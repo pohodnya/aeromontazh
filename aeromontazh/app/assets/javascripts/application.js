@@ -13,4 +13,17 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require 1.7.2.jquery.min
+//= require 4oqRm5VZpCZ4wscAYLYyVvBzKIXHtLtXxLXmNOpjC1I
+//= require ad_status
+//= require functions
+//= require html5player
+//= require jquery.arcticmodal-0.3.min
+//= require jquery.fancybox
+//= require jquery.jcarousel
+//= require jquery.lazyload.min
+//= require jquery.maskedinput
+//= require watch
+//= require wow.min
+//= require www-embed-player
 //= require_tree .
