@@ -87,18 +87,19 @@
 #fancybox-loading div {
 	width: 44px;
 	height: 44px;
-	background: url('../images/fancybox_loading.gif') center center no-repeat;
+	background: url('loader.GIF') center center no-repeat;
 }
 
 .fancybox-close {
 	position: absolute;
 	bottom: 0px;
-	right: -48px;
+	right: -30px;
+	top: -15px;
 	width: 48px;
 	height: 48px;
 	cursor: pointer;
 	z-index: 8040;
-	background: url('../images/close.jpg') no-repeat;
+	background: url('close.png') no-repeat;
 }
 
 .fancybox-nav {
@@ -124,7 +125,7 @@
 	position: absolute;
 	top: 50%;
 	width: 36px;
-	height: 34px;
+	height: 70px;
 	margin-top: -18px;
 	cursor: pointer;
 	z-index: 8040;
@@ -133,12 +134,12 @@
 
 .fancybox-prev span {
 	left: 0px;
-	background: url(../images/left2.png) no-repeat;
+	background: url(left.png) no-repeat;
 }
 
 .fancybox-next span {
 	right: 0px;
-	background: url(../images/right2.png) no-repeat;
+	background: url(right.png) no-repeat;
 }
 
 .fancybox-nav:hover span {
