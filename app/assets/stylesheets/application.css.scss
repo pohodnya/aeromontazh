@@ -412,7 +412,7 @@ section .window {
 }
 section ul.wind1,
 section ul.wind2 {
-    width: 490px;
+    width: 487px;
     display: inline-block;
     vertical-align: top;
 }
@@ -428,26 +428,26 @@ section ul.wind1 li.li4 {
     background: asset_url('wind_li_small.png') no-repeat 0px 38px;
 }
 section ul.wind1 li span {
-    position: absolute;
+    position: relative;
     font: 20px 'OpenSans Rg', sans-serif;
     color: #000000;
     text-transform: uppercase;
 }
-section ul.wind1 li.li1 span {
-    margin: -5px 0px 0px -15px;
+section ul.wind1 li span {
+    poaition: relative;
 }
-section ul.wind1 li.li2 span {
-    margin: -5px 0px 0px -15px;
-}
+//section ul.wind1 li.li2 span {
+//    margin: -5px 0px 0px -15px;
+//}
 section ul.wind1 li.li3 span {
-    margin: -30px 0px 0px -50px;
+  top: -25px;
 }
 section ul.wind1 li.li4 span {
-    margin: -30px 0px 0px -50px;
+  top: -25px;
 }
-section ul.wind1 li.li5 span {
-    margin: -5px 0px 0px -40px;
-}
+//section ul.wind1 li.li5 span {
+//    margin: -5px 0px 0px -40px;
+//}
 section ul.wind1 li img {
     float: right;
 }
@@ -479,29 +479,29 @@ section ul.wind2 li.li5 {
     background: asset_url('wind_li_small.png') no-repeat 100% 38px;
 }
 section ul.wind2 li span {
-    position: absolute;
+    position: relative;
     font: 20px 'OpenSans Rg', sans-serif;
     color: #000000;
     text-transform: uppercase;
 }
-section ul.wind2 li.li1 span {
-    margin: -5px 0px 0px -50px;
+section ul.wind2 li span {
+    position: relative;
 }
-section ul.wind2 li.li2 span {
-    margin: -5px 0px 0px -50px;
-}
-section ul.wind2 li.li3 span {
-    margin: -5px 0px 0px -60px;
-}
+//section ul.wind2 li.li2 span {
+//    margin: -5px 0px 0px -50px;
+//}
+//section ul.wind2 li.li3 span {
+//    margin: -5px 0px 0px -60px;
+//}
 section ul.wind2 li.li4 span {
-    margin: -25px 0px 0px -65px;
+  top: -25px;
 }
 section ul.wind2 li.li5 span {
-    margin: -25px 0px 0px -65px;
+  top: -25px;
 }
-section ul.wind2 li.li6 span {
-    margin: -5px 0px 0px -50px;
-}
+//section ul.wind2 li.li6 span {
+//    margin: -5px 0px 0px -50px;
+//}
 section ul.wind2 li img {
     float: left;
 }
@@ -531,7 +531,7 @@ section ul.decision li {
     padding: 0px;
     display: inline-block;
     vertical-align: top;
-    width: 245px;
+    width: 244px;
     font: 18px 'OpenSans Rg', sans-serif;
     color: #fff;
 }
@@ -698,7 +698,7 @@ section ul.for li {
     padding: 0px 10px;
     display: inline-block;
     vertical-align: top;
-    width: 470px;
+    width: 469px;
     font: 16px 'OpenSans Rg', sans-serif;
     color: #000101;
     text-align: left;
@@ -862,7 +862,7 @@ section ul.kol li {
     padding: 0px;
     display: inline-block;
     vertical-align: top;
-    width: 450px;
+    width: 448px;
     font: 30px 'OpenSans Bold', sans-serif;
     color: #0d404f;
 }
