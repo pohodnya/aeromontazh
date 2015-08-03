@@ -439,9 +439,19 @@ section ul.wind1 li span {
 //section ul.wind1 li.li2 span {
 //    margin: -5px 0px 0px -15px;
 //}
-section ul.wind1 li.li3 span {
-  top: -25px;
+@media screen and (min-width: 990px) {
+  section ul.wind1 li.li3 span {
+    top: -100px;
+    left: -170px;
+  }
 }
+
+@media screen and (max-width: 980px) {
+  section ul.wind1 li.li3 span {
+    top: -25px;
+  }
+}
+
 section ul.wind1 li.li4 span {
   top: -25px;
 }
@@ -919,6 +929,10 @@ section.head a.btn_to {
 }
 section.head a.btn_to b {
     font-family: 'OpenSans Extrabold', sans-serif;
+}
+a.btn_to i {
+  font-style: normal;
+  font-size: 16px;
 }
 section.head a.btn_call,
 section.footer a.btn_call {
