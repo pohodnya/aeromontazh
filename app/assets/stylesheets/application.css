@@ -22,23 +22,23 @@
 
 @font-face {
     font-family: 'OpenSans Rg';
-    src: url('OpenSans-Regular.ttf')
+    src: asset_url('OpenSans-Regular.ttf')
 }
 @font-face {
     font-family: 'OpenSans Bold';
-    src: url('OpenSans-Bold.ttf');
+    src: asset_url('OpenSans-Bold.ttf');
 }
 @font-face {
     font-family: 'OpenSans Semibold';
-    src: url('OpenSans-Semibold.ttf');
+    src: asset_url('OpenSans-Semibold.ttf');
 }
 @font-face {
     font-family: 'OpenSans Extrabold';
-    src: url('OpenSans-ExtraBold.ttf');
+    src: asset_url('OpenSans-ExtraBold.ttf');
 }
 @font-face {
     font-family: 'OpenSans Light';
-    src: url('OpenSans-Light.ttf');
+    src: asset_url('OpenSans-Light.ttf');
 }
 html,
 body {
@@ -180,42 +180,42 @@ section {
     text-align: center;
 }
 section.head {
-    background: url('head.jpg') no-repeat 50% 0;
+    background: asset_url('head.jpg') no-repeat 50% 0;
     height: 867px;
     text-align: left;
 }
 section.sale {
     margin: -55px 0px 0px 0px;
-    background: url('sale.png') no-repeat 50% 0;
+    background: asset_url('sale.png') no-repeat 50% 0;
     height: 704px;
 }
 section.window {
     margin: -120px 0px 0px 0px;
 }
 section.decision {
-    background: url('decision.jpg') no-repeat 50% 0;
+    background: asset_url('decision.jpg') no-repeat 50% 0;
     height: 698px;
 }
 section.about {
-    background: url('about.jpg') no-repeat 50% 0;
+    background: asset_url('about.jpg') no-repeat 50% 0;
     height: 814px;
 }
 section.video {
     height: 800px;
 }
 section.spider {
-    background: url('spider.jpg') no-repeat 50% 0;
+    background: asset_url('spider.jpg') no-repeat 50% 0;
     height: 2108px;
 }
 section.clients {
     height: 630px;
 }
 section.why {
-    background: url('why.jpg') no-repeat 50% 0;
+    background: asset_url('why.jpg') no-repeat 50% 0;
     height: 814px;
 }
 section.why2 {
-    background: url('why2.jpg') no-repeat 50% 0;
+    background: asset_url('why2.jpg') no-repeat 50% 0;
     height: 673px;
 }
 section.for {
@@ -226,23 +226,23 @@ section.disease {
     padding: 0px 0px 60px;
 }
 section.sert {
-    background: url('sert.jpg') no-repeat 50% 0;
+    background: asset_url('sert.jpg') no-repeat 50% 0;
     height: 568px;
 }
 section.work {
-    background: url('work.jpg') no-repeat 50% 0;
+    background: asset_url('work.jpg') no-repeat 50% 0;
     height: 1278px;
 }
 section.kol {
-    background: url('kol.jpg') no-repeat 50% 0;
+    background: asset_url('kol.jpg') no-repeat 50% 0;
     height: 857px;
 }
 section.diler {
-    background: url('diler.jpg') no-repeat 50% 0;
+    background: asset_url('diler.jpg') no-repeat 50% 0;
     height: 698px;
 }
 section.footer {
-    background: url('footer.jpg') no-repeat 50% 0;
+    background: asset_url('footer.jpg') no-repeat 50% 0;
     height: 607px;
 }
 .page {
@@ -373,7 +373,7 @@ section.footer p span {
 section .head_banner {
     margin: 130px 0px 0px 490px;
     padding: 118px 0px 0px 285px;
-    background: url('head_banner.png') no-repeat;
+    background: asset_url('head_banner.png') no-repeat;
     width: 205px;
     height: 200px;
     position: absolute;
@@ -384,7 +384,7 @@ section .head_banner {
 section .sale_block {
     margin: 0px 0px 40px;
     padding: 0px;
-    background: url('sale_block.png') no-repeat;
+    background: asset_url('sale_block.png') no-repeat;
     width: 520px;
     height: 80px;
     font: 18px 'OpenSans Bold', sans-serif;
@@ -405,7 +405,7 @@ section .sale_block b {
 section .window {
     margin: 0px;
     padding: 0px;
-    background: url('window.jpg') no-repeat;
+    background: asset_url('window.jpg') no-repeat;
     width: 980px;
     min-height: 553px;
     font-size: 0px;
@@ -419,13 +419,13 @@ section ul.wind2 {
 section ul.wind1 li {
     margin: 0px 0px 42px;
     padding: 0px;
-    background: url('wind_li.png') no-repeat 0px 38px;
+    background: asset_url('wind_li.png') no-repeat 0px 38px;
     height: 76px;
 }
 section ul.wind1 li.li2,
 section ul.wind1 li.li3,
 section ul.wind1 li.li4 {
-    background: url('wind_li_small.png') no-repeat 0px 38px;
+    background: asset_url('wind_li_small.png') no-repeat 0px 38px;
 }
 section ul.wind1 li span {
     position: absolute;
@@ -469,14 +469,14 @@ section ul.wind1 li.li5 img {
 section ul.wind2 li {
     margin: 0px 0px 18px;
     padding: 0px;
-    background: url('wind_li.png') no-repeat 100% 38px;
+    background: asset_url('wind_li.png') no-repeat 100% 38px;
     height: 76px;
 }
 section ul.wind2 li.li2,
 section ul.wind2 li.li3,
 section ul.wind2 li.li4,
 section ul.wind2 li.li5 {
-    background: url('wind_li_small.png') no-repeat 100% 38px;
+    background: asset_url('wind_li_small.png') no-repeat 100% 38px;
 }
 section ul.wind2 li span {
     position: absolute;
@@ -554,16 +554,16 @@ section ul.about li {
     min-height: 50px;
 }
 section ul.about li.li1 {
-    background: url('about-1.jpg') no-repeat 0 100%;
+    background: asset_url('about-1.jpg') no-repeat 0 100%;
 }
 section ul.about li.li2 {
-    background: url('about-2.jpg') no-repeat 0 100%;
+    background: asset_url('about-2.jpg') no-repeat 0 100%;
 }
 section ul.about li.li3 {
-    background: url('about-3.jpg') no-repeat 0 100%;
+    background: asset_url('about-3.jpg') no-repeat 0 100%;
 }
 section ul.about li.li4 {
-    background: url('about-4.jpg') no-repeat 0 100%;
+    background: asset_url('about-4.jpg') no-repeat 0 100%;
 }
 section div.video {
     margin: 0px auto 50px;
@@ -654,12 +654,12 @@ section ul.why > li li.empty {
 }
 section ul.why > li:first-child li {
     padding: 0px 0px 0px 40px;
-    background: url('why-li-li.png') no-repeat 5px 50%;
+    background: asset_url('why-li-li.png') no-repeat 5px 50%;
     text-align: left;
 }
 section ul.why2 {
     margin: 70px 0px 0px;
-    background: url('why2.png') no-repeat;
+    background: asset_url('why2.png') no-repeat;
 }
 section ul.why2 li {
     margin: 0px 40px;
@@ -689,7 +689,7 @@ section ul.why2 li.alt span {
 }
 section ul.for {
     margin: 70px 0px 0px;
-    background: url('for.jpg') no-repeat;
+    background: asset_url('for.jpg') no-repeat;
     height: 730px;
     font-size: 0px;
 }
@@ -714,10 +714,10 @@ section ul.for li span {
     font: 20px 'OpenSans Bold', sans-serif;
     color: #3ec0ef;
     text-transform: uppercase;
-    background: url('for-hr2.png') no-repeat 0 100%;
+    background: asset_url('for-hr2.png') no-repeat 0 100%;
 }
 section ul.for li.alt span {
-    background: url('for-hr.png') no-repeat 100% 100%;
+    background: asset_url('for-hr.png') no-repeat 100% 100%;
 }
 section ul.for li.center span {
     width: 150px;
@@ -750,7 +750,7 @@ section ul.disease li h5 {
 }
 section ul.disease li p {
     padding: 0px 0px 0px 45px;
-    background: url('disease-p.jpg') no-repeat 0px 5px;
+    background: asset_url('disease-p.jpg') no-repeat 0px 5px;
     font: 14px 'OpenSans Rg', sans-serif;
     color: #000000;
     min-height: 125px;
@@ -758,7 +758,7 @@ section ul.disease li p {
 section ul.sert li {
     margin: 0px;
     padding: 21px 0px 0px 0px;
-    background: url('sert.png') no-repeat;
+    background: asset_url('sert.png') no-repeat;
     height: 356px;
 }
 section ul.sert li a {
@@ -779,7 +779,7 @@ section ul.sert li:hover a img {
 section ul.work1 {
     margin: 0px;
     padding: 120px 0px 0px 0px;
-    background: url('work1.png') no-repeat;
+    background: asset_url('work1.png') no-repeat;
     border: 1px solid #fff;
     width: 978px;
     height: 220px;
@@ -788,7 +788,7 @@ section ul.work1 {
 section ul.work2 {
     margin: 0px 0px 50px 0px;
     padding: 80px 0px 0px 0px;
-    background: url('work2.png') no-repeat;
+    background: asset_url('work2.png') no-repeat;
     width: 980px;
     height: 460px;
     font-size: 0px;
@@ -855,7 +855,7 @@ section ul.how li:first-child a.btn {
 }
 section ul.kol {
     font-size: 0px;
-    background: url('kol.png') no-repeat 50% 205px;
+    background: asset_url('kol.png') no-repeat 50% 205px;
 }
 section ul.kol li {
     margin: 0px 0px 60px;
