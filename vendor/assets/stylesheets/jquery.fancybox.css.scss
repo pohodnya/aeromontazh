@@ -134,12 +134,12 @@
 
 .fancybox-prev span {
 	left: 0px;
-	background: asset_url(left.png) no-repeat;
+	background: asset_url('left.png') no-repeat;
 }
 
 .fancybox-next span {
 	right: 0px;
-	background: asset_url(right.png) no-repeat;
+	background: asset_url('right.png') no-repeat;
 }
 
 .fancybox-nav:hover span {
