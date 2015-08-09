@@ -27,5 +27,9 @@ module Myapp
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+
+    # config.mailgun_api_key = 'key-8d0au3n6g4-yn4wklb4pu7qi49ywe5u8'
+
+    ActionMailer::Base.default from: 'AeroMontazh <noreply.aeromontazh@gmail.com>'
   end
 end

@@ -879,7 +879,7 @@ section ul.diler li div p {
 }
 /* buttons */
 
-a.btn {
+input[type="submit"].btn_send, a.btn {
   margin: 0px;
   padding: 0px;
   font: 24px/70px 'OpenSans Semibold', sans-serif;
@@ -927,11 +927,19 @@ a.btn_call:hover {
   background: #0d404f;
   color: #fff;
 }
-a.btn_send,
-a.btn_white {
+a.btn_send, a.btn_white {
   background: none;
   color: #fff;
   border: 1px solid #fff;
+}
+
+input[type="submit"].btn_send{
+  width: 100%;
+  background: #0d4150 !important;
+  color: #fff !important;
+  border: 2px solid #0d4150;
+  margin-top: 15px;
+  line-height: 0px;
 }
 a.btn_send {
   width: 100%;
@@ -939,10 +947,9 @@ a.btn_send {
 a.btn_white {
   padding: 0px 20px;
 }
-a.btn_send:hover,
-a.btn_white:hover {
-  background: #fff;
-  color: #0d404f;
+input[type="submit"].btn_send:hover, a.btn_send:hover, a.btn_white:hover {
+  background: #fff !important;
+  color: #0d404f !important;
 }
 a.btn_more {
   margin: 0px 0px 0px 515px;

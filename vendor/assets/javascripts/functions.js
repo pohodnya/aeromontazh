@@ -2,8 +2,7 @@ $(document).ready(function(){
 
 	// маска ввода телефона
    	jQuery(function($){
-	   $(".phone.small").mask("(999)");
-	   $(".phone.big").mask("999-9999");
+	   $(".phone").mask("+7 (999) 999-99-99");
 	});
 
 	// карусель
@@ -49,33 +48,33 @@ $(document).ready(function(){
 	// обработка форм
 	$('.btn_send').click(function(){
 		var form = $(this).closest('.form');
-		var valName = (form.find('input[name="name"]').length > 0) ? form.find('input[name="name"]').val() : '';
-		var valPhone1 = (form.find('input[name="phone1"]').length > 0) ? form.find('input[name="phone1"]').val() : '';
-		var valPhone2 = (form.find('input[name="phone2"]').length > 0) ? form.find('input[name="phone2"]').val() : '';
-		var valEmail = (form.find('input[name="mail"]').length > 0) ? form.find('input[name="mail"]').val() : '';
+		var valName = (form.find('input[name="client[name]"]').length > 0) ? form.find('input[name="client[name]"]').val() : '';
+		var valPhone = (form.find('input[name="client[phone]"]').length > 0) ? form.find('input[name="client[phone]"]').val() : '';
+		var valEmail = (form.find('input[name="client[mail]"]').length > 0) ? form.find('input[name="client[mail]"]').val() : '';
 		var valTitle = (form.find('input[name="title"]').length > 0) ? form.find('input[name="title"]').val() : '';
 
-		if (valName == '' || valPhone1 == '' || valPhone2 == ''){
+		if (valName == '' || valPhone == '' ){
 			if (valName == '')
-				form.find('input[name="name"]').css({'border-color': '#ff0000'});
-			if (valPhone1 == '')
-				form.find('input[name="phone1"]').css({'border-color': '#ff0000'});
-			if (valPhone2 == '')
-				form.find('input[name="phone2"]').css({'border-color': '#ff0000'});
+				form.find('input[name="client[name]"]').css({'border-color': '#ff0000'});
+			if (valPhone == '')
+				form.find('input[name="client[phone]"]').css({'border-color': '#ff0000'});
 			setTimeout(function(){
-				form.find('input[name="name"], input[name="phone1"], input[name="phone2"]').css({'border-color': '#0d4150'});
+				form.find('input[name="client[name]"], input[name="client[phone]"]').css({'border-color': '#0d4150'});
 			}, 3000);
 		}
 		else {
-			$.post('/formtion.php', {'name': valName, 'phone1': valPhone1, 'phone2': valPhone2, 'email': valEmail, 'title': valTitle, 'page': 'http://klimatperm.ru/index2.html'}, function(){
 				$.arcticmodal('close');
 				$('.popup_true').arcticmodal();
 				//window.location.href = 'http://land.pulsar.org.ua/thankyou.html';
-				$('input[name="name"]').val('');
-				$('input[name="phone1"]').val('');
-				$('input[name="phone2"]').val('');
-				$('input[name="mail"]').val('');
-			});
+
+				setTimeout(function(){
+					$.arcticmodal('close');
+				}, 2000);
+				setTimeout(function(){
+					$('input[name="client[name]"]').val('');
+					$('input[name="client[phone]"]').val('');
+					$('input[name="client[mail]"]').val('');
+				}, 2000);
 		}
 	});
 
