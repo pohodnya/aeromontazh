@@ -163,7 +163,7 @@ section.head {
   background: asset_url('head.jpg') no-repeat 50% 0;
   height: 867px;
   text-align: left;
-  margin-top: 80px;
+  margin-top: 55px;
 }
 section.sale {
   margin: -55px 0px 0px 0px;
@@ -1101,16 +1101,12 @@ section.sale .form {
 
 #navigation {
   display: inline-block;
-  float: right;
-  position: relative;
-  top: 19px;
-  right: 5px;
+  margin-top: 5px;
   ul {
     list-style: none;
     li {
       padding: 3px 8px;
       cursor: pointer;
-      margin-right: 8px;
       display: inline;
       font-family: OpenSans;
       color: #d0e8f1;
@@ -1137,12 +1133,6 @@ section.sale .form {
   top: 0px;
   background-color: #074150;
   width: 100%;
-  height: 81px;
+  height: 57px;
   z-index: 1000;
-}
-
-#landing-menu {
-  margin: 0px auto;
-  padding: 1px 0px;
-  width: 980px;
 }

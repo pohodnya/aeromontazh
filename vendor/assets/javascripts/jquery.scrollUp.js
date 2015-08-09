@@ -34,6 +34,7 @@ Twitter: @markgdyr
 
 		// Create element
 		$('<a/>', {
+			class: 'hover outline-outward',
 			id: o.scrollName,
 			href: '#top',
 			title: o.scrollText
@@ -66,6 +67,7 @@ Twitter: @markgdyr
 					$( ($(window).scrollTop() > o.topDistance) ? $(scrollId).show(0) : $(scrollId).hide(0) );
 			}
 		});
+
 
 		// To the top
 		$(scrollId).click( function(event) {

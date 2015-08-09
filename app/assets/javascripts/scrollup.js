@@ -2,6 +2,11 @@ $(function () {
     $.scrollUp();
 });
 
+$(function () {
+    $('#scrollUp').animate({bottom: "+=20"}, 1000);
+    $('#scrollUp').animate({bottom: "-=20"}, 200);
+});
+
 $( document ).ready(function() {
     var lastId,
         topMenu = $("#navigation"),
