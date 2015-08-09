@@ -1,4 +1,22 @@
-<section class="head">
+<section class="top-menu">
+  <div id="landing-menu">
+    <div id="navigation">
+      <ul>
+        <a href="#top-link"><li class="active">вверх</li></a>
+        <a href="#l1"><li>научность</li></a>
+        <a href="#l2"><li>эффективность</li></a>
+        <a href="#l3"><li>пример</li></a>
+        <a href="#l4"><li>как это работает</li></a>
+        <a href="#l5"><li>эксперты</li></a>
+        <a href="#why"><li>отзывы</li></a>
+        <a href="#l8"><li>отзывы</li></a>
+        <a href="#l9"><li>отзывы</li></a>
+        <a href="#l10"><li>отзывы</li></a>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="head" id="toptop">
   <header>
     <div id="top" class="page">
       <div class="logo">
@@ -32,7 +50,7 @@
   </div>
 </section>
 <section class="window">
-  <div class="page">
+  <div class="page landingItem" id="l1">
     <h4>В помещении с закрытыми <br>окнами обычно нечем дышать</h4>
     <h4><span>Ради свежего воздуха <br>вы открываете окно</span></h4>
     <h4>Но вместе с воздухом <br>в квартиру попадают</h4>
@@ -58,7 +76,7 @@
   </div>
 </section>
 <section class="decision">
-  <div class="page">
+  <div class="page landingItem" id="l2">
     <h3><span>Решение найдено!</span><br>
       Система очистки воздуха Бризер Tion O<b>2</b> Standart</h3>
     <ul class="decision">
@@ -71,7 +89,7 @@
   </div>
 </section>
 <section class="about">
-  <div class="page">
+  <div class="page landingItem" id="l3">
     <h3>Бризер Tion O<b>2</b> Standart</h3>
     <ul class="about">
       <li class="li1">Подает свежий воздух внутрь помещения постоянно и в нужном объеме</li>
@@ -84,7 +102,7 @@
 </section>
 <section class="spider">
   <section class="video">
-    <div class="page">
+    <div class="page" id="l4">
       <h3>Посмотрите за 40 секунд, как работает бризер</h3>
       <div class="video">
         <iframe width="950" height="470" src="https://www.youtube.com/embed/pyrxCQRsGwM?rel=0" frameborder="0" allowfullscreen></iframe>
@@ -93,8 +111,8 @@
     </div>
   </section>
   <section class="clients">
-    <div class="page">
-      <h3>Наши постоянные клиенты</h3>
+    <div class="page" id="l5">
+      <h3>Кто уже пользуется Бризером</h3>
       <ul class="clients">
         <li><%= image_tag('1.jpg') %></li>
         <li><%= image_tag('2.jpg') %></li>
@@ -115,9 +133,8 @@
     </div>
   </section>
   <section class="comments">
-    <div class="page">
-      <h3>Отзывы тех, кто уже наслаждается<br>
-        всегда свежим и чистым воздухом</h3>
+    <div class="page" id="l6">
+      <h3>О Бризере на Телевидении</h3>
       <ul class="comments">
         <li>
           <iframe width="290" height="180" src="https://www.youtube.com/embed/Jt8GjSg-z5A?rel=0" frameborder="0" allowfullscreen></iframe>
@@ -198,7 +215,7 @@
   </div>
 </section>
 <section class="why2">
-  <div class="page">
+  <div class="page" id="l8">
     <h3>Еще несколько преимуществ бризера</h3>
     <ul class="why2">
       <li><%= image_tag('why2-1.png') %>Не требует согласования<br>на установку</li>
@@ -211,7 +228,7 @@
   </div>
 </section>
 <section class="for">
-  <div class="page">
+  <div class="page" id="l9">
     <h3>Для каких помещений необходим бризер?</h3>
     <ul class="for">
       <li><span>Детская</span>Чистый воздух<br>без аллергенов, шума, пыли<br>и главное – сквозняков</li>
@@ -225,7 +242,7 @@
   </div>
 </section>
 <section class="disease">
-  <div class="page">
+  <div class="page" id="l10">
     <h3>Как бризер защищает вас от болезней?</h3>
     <p>Поступающий с улицы воздух проходит тщательную очистку от пыли, грязи, аллергенов при помощи специальных медицинских фильтров</p>
     <ul class="disease">
@@ -255,7 +272,7 @@
   </div>
 </section>
 <section class="sert">
-  <div class="page">
+  <div class="page" id="l11">
     <h3>Сертификаты</h3>
     <div class=" jcarousel-skin-tango"><div class="jcarousel-container jcarousel-container-horizontal" style="position: relative; display: block;"><div class="jcarousel-clip jcarousel-clip-horizontal" style="position: relative;"><ul id="mycarousel" class="sert jcarousel-list jcarousel-list-horizontal" style="overflow: hidden; position: relative; top: 0px; margin: 0px; padding: 0px; left: 0px; width: 2940px;">
       <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal" jcarouselindex="1" style="float: left; list-style: none;"><a href=<%= image_path('cert_diler.jpg')%> class="fancybox" rel="gallery"><%= image_tag('zoom.png') %></a><%= image_tag('cert_diler.jpg', width: '225px', height: '325px') %></li>

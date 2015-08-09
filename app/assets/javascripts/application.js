@@ -26,4 +26,6 @@
 //= require watch
 //= require wow.min
 //= require www-embed-player
+//= require jquery.scrollUp
+//= require scrollup
 //= require_tree .
