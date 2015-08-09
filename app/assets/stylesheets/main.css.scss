@@ -420,17 +420,10 @@ section ul.wind1 li span {
 //section ul.wind1 li.li2 span {
 //    margin: -5px 0px 0px -15px;
 //}
-@media screen and (min-width: 1000px) {
-  section ul.wind1 li.li3 span {
-    top: -100px;
-    left: -170px;
-  }
-}
 
-@media screen and (max-width: 1000px) {
-  section ul.wind1 li.li3 span {
-    top: -25px;
-  }
+section ul.wind1 li.li3 span {
+  margin-left: -4px;
+  top: -25px;
 }
 
 section ul.wind1 li.li4 span {
