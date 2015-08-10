@@ -5,6 +5,6 @@ ActionMailer::Base.smtp_settings = {
     port:                  587,
     domain:               'aeromontazh.herokuapp.com',
     user_name:            'aeromontazh@gmail.com',
-    password:             'fowldrismpvvtobu',
+    password:             'mftavzjsqcgxofyw',
     authentication:       'plain',
     enable_starttls_auto:  true  }
