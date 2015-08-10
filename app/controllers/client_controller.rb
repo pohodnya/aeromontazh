@@ -1,7 +1,7 @@
 class ClientController < ApplicationController
 
   def create
-    ClientMailer.send_to_admin(client_params).deliver
+    ClientMailer.send_to_admin(client_params).deliver_now
     redirect_to "https://aeromontazh.herokuapp.com"
   end
 
