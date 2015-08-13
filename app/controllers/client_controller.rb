@@ -2,7 +2,7 @@ class ClientController < ApplicationController
 
   def create
     ClientMailer.send_to_admin(client_params).deliver_now
-    redirect_to "https://aeromontazh.herokuapp.com"
+    redirect_to Rails.application.config.host
   end
 
   private
