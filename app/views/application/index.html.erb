@@ -390,13 +390,12 @@
       <div class="form">
         <p><span>Введите свои контактные данные</span><br>
           Мы свяжемся с вами в течение 20 минут и ответим на все интересующие вас вопросы об очистке воздуха при помощи системы "Tion"</p>
-        <input type="text" name="name" class="name" placeholder="Ваше имя (для обращения к Вам)">
-        <label>Ваш телефон (для обратной связи)</label>
-        <b>+7</b>
-        <input type="text" name="phone1" class="phone small">
-        <input type="text" name="phone2" class="phone big">
-        <input type="hidden" name="title" value="Обратный звонок">
-        <a class="btn btn_send">Перезвоните мне!</a>
+        <%= form_for :client, url: client_index_path, method: :post do |form|%>
+          <%= form.text_field :name, class: 'name', placeholder: 'Ваше имя (для обращения к Вам)'%>
+          <%= form.text_field :phone, class: 'phone', placeholder: 'Ваш телефон для связи'%>
+          <%= form.hidden_field :from_form, value: 'Обратный звонок'%>
+          <%= form.submit class: 'btn btn_send', value: 'Перезвоните мне!'%>
+        <% end %>
       </div>
     </div>
   </div>
@@ -427,13 +426,12 @@
       <div class="form">
         <p><span>Введите свои контактные данные</span><br>
           Чтобы оставить заявку на покупку бризера или получить консультацию! Наш менеджер свяжется с Вами в течение 20 минут.</p>
-        <input type="text" name="name" class="name" placeholder="Ваше имя (для обращения к Вам)">
-        <label>Ваш телефон (для обратной связи)</label>
-        <b>+7</b>
-        <input type="text" name="phone1" class="phone small">
-        <input type="text" name="phone2" class="phone big">
-        <input type="hidden" name="title" value="Получить подарок">
-        <a class="btn btn_send">Получить подарок!</a>
+        <%= form_for :client, url: client_index_path, method: :post do |form|%>
+          <%= form.text_field :name, class: 'name', placeholder: 'Ваше имя (для обращения к Вам)'%>
+          <%= form.text_field :phone, class: 'phone', placeholder: 'Ваш телефон для связи'%>
+          <%= form.hidden_field :from_form, value: 'landing_middle'%>
+          <%= form.submit class: 'btn btn_send', value: 'Оставить заявку'%>
+        <% end %>
       </div>
     </div>
   </div>
@@ -446,13 +444,12 @@
       <div class="form">
         <p><span>Введите свои контактные данные </span><br>
           Мы свяжемся с Вами в течение 20 минут и расскажем подробнее о том, чем полезен бризер и как он работает.</p>
-        <input type="text" name="name" class="name" placeholder="Ваше имя (для обращения к Вам)">
-        <label>Ваш телефон (для обратной связи)</label>
-        <b>+7</b>
-        <input type="text" name="phone1" class="phone small">
-        <input type="text" name="phone2" class="phone big">
-        <input type="hidden" name="title" value="Узнать больше о бризере">
-        <a class="btn btn_send">Узнать больше о бризере</a>
+        <%= form_for :client, url: client_index_path, method: :post do |form|%>
+          <%= form.text_field :name, class: 'name', placeholder: 'Ваше имя (для обращения к Вам)'%>
+          <%= form.text_field :phone, class: 'phone', placeholder: 'Ваш телефон для связи'%>
+          <%= form.hidden_field :from_form, value: 'landing_middle'%>
+          <%= form.submit class: 'btn btn_send', value: 'Узнать больше о Бризере'%>
+        <% end %>
       </div>
     </div>
   </div>
@@ -465,13 +462,12 @@
       <div class="form">
         <p><span>Введите свои контактные данные</span><br>
           Мы свяжемся с Вами в течение 20 минут, чтобы уточнить время приезда менеджера.</p>
-        <input type="text" name="name" class="name" placeholder="Ваше имя (для обращения к Вам)">
-        <label>Ваш телефон (для обратной связи)</label>
-        <b>+7</b>
-        <input type="text" name="phone1" class="phone small">
-        <input type="text" name="phone2" class="phone big">
-        <input type="hidden" name="title" value="Бесплатный выезд менеджера">
-        <a class="btn btn_send">Оставить заявку</a>
+        <%= form_for :client, url: client_index_path, method: :post do |form|%>
+          <%= form.text_field :name, class: 'name', placeholder: 'Ваше имя (для обращения к Вам)'%>
+          <%= form.text_field :phone, class: 'phone', placeholder: 'Ваш телефон для связи'%>
+          <%= form.hidden_field :from_form, value: 'Бесплатный выезд менеджера'%>
+          <%= form.submit class: 'btn btn_send', value: 'Оставить заявку'%>
+        <% end %>
       </div>
     </div>
   </div>
@@ -484,13 +480,12 @@
       <div class="form">
         <p><span>Введите свои контактные данные</span><br>
           Мы свяжемся с Вами в течение 20 минут и ответим на все интересующие Вас вопросы о бризере.</p>
-        <input type="text" name="name" class="name" placeholder="Ваше имя (для обращения к Вам)">
-        <label>Ваш телефон (для обратной связи)</label>
-        <b>+7</b>
-        <input type="text" name="phone1" class="phone small">
-        <input type="text" name="phone2" class="phone big">
-        <input type="hidden" name="title" value="Задать вопрос">
-        <a class="btn btn_send">Задать вопрос</a>
+        <%= form_for :client, url: client_index_path, method: :post do |form|%>
+          <%= form.text_field :name, class: 'name', placeholder: 'Ваше имя (для обращения к Вам)'%>
+          <%= form.text_field :phone, class: 'phone', placeholder: 'Ваш телефон для связи'%>
+          <%= form.hidden_field :from_form, value: 'Задать вопрос'%>
+          <%= form.submit class: 'btn btn_send', value: 'Задать вопрос'%>
+        <% end %>
       </div>
     </div>
   </div>
