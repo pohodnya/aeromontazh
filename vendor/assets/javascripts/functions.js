@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
 	// маска ввода телефона
-   	jQuery(function($){
-	   $(".phone").mask("+7 (999) 999-99-99");
-	});
+   	//jQuery(function($){
+	//   $(".phone").mask("+7 (999) 999-99-99");
+	//});
 
 	// карусель
 	$('#mycarousel').jcarousel({
