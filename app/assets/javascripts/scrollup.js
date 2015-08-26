@@ -3,6 +3,59 @@ $(function () {
 });
 
 $(function () {
+    var note = $('#note'),
+        ts = new Date(2015, 8, 1),
+        newYear = true;
+
+    if((new Date()) > ts){
+        // Задаем точку отсчета для примера. Пусть будет очередной Новый год или дата через 10 дней.
+        // Обратите внимание на *1000 в конце - время должно задаваться в миллисекундах
+        ts = (new Date()).getTime() + 10*24*60*60*1000;
+        newYear = false;
+    }
+
+    $('#getting-started').countdown({
+        timestamp	: ts,
+        callback	: function(days, hours, minutes, seconds){
+
+            var message = "";
+
+            message += "Дней              часов                минут";
+            message += " <br />";
+            message += "осталось до конца акции";
+
+            note.html(message);
+        }
+    });
+});
+
+$(function () {
+    $('.hasTooltip').qtip({
+        content: {
+            text: $('#qtip-0') // Use the "div" element next to this for the content
+        },
+        position: {
+            my: 'bottom center',
+            at: 'top center',
+        },
+        show: {
+            effect: function() {
+                $(this).slideDown();
+            }
+        },
+        hide: {
+            event: 'unfocus',
+            effect: function() {
+                $(this).slideUp();
+            }
+        },
+        style: {
+            classes: 'qtip-blue qtip-shadow'
+        }
+    });
+});
+
+$(function () {
     $('#scrollUp').animate({bottom: "+=20"}, 1000);
     $('#scrollUp').animate({bottom: "-=20"}, 200);
 });

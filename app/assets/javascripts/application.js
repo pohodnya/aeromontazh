@@ -28,4 +28,7 @@
 //= require www-embed-player
 //= require jquery.scrollUp
 //= require scrollup
+//= require jquery.qtip
+//= require imagesloaded.pkg.min
+//= require jquery.countdown.js
 //= require_tree .
