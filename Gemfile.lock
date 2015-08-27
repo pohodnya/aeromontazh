@@ -209,7 +209,6 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
-  capistrano (~> 2.6.0)
   capistrano-sidekiq!
   capistrano-unicorn
   coffee-rails (~> 4.1.0)

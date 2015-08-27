@@ -52,7 +52,7 @@ group :development, :test do
 end
 
 group :development do
-  gem 'capistrano', '~> 2.6.0'
+
   gem 'rvm-capistrano', :require => false
   gem 'capistrano-unicorn', :require => false
   gem 'capistrano-sidekiq', github: 'seuros/capistrano-sidekiq'
