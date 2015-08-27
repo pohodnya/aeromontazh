@@ -49,10 +49,18 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'unicorn_service', require: false
+end
+
+group :development do
+  gem 'capistrano'
+  gem 'rvm-capistrano', :require => false
+  gem 'capistrano-unicorn', :require => false
+  gem 'capistrano-sidekiq', github: 'seuros/capistrano-sidekiq'
 end
 
 group :production do
-  gem 'unicorn', '~> 3.6.2', :require => nil
+  gem 'unicorn', platform: :ruby
 end
 
 ruby '2.0.0'
