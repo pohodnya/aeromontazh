@@ -76,19 +76,18 @@
 .countDiv0:after, .countDiv1:after, .countDiv2:after, .countDiv3:after {
 	content: attr(count);
 }
-/*.countDiv:before,*/
-/*.countDiv:after{*/
-	/*position:absolute;*/
-	/*width:5px;*/
-	/*height:5px;*/
-	/*background-color:#444;*/
-	/*border-radius:50%;*/
-	/*left:50%;*/
-	/*margin-left:-3px;*/
-	/*top:0.5em;*/
-	/*box-shadow:1px 1px 1px rgba(4, 4, 4, 0.5);*/
-	/*content:'';*/
-/*}*/
+.countDiv0:before, .countDiv1:before, .countDiv2:before {
+	position:absolute;
+	width:5px;
+	height:5px;
+	background-color:#444;
+	border-radius:50%;
+	margin-left:-3px;
+	top: -40px;
+	left: 85px;
+	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.5);
+	content:'';
+}
 
 /*.countDiv:after{*/
 	/*top:0.9em;*/
