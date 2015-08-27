@@ -228,6 +228,7 @@
     <orderEntry type="library" scope="PROVIDED" name="unf (v0.1.4, RVM: ruby-2.0.0-p598) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="unf_ext (v0.0.7.1, RVM: ruby-2.0.0-p598) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="unicorn (v3.6.2, RVM: ruby-2.0.0-p598) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="unicorn_service (v0.5.1, RVM: ruby-2.0.0-p598) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="web-console (v2.2.1, RVM: ruby-2.0.0-p598) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">

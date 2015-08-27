@@ -1,4 +1,8 @@
-$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
+require 'rvm/capistrano' # Для работы rvm
+require 'bundler/capistrano' # Для работы bundler. При изменении гемов bundler автоматически обновит все гемы на сервере, чтобы они в точности соответствовали гемам разработчика.
+require 'capistrano-unicorn'
+require 'capistrano/sidekiq'
+require 'whenever/capistrano'
 require "rvm/capistrano"
 set :rvm_ruby_string, '2.0.0'
 
