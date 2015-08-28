@@ -11,9 +11,9 @@ set :repository, 'git@github.com:pohodnya/aeromontazh.git'
 # role :app, domain
 # role :db,  domain, :primary => true
 
-after 'deploy:publishing', 'deploy:restart'
-namespace :deploy do
-  task :restart do
-    invoke 'unicorn:restart'
-  end
-end
+# after 'deploy:publishing', 'deploy:restart'
+# namespace :deploy do
+#   task :restart do
+#     invoke 'unicorn:restart'
+#   end
+# end
