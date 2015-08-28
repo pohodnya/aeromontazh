@@ -51,6 +51,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'capistrano', '~> 3.4.0'
   # Гем, который добавляет специфические для Rails таски, такие как прогон миграций и компиляция ассетов
   gem 'capistrano-rails'
   # Гем, добавляющий возможности bundle к capistrano
