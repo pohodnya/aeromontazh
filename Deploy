@@ -1,5 +1,4 @@
 git add .
 git commit -a -m "Release"
 git push
-cap deploy:update
-cap deploy:restart
+cap production deploy

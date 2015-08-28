@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem "rails_12factor", group: :production
-
+gem 'nginx-config'
 #
 # Другие ваши gem-ы
 #
@@ -51,6 +51,13 @@ group :development, :test do
 end
 
 group :development do
+  # Гем, который добавляет специфические для Rails таски, такие как прогон миграций и компиляция ассетов
+  gem 'capistrano-rails'
+  # Гем, добавляющий возможности bundle к capistrano
+  gem 'capistrano-bundler'
+  # Добавление поддержки rvm (менеджера версий для Ruby)
+  gem 'capistrano-rvm'
+  # Интеграция юникорна и капистрано
   gem 'capistrano3-unicorn'
 end
 
