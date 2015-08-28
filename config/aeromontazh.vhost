@@ -1,5 +1,5 @@
 upstream aeromontazh_server {
-    server unix:/var/www/aeromontazh/shared/unicorn.sock fail_timeout=0;
+    server unix:/home/aeromontazh/web-app/shared/unicorn.sock fail_timeout=0;
 }
 
 server {
@@ -8,7 +8,7 @@ server {
     client_max_body_size 1G;
     server_name 80.87.201.159 www.80.87.201.159;
     keepalive_timeout 5;
-    root /var/www/aeromontazh/current/public;
+    root /home/aeromontazh/web-app/current/public;
         try_files $uri/index.html $uri.html $uri @myapp;
 
     location @myapp {
@@ -19,7 +19,7 @@ server {
     }
 
     location ~ ^/(assets)/  {
-        root /var/www/aeromontazh/current/public;
+        root /home/aeromontazh/web-app/current/public;
         gzip_static on; # to serve pre-gzipped version
         expires max;
         add_header Cache-Control public;
@@ -28,6 +28,6 @@ server {
 
     error_page 500 502 503 504 /500.html;
     location = /500.html {
-        root /var/www/aeromontazh/current/public;
+        root /home/web-app/aeromontazh/current/public;
     }
 }
