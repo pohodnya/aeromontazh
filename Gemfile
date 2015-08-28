@@ -35,7 +35,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
-# gem 'unicorn'gem in
+# gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -48,18 +48,14 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  gem 'unicorn_service', require: false
 end
 
 group :development do
-
-  gem 'rvm-capistrano', :require => false
-  gem 'capistrano-unicorn', :require => false
-  gem 'capistrano-sidekiq', github: 'seuros/capistrano-sidekiq'
+  gem 'capistrano3-unicorn'
 end
 
 group :production do
-  gem 'unicorn', platform: :ruby
+  gem 'unicorn'
 end
 
 ruby '2.0.0'
