@@ -5,7 +5,7 @@ set :repo_url, 'git@github.com:pohodnya/aeromontazh.git'
 # Ветка по-умолчанию
 set :branch, 'master'
 # Директория для деплоя
-set :deploy_to, '/home/deploy/applications/aeromontazh'
+set :deploy_to, '/home/root/applications/aeromontazh'
 
 set :log_level, :info
 # Копирующиеся файлы и директории (между деплоями)
