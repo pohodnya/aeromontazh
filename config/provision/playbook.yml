@@ -13,7 +13,7 @@
       # Название приложения
       name: 'aeromontazh'
       # Путь до нашего приложения
-      application: '{{ home }}/applications/{{ name }}'
+      application: '{{ home } }/applications/{{ name }}'
 
     # Список задач, которые будут выполнены последовательно
     tasks:
