@@ -27,8 +27,12 @@
 //= require wow.min
 //= require www-embed-player
 //= require jquery.scrollUp
-//= require scrollup
 //= require jquery.qtip
 //= require imagesloaded.pkg.min
 //= require jquery.countdown.js
+//= require semantic_ui/semantic_ui
+//= require configurator
+//= require scrollup
+//= require jquery.sticky
+//= require jquery-ui
 //= require_tree .

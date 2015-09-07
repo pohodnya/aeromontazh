@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'application#index'
 
   resources :client, only: :create
+  resources :market
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

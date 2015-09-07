@@ -1,0 +1,201 @@
+section.top-menu
+  .page
+    #navigation.floatedLeft
+      ul
+        =link_to root_path, data: { no_turbolink: 'true'}
+          li#backToMain
+            i.chevron.left.icon
+            | Назад к описанию
+section#logoConfig
+  header
+    .page#top
+      .logo
+        = image_tag('aeromontazh_logo.png', width: "410px")
+      .header_info
+        br
+        | Система очистки воздуха
+        br
+        | в Новосибирске и области
+      .call
+        | +7 (383) 239-59-58
+        br
+        a.btn.btn_call Заказать обратный звонок
+section#configTitleSection
+  .page
+    h4.ui.horizontal.divider.header#configTitle
+      i.icon.options
+      | Настройте Ваш Бризер
+section.configurator
+  .page
+    /#fixedSteps
+    /  .ui.ordered.steps#steps
+    /    a.step href='#step1'
+    /      .content
+    /        .title Климат-контроль
+    /        .description Наличие подогрева воздуха
+    /    a.step href='#step2'
+    /      .content
+    /        .title Фильтры
+    /        .description Выберите фильтры
+    /    a.step href='#step3'
+    /      .content
+    /        .title Монтаж бризера
+    /        .description Заказ монтажа
+    /    a.step href='#step4'
+    /      .content
+    /        .title Доп. фильтры
+    /        .description Дополнительные сменные фильтры
+    .ui.grid
+      .five.wide.column#brizerExample
+        = image_tag('Standard.jpg', :id => 'standart')
+        = image_tag('Base.jpg', :id => 'base')
+        = image_tag('Base_HEPA.jpg', :id => 'baseHepa')
+        = image_tag('Base_АК.jpg', :id => 'baseAK')
+        = image_tag('Lite.jpg', :id => 'lite')
+        = image_tag('Lite_HEPA.jpg', :id => 'liteHepa')
+        = image_tag('Lite_АК.jpg', :id => 'liteAK')
+        = image_tag('Lite_HEPA_АК.jpg', :id => 'liteHepaAK')
+        .description
+          h4.ui.header Вы выбрали:
+          .ui.middle.aligned.divided.list
+            .item
+              .right.floated.content
+                | 22 900
+                i.ruble.icon
+              = image_tag('briz6.jpg', :class => 'ui avatar image')
+              .content
+                | Бризер Тион О2 Standart
+            .item
+              .right.floated.content
+                | 4000
+                i.ruble.icon
+              = image_tag('boor1.jpg', :class => 'ui avatar image')
+              .content
+                | Монтаж бризера
+            .item
+              .right.floated.content
+                p
+                  | Итого: 26 900
+                  i.ruble.icon
+            .item
+              .right.floated.content
+                br
+                .ui.positive.left.labeled.icon.button#createOrder onclick='$(".ui.modal").modal("show");'
+                  | Оформить заказ
+                  i.add.to.cart.icon
+      .nine.wide.column.right.floated#brizerContext
+        h2.ui.header.aligned.left#step1 Шаг 1. Наличие подогрева воздуха
+        .ui.grid
+          .four.wide.column
+            .ui.black.basic.button.climatButton#withoutHeater onclick='changeClimat(false);'
+              | Без подогрева приточного воздуха
+          .four.wide.column
+            .ui.inverted.blue.basic.button.active.climatButton#withHeater onclick='changeClimat(true);'
+              | Нагреватель с климат-контролем
+        .description.aboutFilter#aboutWithHeater Функция подогрева с климат-контролем позволяет использовать прибор в холодное время года при температурах ниже 0°С.
+        .description.aboutFilter.hidden#aboutWithoutHeater Бризер без подогрева подходит для теплых регионов, где температура в зимнее время не опускается ниже 0°С.
+
+        h2.ui.header.aligned.left#step2 Шаг 2. Выберите необходимые фильтры
+        .ui.grid
+          .four.wide.column
+            .ui.black.basic.button.filterButton
+              | фильтр F7
+              br
+              i.checkmark.icon.baseFilter
+          .four.wide.column
+            .ui.inverted.blue.active.basic.button.filterButton#hepa onclick='changeFilter("hepa");'
+              | фильтр HEPA
+              br
+              i.icon.baseFilter.checkmark.activate
+          .four.wide.column
+            .ui.inverted.blue.active.basic.button.filterButton#ak onclick='changeFilter("ak");'
+              | фильтр AK
+              br
+              i.icon.baseFilter.checkmark.activate
+        .description.aboutFilter#aboutF7
+          b Базовый фильтр F7 для Тион O2 (предустановлен во всех бризерах).
+          '
+          | Задерживает пух, шерсть, крупные и средние частицы пыли и другие частицы, в том числе пыльцу растений. Продлевает срок службы других фильтров. Фильтр можно менять самостоятельно. Замена требуется не чаще 1 раза в год при условии его периодической очистки (пылесосом).
+        .description.aboutFilter#aboutHepa
+          b Высокоэффективный НЕРА-фильтр H11 для Tion О2.
+          '
+          | Медицинский стандарт очистки воздуха. Задерживает не только крупную и среднюю, но и мельчайшую высокоаллергенную пыль, пыльцу, инфекции, споры плесени и др. частицы и миркроорганизмы. Только HEPA задерживает опасные для здоровья частицы, фильтры меньшего класса их не улавливают. Не предназначен для очистки водой или пылесосом. Фильтр можно менять самостоятельно. Частота замены — 1 раз в 2 года.
+        .description.aboutFilter#aboutAk
+          b Адсорбционно-каталитический фильтр АК для Tion О2.
+          '
+          | Осуществляет очистку воздуха от выхлопных газов, промышленных выбросов до уровня соответствия нормам ПДК при концентрациях на входе до 5 ПДКсс. Эффективность при производительности 30 м3/ч - не менее 90%; в режиме TURBO - не менее 75%. Не предназначен для очистки водой или пылесосом. Частота замены — 1 раз в год.
+
+        h2.ui.header.aligned.left#step3 Шаг 3. Монтаж бризера
+        .ui.grid
+          .four.wide.column
+            .ui.black.basic.button.climatButton#withMount onclick='changeMount(true);'
+              | Да, нужен
+              br
+              | за 4000
+              '
+              i.ruble.icon
+          .four.wide.column
+            .ui.inverted.blue.basic.button.active.climatButton#withoutMount onclick='changeMount(false);'
+              | Нет, спасибо
+        .description.aboutFilter#aboutWithHeater Стандартный монтаж бризера занимает около 1 часа, не портит отделку помещения и может быть выполнен в чистовом ремонте. Для исправной работы прибора и сохранения гарантии используйте услуги рекомендованных монтажных организаций (мы предложим специалистов в Вашем городе). В большинстве случаев достаточно стандартного монтажа
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+
+
+.ui.modal
+  i.close.icon
+  .header Оформление заказа
+  .content
+    form.ui.form
+      h4.ui.dividing.header Информация о покупателе
+      .three.fields
+        .field
+          input type='text' name='first_name' placeholder='Фамилия'
+        .field
+          input type='text' name='last_name' placeholder='Имя'
+        .field
+          input type='text' name='third_name' placeholder='Отчество'
+      .two.fields
+        .field
+          input type='text' name='email' placeholder='E-mail'
+        .field
+          input type='text' name='phone' placeholder='Телефон'
+      h4.ui.dividing.header Адрес доставки в г.Новосибирск
+      .three.fields
+        .field
+          input type='text' name='street' placeholder='Улица'
+        .field
+          input type='text' name='house' placeholder='Дом'
+        .field
+          input type='text' name='flat' placeholder='Квартира'
+  .actions
+    .ui.negative.left.labeled.icon.button
+      | Отмена
+      i.remove.icon
+    .ui.positive.left.labeled.icon.button
+      | Заказать
+      i.checkmark.icon
+
+/button#recall
+/  i.call.icon
+
+
+.disabled
+  .popup_call
+    .popup_block
+      .form
+        p
+          span Введите свои контактные данные
+          br
+          | Мы свяжемся с вами в течение 20 минут и ответим на все интересующие вас вопросы об очистке воздуха при помощи системы "Tion"</p>
+        = form_for :client, url: client_index_path, method: :post do |form|
+          = form.text_field :name, class: 'name', placeholder: 'Ваше имя (для обращения к Вам)'
+          = form.text_field :phone, class: 'phone', placeholder: 'Ваш телефон для связи'
+          = form.hidden_field :from_form, value: 'Обратный звонок'
+          = form.submit class: 'btn btn_send', value: 'Перезвоните мне!'

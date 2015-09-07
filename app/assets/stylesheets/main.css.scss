@@ -1144,6 +1144,12 @@ section.sale .form {
   z-index: 1000;
 }
 
+.configurator-menu {
+  background-color: rgb(249, 249, 249);
+  border-bottom-color: rgb(232, 232, 232);
+  border-top-color: rgb(232, 232, 232);
+}
+
 .hasTooltip {
   width: 500px;
 }
@@ -1157,4 +1163,178 @@ section.sale .form {
   text-align: center;
   margin: 0 0 20px 0;
   padding: 0;
+}
+
+.learnMoreButton {
+  font-family: 'OpenSans Rg', sans-serif !important;
+  font-size: 22px !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  font-variant: normal !important;
+  font-weight: normal !important;
+  #marketIcon {
+    display: none;
+  }
+  #moreIcon {
+    display: none;
+  }
+}
+
+#logoConfig {
+  margin-top: 45px;
+  z-index: 10;
+  background-color: #fff;
+}
+
+
+#toptop {
+  margin-top: 55px;
+  z-index: 10;
+  background-color: #fff;
+}
+
+.ui.step, .ui.steps .step {
+  font-size: 0.9rem !important;
+}
+
+.ui.ordered.steps {
+  margin-top: 20px !important;
+}
+
+.filterButton {
+  width: 110px !important;
+}
+
+.climatButton {
+  width: 110px !important;
+}
+
+i.baseFilter {
+  width: 22px !important;
+  height: 22px !important;
+  margin: 7px 0 0 0 !important;
+  padding: 3px 3px;
+  line-height: 20px;
+  background-color: #ccc;
+  border-radius: 20px;
+}
+
+i.baseFilter.activate {
+  background-color: #54c8ff !important;
+  color: #fff !important;
+}
+
+.ui.basic.button.inverted.blue.active.filterButton, .ui.basic.button.inverted.blue.active.climatButton {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+
+#hepa, #ak {
+  height: 51px !important;
+}
+
+#withMount {
+  height: 40px !important;
+  padding-top: 20px !important;
+}
+
+#withoutMount {
+  padding-top: 30px !important;
+  height: 30px !important;
+}
+
+#base, #baseHepa, #baseAK, #lite, #liteHepa, #liteAK, #liteHepaAK {
+  display: none;
+}
+
+.five.wide.column#brizerExample {
+  width: 35% !important;
+}
+
+.ui.grid .description {
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.ui.grid .description.aboutFilter {
+  font-size: 15px;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+#brizerExample-sticky-wrapper {
+  text-align: left !important;
+}
+
+#brizerExample .description{
+  width: 330px !important;
+  margin-top: 20px;
+}
+
+#fixedSteps-sticky-wrapper {
+  height: 130px !important;
+  text-align: left !important;
+  background-color: #fff;
+  z-index: 10;
+}
+
+#fixedSteps {
+  width: 980px !important;
+  z-index: 10;
+  background-color: #fff;
+}
+
+.ui.modal .content {
+  width: 94% !important;
+  form.ui.form {
+    width: 805px !important;
+    input[type="text"] {
+      height: 18px !important;
+    }
+    .fields .field {
+      margin: 0em 1em 1em !important;
+    }
+    .fields .field:first-child {
+      margin-left: 0em !important;
+    }
+    .fields .field:last-child {
+      margin-right: 0em !important;
+    }
+  }
+}
+
+#createOrder {
+  width: 140px !important;
+}
+
+section#configTitleSection {
+  background-color: #ffffff;
+  z-index: 10;
+  padding: 30px 0 25px 0 !important;
+}
+
+#configTitle-sticky-wrapper.sticky-wrapper.is-sticky {
+  height: 90px !important;
+}
+
+#recall {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 75px;
+  height: 75px;
+  background-color: #fff;
+  border: 1px solid green;
+  border-radius: 60px;
+  i {
+    font-size: 50px;
+    color: green;
+  }
+}
+
+#navigation.floatedLeft {
+  float: left !important;
+}
+.floatedRight {
+  float: right !important;
 }

@@ -1,5 +1,27 @@
+
 $(function () {
     $.scrollUp();
+    $('#buttonToMarket').hover(
+        function () {
+            $('#marketIcon').toggle(400);
+        },
+        function(){
+            $('#marketIcon').toggle(400);
+    });
+    $('#buttonToMore').hover(
+        function () {
+            $('#moreIcon').toggle(400);
+        },
+        function(){
+            $('#moreIcon').toggle(400);
+    });
+});
+
+$(function() {
+    $('#logoConfig').sticky({topSpacing: 0});
+    $('#configTitleSection').sticky({topSpacing: 145});
+    $('#brizerExample').sticky({topSpacing:210});
+
 });
 
 $(function () {
