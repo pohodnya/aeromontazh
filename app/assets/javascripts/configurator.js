@@ -8,7 +8,7 @@ var
 function sendOrder(name, mail, phone) {
     var jqxhr = $.ajax({
         type: "POST",
-        url: 'http://localhost:3000/market',
+        url: '/market',
         data: { authenticity_token: AUTH_TOKEN, order: { first_name: $('#first_name').val(), last_name: $('#last_name').val(),
                 third_name: $('#third_name').val(), email: $('#email').val(), phone: $('#phone').val(), street: $('#street').val(),
                 house: $('#house').val(), flat: $('#flat').val()}}
