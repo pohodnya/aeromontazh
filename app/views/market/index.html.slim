@@ -59,28 +59,28 @@ section.configurator
           h4.ui.header Вы выбрали:
           .ui.middle.aligned.divided.list
             .item
-              .right.floated.content
+              .right.floated.content#brizerPrice
                 | 22 900
                 i.ruble.icon
               = image_tag('briz6.jpg', :class => 'ui avatar image')
-              .content
+              .content#brizerName
                 | Бризер Тион О2 Standart
-            .item
+            .item#mountItem
               .right.floated.content
                 | 4000
                 i.ruble.icon
               = image_tag('boor1.jpg', :class => 'ui avatar image')
               .content
                 | Монтаж бризера
-            .item
+            .item#allItem
               .right.floated.content
                 p
-                  | Итого: 26 900
+                  | Итого: 22 900
                   i.ruble.icon
             .item
               .right.floated.content
                 br
-                .ui.positive.left.labeled.icon.button#createOrder onclick='$(".ui.modal").modal("show");'
+                .ui.positive.left.labeled.icon.button#createOrder onclick='$(".ui.modal#newOrder").modal("show");'
                   | Оформить заказ
                   i.add.to.cart.icon
       .nine.wide.column.right.floated#brizerContext
@@ -148,7 +148,7 @@ section.configurator
         br
 
 
-.ui.modal
+.ui.modal#newOrder
   i.close.icon
   .header Оформление заказа
   .content
@@ -156,32 +156,53 @@ section.configurator
       h4.ui.dividing.header Информация о покупателе
       .three.fields
         .field
-          input type='text' name='first_name' placeholder='Фамилия'
+          input type='text' id='first_name' placeholder='Фамилия'
         .field
-          input type='text' name='last_name' placeholder='Имя'
+          input type='text' id='last_name' placeholder='Имя'
         .field
-          input type='text' name='third_name' placeholder='Отчество'
+          input type='text' id='third_name' placeholder='Отчество'
       .two.fields
         .field
-          input type='text' name='email' placeholder='E-mail'
+          input type='text' id='email' placeholder='E-mail'
         .field
-          input type='text' name='phone' placeholder='Телефон'
+          input type='text' id='phone' placeholder='Телефон'
       h4.ui.dividing.header Адрес доставки в г.Новосибирск
       .three.fields
         .field
-          input type='text' name='street' placeholder='Улица'
+          input type='text' id='street' placeholder='Улица'
         .field
-          input type='text' name='house' placeholder='Дом'
+          input type='text' id='house' placeholder='Дом'
         .field
-          input type='text' name='flat' placeholder='Квартира'
+          input type='text' id='flat' placeholder='Квартира'
   .actions
     .ui.negative.left.labeled.icon.button
       | Отмена
       i.remove.icon
-    .ui.positive.left.labeled.icon.button
+    .ui.positive.left.labeled.icon.button onclick='sendOrder();'
       | Заказать
       i.checkmark.icon
 
+
+.ui.small.modal#successOrder
+  i.close.icon
+  .header Заказ успешно отправлен
+  .content
+    p
+      | Менеджер свяжется с Вами в ближайшее время
+  .actions
+    .ui.positive.left.labeled.icon.button
+      | Ок
+      i.checkmark.icon
+.ui.small.modal#failOrder
+  i.close.icon
+  .header Ошибка при отправке
+  .content
+    p
+      | При отправке вашего заказа произошла ошибка. Попробуйте отправить заказ повторно или свзяаться с нами по телефону + 7 (383) 239-59-58
+  .actions
+    .ui.negative.left.labeled.icon.button
+      | Ок
+      i.checkmark.icon
 /button#recall
 /  i.call.icon
 
@@ -199,3 +220,5 @@ section.configurator
           = form.text_field :phone, class: 'phone', placeholder: 'Ваш телефон для связи'
           = form.hidden_field :from_form, value: 'Обратный звонок'
           = form.submit class: 'btn btn_send', value: 'Перезвоните мне!'
+
+= javascript_tag "const AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery?

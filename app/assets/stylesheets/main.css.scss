@@ -1285,7 +1285,7 @@ i.baseFilter.activate {
 }
 
 .ui.modal .content {
-  width: 94% !important;
+  width: 93% !important;
   form.ui.form {
     width: 805px !important;
     input[type="text"] {
@@ -1337,4 +1337,15 @@ section#configTitleSection {
 }
 .floatedRight {
   float: right !important;
+}
+
+.ui.middle.aligned.divided.list {
+  width: 360px !important;
+  img {
+    border-radius: 0px !important;
+  }
+}
+
+.item#mountItem {
+  display: none;
 }

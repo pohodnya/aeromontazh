@@ -5,6 +5,22 @@ var
     hepa = true;
     ak = true;
 
+function sendOrder(name, mail, phone) {
+    var jqxhr = $.ajax({
+        type: "POST",
+        url: 'http://localhost:3000/market',
+        data: { authenticity_token: AUTH_TOKEN, order: { first_name: $('#first_name').val(), last_name: $('#last_name').val(),
+                third_name: $('#third_name').val(), email: $('#email').val(), phone: $('#phone').val(), street: $('#street').val(),
+                house: $('#house').val(), flat: $('#flat').val()}}
+    })
+    .done(function() {
+        $('#successOrder').modal('show');
+    })
+    .fail(function() {
+        $('#failOrder').modal('show');
+    });
+}
+
 function changeFilter(filterType) {
     tmpBrizerType = brizerType;
 
@@ -100,7 +116,7 @@ function changeClimat(flag) {
             $('#withoutHeater').removeClass('inverted blue active');
             $('#withoutHeater').addClass('black');
             $('#withHeater').removeClass('black');
-            $('#withHeater').addClass('inverted blue heater');
+            $('#withHeater').addClass('inverted blue active');
             switch (brizerType) {
                 case 'lite':
                     brizerType = 'base';
@@ -122,7 +138,7 @@ function changeClimat(flag) {
             $('#withoutHeater').addClass('inverted blue active');
             $('#withoutHeater').removeClass('black');
             $('#withHeater').addClass('black');
-            $('#withHeater').removeClass('inverted blue heater');
+            $('#withHeater').removeClass('inverted blue active');
             switch (brizerType) {
                 case 'base':
                     brizerType = 'lite';
@@ -149,6 +165,7 @@ function changeClimat(flag) {
 
 function changeMount(flag) {
     if (flag != mount) {
+        $('#mountItem').toggle(400);
         mount = !mount;
         if (mount) {
             $('#withoutMount').removeClass('inverted blue active');
@@ -164,9 +181,50 @@ function changeMount(flag) {
             $('#withMount').removeClass('inverted blue active');
         }
     }
-
+    changeDescription();
 }
 
 function changeDescription() {
+    var price = 0;
+        rubleIcon = '<i class="ruble icon"></i>';
+    switch (brizerType) {
+        case 'lite':
+            $('#brizerName').html('Бризер Тион О2 Lite');
+            price = 17300;
+            break;
+        case 'liteHepa':
+            $('#brizerName').html('Бризер Тион О2 Lite + HEPA');
+            price = 19100;
+            break;
+        case 'liteAK':
+            $('#brizerName').html('Бризер Тион О2 Lite + AK');
+            price = 18700;
+            break;
+        case 'liteHepaAK':
+            $('#brizerName').html('Бризер Тион О2 Lite + HEPA + AK');
+            price = 20500;
+            break;
+        case 'base':
+            $('#brizerName').html('Бризер Тион О2 Base');
+            price = 20300;
+            break;
+        case 'baseHepa':
+            $('#brizerName').html('Бризер Тион О2 Base + HEPA');
+            price = 22100;
+            break;
+        case 'baseAK':
+            $('#brizerName').html('Бризер Тион О2 Base + AK');
+            price = 21700;
+            break;
+        case 'standart':
+            $('#brizerName').html('Бризер Тион О2 Standart');
+            price = 22900;
+            break;
+    }
+    $('#brizerPrice').html(price + rubleIcon);
+    if (mount) {
+        price = price + 4000;
+    }
+    $('#allItem p').html(price + rubleIcon);
 
 }
