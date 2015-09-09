@@ -6,11 +6,11 @@ class ClientMailer < ActionMailer::Base
   end
 
   def send_order(order)
-    mail to: 'info@aero-montazh.ru', subject: 'Заявка бризера с лэндинга', body: 'Фамилия: ' + order['last_name'] +
-                                       '<br>Имя: ' + order['first_name'] + '<br>Отчество: ' + order['third_name'] +
+    mail to: 'info@aero-montazh.ru', subject: 'Заявка бризера с лэндинга', body: 'Бризер: ' + order['brizer_type'] +
+                                       '<br>ФИО: ' + order['first_name'] + ' ' + order['last_name'] + ' ' + order['third_name'] +
                                        '<br>Телефон: ' + order['phone'] + '<br>Email: ' + order['email'] +
-                                       '<br>Улица: ' + order['street'] + '<br>Дом: ' + order['house'] +
-                                       '<br>Квартира: ' + order['flat'] + '<br>Время: ' +
+                                       '<br>Адрес: г.Новосибирск, ул.' + order['street'] + ' д.' + order['house'] +
+                                       ' кв. ' + order['flat'] + '<br>Время: ' +
                                        DateTime.now.strftime('%d/%m/%Y %H:%M:%S'), content_type: "text/html"
   end
 end

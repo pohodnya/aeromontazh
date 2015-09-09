@@ -5,11 +5,16 @@ var
     hepa = true;
     ak = true;
 
-function sendOrder(name, mail, phone) {
+function sendOrder() {
+    var fullName = $('#brizerName').html();
+    if (mount){
+        fullName += ' + Монтаж';
+    }
+
     var jqxhr = $.ajax({
         type: "POST",
         url: '/market',
-        data: { authenticity_token: AUTH_TOKEN, order: { first_name: $('#first_name').val(), last_name: $('#last_name').val(),
+        data: { authenticity_token: AUTH_TOKEN, order: { brizer_type: fullName, first_name: $('#first_name').val(), last_name: $('#last_name').val(),
                 third_name: $('#third_name').val(), email: $('#email').val(), phone: $('#phone').val(), street: $('#street').val(),
                 house: $('#house').val(), flat: $('#flat').val()}}
     })

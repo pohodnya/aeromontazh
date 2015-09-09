@@ -28,6 +28,6 @@ class MarketController < ApplicationController
 
   private
   def order_params
-    params.require(:order).permit :first_name, :last_name, :third_name, :phone, :email, :street, :house, :flat
+    params.require(:order).permit :brizer_type, :first_name, :last_name, :third_name, :phone, :email, :street, :house, :flat
   end
 end
