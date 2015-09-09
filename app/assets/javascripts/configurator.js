@@ -5,6 +5,8 @@ var
     hepa = true;
     ak = true;
 
+
+// Отправка заявки
 function sendOrder() {
     var fullName = $('#brizerName').html();
     if (mount){
