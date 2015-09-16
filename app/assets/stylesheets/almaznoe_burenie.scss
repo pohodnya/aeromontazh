@@ -1,0 +1,435 @@
+// Place all the styles related to the almaznoe_burenie controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  font-family: verdana, sans;
+  background-color: #F1F1F1;
+  margin: 0;
+}
+h2 {
+  font-family: IntroRegular;
+  color: #eb4619;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+#header {
+  position: relative;
+}
+.header-bg {
+  background: asset_url('hbg.png') no-repeat;
+  height: 559px;
+}
+.footer-bg {
+  background: asset_url('hbg.png') no-repeat;
+  height: 120px;
+  background-position: 0 -115px;
+}
+.header-top-bg {
+  background: asset_url('hbg2.png') repeat;
+  height: 120px;
+}
+#header-top
+{
+  position: absolute;
+  left:0;
+  top:0;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+}
+.header-left {
+  float: left;
+}
+.header-left img {
+  padding-top: 36px;
+  width: 330px;
+}
+.header-right {
+  float: right;
+  padding-top: 10px;
+  text-align: right;
+}
+.header-right p {
+  background: asset_url('hri.png') no-repeat;
+  background-position:  left;
+  padding-left: 37px;
+  margin: 0;
+  color: #084150;
+  font-size: 22px;
+  line-height: 25px;
+}
+.order-call {
+  display: inline-block;
+  height: 39px;
+  border: 1px solid darkorange;
+  border-radius: 4px;
+  color: #fff;
+  line-height: 39px;
+  font-size: 18px;
+  padding: 0 10px;
+  background: asset_url('oc.jpg') repeat-x;
+  margin-top: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.header-center{
+  text-align: center;
+  color: #4B35B2;
+  font-size: 24px;
+}
+.header-center p {
+  margin: 0;
+  line-height: 50px;
+}
+.header-center h2 {
+  font-size: 26px;
+  line-height: 33px;
+  color: #000;
+  padding-top: 20px;
+  font-family: sans-serif;
+}
+.header-main {
+  width:950px;
+  margin:0 auto;
+}
+.deviz-left {
+  position: relative;
+}
+.deviz-left-flag {
+  position: absolute;
+  width: 69px;
+  height: 126px;
+  top: 31px;
+  left: 474px;
+  z-index: 2;
+  background: asset_url('flag.png') no-repeat;
+}
+.deviz-left-bg {
+  float: left;
+  background: asset_url('hbg3.png') repeat;
+  margin-top: 41px;
+  padding: 18px 55px 20px 15px;
+}
+.deviz-left-bg h2 {
+  color: #000000; /* Цвет текста */
+  font-size: 36px;
+  font-weight: normal;
+}
+.content p{
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+.deviz-left-bg p {
+  font-size: 24px;
+  padding-top: 0;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+.form-right-bg {
+  float: right;
+  background: asset_url('hbg3.png') repeat;
+  height: 350px;
+  width: 320px;
+  margin-top: 41px;
+  padding: 10px 12px;
+  text-align: center;
+}
+.form-right-bg p {
+  color: #000000; /* Цвет текста */
+  font-size: 33.17px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+.form-right-bg small {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  padding-bottom: 10px;
+}
+.form-right-bg .order-call
+{
+  width: 283px;
+}
+.form-text-field
+{
+  width: 238px;
+  background: #fff no-repeat;
+  background-position:  left;
+  border-radius: 4px;
+  padding-left: 55px;
+  margin: 0;
+  color: #000000;
+  font-size: 22px;
+  height: 40px;
+  line-height: 40px;
+  margin: 9px auto;
+  font-style: italic;
+}
+.form-name {
+  background-image: asset_url('f1.png');
+}
+.form-phone {
+  background-image: asset_url('f2.png');
+}
+.form-mail {
+  background-image: asset_url('f3.png');
+}
+.form-right .order-call {
+  font-family: verdana;
+  height: 51px;
+  border: 1px solid darkorange;
+  border-radius: 4px;
+  line-height: 51px;
+  font-size: 22px;
+  padding: 0 22px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.content1 {
+  text-align: center; /* Выравнивание по центру */
+  background: #e4e4e4 asset_url('wbg.jpg') repeat; /* Цвет фона*/
+  padding: 25px 0px 35px;
+}
+.content1-ins {
+  padding-top: 40px;
+  width:950px;
+  margin:0 auto;
+}
+.c1i {
+  width: 181px; /* Ширина блока */
+  padding-left: 9px;
+  float: left;
+}
+a.read-more {
+  color: #eb4619;
+  font-size: 10px;
+}
+.content2 {
+  text-align: center; /* Выравнивание по центру */
+  background: #fff asset_url('gbg.jpg') repeat; /* Цвет фона левой колонки */
+  padding: 25px 0px 35px;
+}
+.content2 h2 {
+  color: #000000;
+}
+.content3 {
+  text-align: center; /* Выравнивание по центру */
+  background: #e4e4e4 asset_url('wbg.jpg') repeat; /* Цвет фона*/
+  padding: 25px 0px 35px;
+}
+.content3 h2 {
+  color: #eb4619;
+}
+.t-cl-rw {
+  border-spacing: 15px;
+}
+.t-cl-rw td {
+  vertical-align: top;
+}
+.t1 img {
+  border: 1px solid #000000; /* Граница вокруг блока */
+  margin: 15px 15px 0 15px;
+}
+.c3i{
+  background: asset_url('hbg3.png') repeat;
+  width: 462px; /* Ширина блока */
+  min-height: 180px;
+  height: 100%;
+  padding-left: 0px;
+  box-shadow: 0 0 30px rgba(156, 156, 156, 0.5);
+}
+.c3i p {
+  font-family: verdana;
+  font-style: normal;
+  color: #000000;
+  font-size: 12px;
+  padding: 0;
+  margin: 0px;
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-bottom: 0px;
+}
+.c3i p.client {
+  font-family: IntroRegular;
+  font-style: italic;
+  color: #eb4619;
+  font-size: 14px;
+  text-align: left;
+  margin-top: 5px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+.content4 {
+  text-align: center; /* Выравнивание по центру */
+  background: #fff asset_url('gbg.jpg') repeat; /* Цвет фона левой колонки */
+  padding: 25px 0px 35px;
+}
+.content4 h2 {
+  color: #000000;
+}
+.c4i {
+  background: asset_url('ar.png') no-repeat;
+  float: left;
+  width: 170px;
+  padding-left: 18px;
+}
+.c4i2 {
+  background: none;
+  padding-left: 0px;
+}
+.content5 {
+  text-align: center; /* Выравнивание по центру */
+  background: asset_url('wbg.jpg') repeat; /* Цвет фона*/
+  padding: 25px 0px 35px;
+}
+.content5 h2 {
+  color: #eb4619;
+}
+.content9 {
+  text-align: center; /* Выравнивание по центру */
+  background: asset_url('gbg.jpg') repeat; /* Цвет фона*/
+  padding: 25px 0px 35px;
+}
+.content9 h2 {
+  color: #000000;
+}
+.t2 p {
+  font-family: IntroRegular;
+  font-style: italic;
+  color: #eb4619;
+  font-size: 13px;
+  background: #fff;
+  padding: 10px 0 10px 0;
+}
+.t2 td {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  /*    border: 1px solid #e4e4e4;*/
+}
+.over {
+  display: block;
+  overflow: hidden;
+  width: 293px;
+  height: 223px;
+}
+.ex-of-works {
+  border-spacing: 15px;
+}
+.ex-of-works td {
+  vertical-align: top;
+}
+.content6 {
+  text-align: center; /* Выравнивание по центру */
+  background: #fff asset_url('c6bg.png'); /* Цвет фона левой колонки */
+  height: 468px;
+}
+.content7 {
+  text-align: center; /* Выравнивание по центру */
+  background: #fff asset_url('wbg.jpg') repeat; /* Цвет фона левой колонки */
+  padding: 25px 0px 35px;
+}
+.content7 h2 {
+  color: #eb4619;
+}
+#map_canvas {
+  height: 340px;
+}
+.clear {
+  clear: both; /* Отмена обтекания */
+}
+#workcalculator table {
+  border: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+#workcalculator table td {
+  vertical-align: middle;
+  text-align: left;
+  font-size: 12px;
+}
+#workcalculator input.calculator_data, #workcalculator select.calculator_data {
+  width: 175px;
+}
+#workcalculator .option_desc {
+  font-size: 11px;
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+#workcalculator small {
+  font-size: 10px;
+  font-weight: normal;
+}
+#workcalculator .amount_label {
+}
+#workcalculator .amount {
+}
+#workcalculator .amount #amount_result {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ff6600;
+}
+#workcalculator a.orange_button {
+  display: inline-block;
+  background-color: #ff6600;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 5px;
+  margin: 0 2px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 5px;
+}
+#workcalculator a.orange_button:hover {
+  color: #2a2a2a;
+}
+#workcalculator .hidden_opt, #workcalculator a.orange_button.hidden_opt {
+  display: none;
+}
+.call .alert {
+  color: red;
+  border-color: red;
+  box-shadow: 5px 0 0 red;
+}
+.call .ajax-loader {
+  background-image: url('../img/ajax-loader.gif');
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+.content .min-order {
+  font-weight: bold;
+}
+p.min-order {
+  line-height: 40px;
+}
+#workcalculator .price-list-parent p {
+  margin-top: 10px;
+  font-size: 115%;
+}
+#workcalculator .price-list {
+  border: none;
+  width: 98%;
+  margin: 5px 0 20px;
+}
+#workcalculator .price-list td {
+  border:none;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  padding: 3px;
+  vertical-align: top;
+  text-align: center;
+  font-size: 115%;
+}
+#workcalculator .price-list tr:last-child td {
+  border-bottom: 1px solid #ccc;
+}
+#workcalculator .price-list tr td:last-child {
+  border-right: 1px solid #ccc;
+}
+h2.black_h2 {
+  color: #000000;
+}

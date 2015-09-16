@@ -1,0 +1,572 @@
+div style=("max-width:1400px;margin:0 auto;")
+  div style=("min-width:1000px;margin:0 auto;")
+    div style=("width:100%;margin:0 auto;")
+      #header
+        .header-bg
+        #header-top
+          .header-top-bg
+            .header-main
+              .header-left
+                = image_tag('logo-2.png')
+              .header-right
+                p
+                  | +7 (383) 239-59-58
+                  br>/
+                  | +7 (983) 310-59-58
+                a.order-call href="#calc_temp2"  КАЛЬКУЛЯТОР
+              .header-center
+                h2
+                  | Алмазное Бурение
+                  br>/
+                  | в Новосибирске и области
+              .clear
+          .header-main
+            #request1.form-right-bg
+              .form-right
+                p Оставьте заявку
+                small прямо сейчас
+                form#call-1.call onsubmit=("return false;")
+                  div
+                    input.form-name.form-text-field.ord_required name="name" placeholder=("Ваше имя") type="text" value="" /
+                  div
+                    input.form-phone.form-text-field.ord_required name="phone" placeholder=("Ваш телефон") type="text" value="" /
+                  div
+                    input.form-mail.form-text-field name="mail" placeholder=("Ваш e-mail") type="text" value="" /
+                  div
+                    input.order-call.order-submit.ord_required type="submit" value=("ЗАКАЗАТЬ ЗВОНОК") /
+            .deviz-left
+              .deviz-left-bg
+                h2 АЛМАЗНОЕ БУРЕНИЕ?
+                p Предоставьте дело профессионалам!
+              .deviz-left-flag
+      .content
+        .content7
+          h2.gh2 ПОЧЕМУ ИМЕННО МЫ?
+          .content1-ins
+            .c1i
+              = image_tag('d1.png')
+              p Приемлимые цены в Новосибирске
+            .c1i
+              = image_tag('d2.png')
+              p Гарантия качества
+            .c1i
+              = image_tag('d3.png')
+              p Более 8000 просверленных отверствий
+            .c1i
+              = image_tag('d4.png')
+              p Индивидуальный подход
+            .c1i
+              = image_tag('d5.png')
+              p Аккуратность в работе
+            .clear
+        .content4
+          h2 КАК МЫ РАБОТАЕМ
+          .content1-ins
+            .c4i.c4i2
+              = image_tag('c1.png')
+              p Вы оставляете заявку на нашем сайте
+            .c4i
+              = image_tag('c2.png')
+              p Наш менеджер Вам перезванивает и уточняет все детали
+            .c4i
+              = image_tag('c3.png')
+              p Наши рабочие приезжают на Ваш обьект
+            .c4i
+              = image_tag('c4_1.png')
+              p Мы профессионально выполняем свою работу
+            .c4i
+              = image_tag('c5.png')
+              p Вы остаетесь довольны нашей работой и полученным результатом!
+            .clear
+        #calc_temp2.content5
+          #workcalculator title=("Онлайн калькулятор")
+            h2.bh2 Наши цены
+            h2.black_h2 Минимальный выезд 3000 рублей
+            table.content1-ins border="0" cellpadding="0" cellspacing="3"
+              tbody
+                tr
+                  td style=("vertical-align: top;")
+                    h2.bh2 Онлайн калькулятор
+                    table border="0"
+                      tbody
+                        tr
+                          td colspan="3" style=("text-align: center;")
+                            p.ord_legend * - Обязательное поле
+                        tr
+                          td style=("width: 160px;")
+                            label for="worktype"  Вид работы *
+                          td style=("width: 180px;")
+                            select#worktype.calculator_data name="worktype"
+                              option selected="selected" value="0"  Выберите вид работы
+                              option value="drilling"  Бурение
+                              option value="cutting"  Резка
+                              option value="cuttingopennings"  Вырезание(расширение) проёмов
+                              option value="dismantling"  Демонтаж
+                          td.option_desc style=("width: 100px;")  &nbsp;
+                        tr.dismantling.cutting.drilling
+                          td
+                            label for="material"  Материал *
+                          td
+                            select#material.calculator_data name="material"
+                              option selected="selected" value="0"  Выберите материал
+                              option value="brick"  Кирпич
+                              option value="concrete"  Бетон
+                              option value="ferroconcrete"  Железобетон
+                          td.option_desc
+                        tr.drilling.brick
+                          td
+                            label for="drilling_anker"  Нужен хим. анкер или шпилька
+                          td
+                            input#drilling_anker name="drilling_anker" type="checkbox" /
+                          td.option_desc При сверлении мягких материалов (кирпич, пенобетон)
+                        tr.drilling.cutting.dismantling.ferroconcrete.hidden_opt
+                          td
+                            label for="heavilyferroconcrete"  Тяжело армированный бетон
+                          td
+                            input#heavilyferroconcrete name="heavilyferroconcrete" type="checkbox" /
+                          td.option_desc Ø арматуры от 28 мм, природный камень, гранит
+                        tr.cuttingopennings.hidden_opt
+                          td
+                            label for="cutopentype"  Что нужно сделать? *
+                          td
+                            select#cutopentype.calculator_data name="cutopentype"
+                              option selected="selected" value="0"  Выберите вид работы
+                              option value="panel"  Вырезать проём в панельном перекрытии
+                              option value="monolith"  Вырезать проём в монолитном перекрытии
+                              option value="door"  Расширить дверной проем в панельном доме
+                              option value="window"  Срезать подоконную тумбу
+                          td.option_desc
+                            span.cuttingopennings.panel.hidden_opt Толщина до 20 см включительно
+                        tr.cutting.hidden_opt
+                          td
+                            label for="cuttype"  Резчик *
+                          td
+                            select#cuttype.calculator_data name="cuttype"
+                              option selected="selected" value="0"  Выберите тип резчика
+                              option value="handsaw"  Ручный резчик
+                              option value="wallsaw"  Настенная пила
+                          td.option_desc
+                            span.handsaw.hidden_opt Глубина реза до 40 см
+                            span.wallsaw.hidden_opt Глубина реза до 53 см
+                        tr.dismantling.hidden_opt
+                          td
+                            label for="dismantlingtype"  Демонтаж с помощью *
+                          td
+                            select#dismantlingtype.calculator_data name="dismantlingtype"
+                              option selected="selected" value="0"  Выберите способ демонтажа
+                              option value="hand"  Ручного ударного инструмента
+                              option value="machine"  Алмазного инструмента, техники, химии
+                          td.option_desc
+                        tr.cuttingopennings.monolith.hidden_opt
+                          td
+                            label for="depth"  Толщина перекрытия, cм *
+                          td
+                            input#depth.calculator_data name="depth" type="text" /
+                          td.option_desc
+                        tr.cutting.dismantling.cuttingopennings.monolith.panel.hidden_opt
+                          td
+                            label for="width"
+                              | Ширина
+                              span.cutting.hidden_opt площади реза
+                              span.cuttingopennings.monolith.panel.hidden_opt проёма,
+                                span.dismantling.hidden_opt перекрытия(стены)
+                              | м
+                          td
+                            input#width.calculator_data name="width" type="text" /
+                          td.option_desc
+                        tr.cutting.dismantling.cuttingopennings.monolith.panel.hidden_opt
+                          td
+                            label for="height"
+                              | Длинна(высота)
+                              span.cutting.hidden_opt площади реза
+                              span.cuttingopennings.monolith.panel.hidden_opt проёма,
+                                span.dismantling.hidden_opt перекрытия(стены)
+                              | м
+                          td
+                            input#height.calculator_data name="height" type="text" /
+                          td.option_desc
+                        tr.drilling.brick.concrete.ferroconcrete.add_diam_1
+                          td
+                            label for="1_drilling_diametr"  Диаметр, мм *
+                          td
+                            select#1_drilling_diametr name="drilling_diametr[]"
+                              option selected="selected" value="0"  Выберите диаметр
+                              option value="50"  50
+                              option value="60"  60
+                              option value="80"  80
+                              option value="100"  100
+                              option value="110"  110
+                              option value="130"  130
+                              option value="150"  150
+                              option value="160"  160
+                              option value="180"  180
+                              option value="200"  200
+                              option value="225"  225
+                              option value="250"  250
+                              option value="300"  300
+                              option value="325"  325
+                              option value="350"  350
+                              option value="400"  400
+                            a#1_remove_diametr_button.orange_button.hidden_opt.remove_diametr_button href="javascript:;"  Удалить диаметр
+                          td.option_desc
+                        tr.drilling.add_diam_1
+                          td
+                            label for="1_drilling_depth"  Глубина, см *
+                          td
+                            input#1_drilling_depth.calculator_data name="drilling_depth[]" placeholder=("Например: 20") type="text" /
+                          td.option_desc
+                        tr.drilling.add_diam_1
+                          td
+                            label for="1_drilling_quantity"  Количество отверствий, шт *
+                          td
+                            input#1_drilling_quantity.calculator_data name="drilling_quantity[]" placeholder=("Например: 2") type="text" /
+                          td.option_desc
+                        tr.drilling.add_diam_1
+                          td
+                            label for="1_drilling_high"  Высота бурения, м *
+                          td
+                            input#1_drilling_high.calculator_data name="drilling_high[]" placeholder=("Например: 1.9") type="text" /
+                          td.option_desc На какой высоте от уровня пола нужно бурить?
+                        tr#add_diametr_row.drilling
+                          td
+                          td
+                            a#add_diametr.orange_button href="javascript:;"  Добавить другой диаметр
+                          td.option_desc
+                        tr.drilling
+                          td
+                            label for="drilling_temperature"  Работа при температуре ниже 0°C
+                          td
+                            input#drilling_temperature name="drilling_temperature" type="checkbox" /
+                          td.option_desc
+                        tr.drilling
+                          td
+                            label for="drilling_withoutwater"  Отсутствует вода
+                          td
+                            input#drilling_withoutwater name="drilling_withoutwater" type="checkbox" /
+                          td.option_desc
+                        tr
+                          td
+                            label for="is_away"  Объект находится не в Киеве?
+                          td
+                            input#is_away name="is_away" type="checkbox" /
+                          td.option_desc
+                        tr.is_away.hidden_opt
+                          td
+                            label for="distance"  Растояние от Киева, км *
+                          td
+                            input#distance.calculator_data name="distance" type="text" /
+                          td.option_desc
+                        tr
+                          td.amount_label Стоимость Вашего заказа:
+                          td.amount
+                            #amount_result 3000
+                            small рублей (с учетом НДС)
+                          td.print
+                            a#calc_print.orange_button href="javascript:;" style=("display: none;")  Распечатать
+                  td.price-list-parent style=("vertical-align: top;")
+                    h2.bh2 Прайс-лист
+                    p
+                      i
+                        | Алмазное бурение.
+                        br
+                        | Цена за 1 см. пог. в рублях с НДС
+                    table.price-list
+                      tbody
+                        tr
+                          td ø диаметр, см
+                          td Кирпич
+                          td Бетон
+                          td Армированный бетон
+                        tr
+                          td ø 50
+                          td 2
+                          td 2,6
+                          td 3,1
+                        tr
+                          td ø 60
+                          td 2,2
+                          td 2,6
+                          td 3,1
+                        tr
+                          td ø 80
+                          td 2,6
+                          td 3,1
+                          td 3,6
+                        tr
+                          td ø 100
+                          td 3,1
+                          td 3,5
+                          td 4
+                        tr
+                          td ø 110
+                          td 3,5
+                          td 4
+                          td 4,5
+                        tr
+                          td ø 130
+                          td 4
+                          td 4,4
+                          td 5,3
+                        tr
+                          td ø 150
+                          td 4,4
+                          td 5,3
+                          td 6,3
+                        tr
+                          td ø 160
+                          td 4,5
+                          td 5,5
+                          td 6,5
+                        tr
+                          td ø 180
+                          td 4,7
+                          td 5,9
+                          td 7
+                        tr
+                          td ø 200
+                          td 5,5
+                          td 6,2
+                          td 7,2
+                        tr
+                          td ø 225
+                          td 6,2
+                          td 7,1
+                          td 8
+                        tr
+                          td ø 250
+                          td 7,3
+                          td 8
+                          td 9
+                        tr
+                          td ø 300
+                          td 9
+                          td 11
+                          td 11,9
+                        tr
+                          td ø 325
+                          td 10,3
+                          td 11,5
+                          td 12,5
+                        tr
+                          td ø 350
+                          td 12,8
+                          td 14,8
+                          td 16
+                        tr
+                          td ø 400
+                          td 14
+                          td 17,1
+                          td 18,9
+        .content9
+          h2.bh2 Наши объекты
+          .content1-ins
+            table.ex-of-works.mceItemTable border="0"
+              tbody
+                tr
+                  td
+                    table.t2.mceItemTable border="0"
+                      tbody
+                        tr
+                          td
+                            .over
+                              = image_tag('fe1.jpg')
+                        tr
+                          td
+                            p mce_style=("text-align: center;") style=("text-align: center;")  Строительство ЖК по ул. Богатырской, г. Киев
+                  td
+                    table.t2.mceItemTable border="0"
+                      tbody
+                        tr
+                          td
+                            .over
+                              = image_tag('fe2.jpg')
+                        tr
+                          td
+                            p mce_style=("text-align: center;") style=("text-align: center;")  Строительство ЖК Липинка, г. Киев
+                  td
+                    table.t2.mceItemTable border="0"
+                      tbody
+                        tr
+                          td
+                            .over
+                              = image_tag('fe3.jpg')
+                        tr
+                          td
+                            p mce_style=("text-align: center;") style=("text-align: center;")  Строительство магазинов "Новус", &nbsp; &nbsp; &nbsp;г. Киев
+                tr
+                  td
+                    table.t2.mceItemTable border="0"
+                      tbody
+                        tr
+                          td
+                            .over
+                              = image_tag('fe4.jpg')
+                        tr
+                          td
+                            p mce_style=("text-align: center;") style=("text-align: center;")
+                              | Строительство ЖК, по ул. Туманяна г. Киев
+                  td
+                    table.t2.mceItemTable border="0"
+                      tbody
+                        tr
+                          td
+                            .over
+                              = image_tag('fe5.jpg')
+                        tr
+                          td
+                            p mce_style=("text-align: center;") style=("text-align: center;")  &nbsp; &nbsp;Строительство ЖК "Golden Park", &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;г. Киев
+                  td
+                    table.t2.mceItemTable border="0"
+                      tbody
+                        tr
+                          td
+                            .over
+                              = image_tag('fe6.jpg')
+                        tr
+                          td
+                            p mce_style=("text-align: center;") style=("text-align: center;")  &nbsp; &nbsp;Строительство ЖК "Южные врата", &nbsp; &nbsp; &nbsp;г. Киев
+          .content1-ins mce_style=("text-align: center;") style=("text-align: center;")
+            span mce_style=("background-color: initial;") style=("background-color: initial;")
+              span mce_style=("font-size: medium;") style=("font-size: medium;")
+                span.Apple-style-span mce_fixed="1" mce_name="strong" mce_style=("font-weight: bold;") style=("font-weight: bold;")  "...и еще сотни объектов больших и маленьких, с одним отверстием и с полным сопровождением в течении всего строительства."
+        .clear
+        .content6
+          .header-main
+            .deviz-left
+              .deviz-left-bg
+                h2 АЛМАЗНОЕ БУРЕНИЕ?
+                p Предоставьте дело профессионалам!
+            #request2.form-right-bg
+              .form-right
+                p Оставьте заявку
+                small прямо сейчас
+                form#call-2.call
+                  div
+                    input.form-name.form-text-field.ord_required name="name" placeholder=("Ваше имя") type="text" value="" /
+                  div
+                    input.form-phone.form-text-field.ord_required name="phone" placeholder=("Ваш телефон") type="text" value="" /
+                  div
+                    input.form-mail.form-text-field name="mail" placeholder=("Ваш e-mail") type="text" value="" /
+                  div
+                    input.order-call.order-submit.ord_required type="submit" value=("ЗАКАЗАТЬ ЗВОНОК") /
+            .clear
+        .content1
+          h2 5 САМЫХ РАСПРОСТРАННЕНЫХ ПРОБЛЕМ НАШИХ КЛИЕНТОВ
+          .content1-ins
+            .c1i
+              a href="javascript:;" mce_href="javascript:;"
+                = image_tag('a1.png')
+              p Негативный опыт бурения старыми способами
+            .c1i
+              a href="javascript:;" mce_href="javascript:;"
+                = image_tag('a2.png')
+              p «Сложные» стены
+            .c1i
+              a href="javascript:;" mce_href="javascript:;"
+                = image_tag('a3.png')
+              p Пылеобразование и шум
+            .c1i
+              a href="javascript:;" mce_href="javascript:;"
+                = image_tag('a4.png')
+              p Низкая квалификация исполнителей
+            .c1i
+              a href="javascript:;" mce_href="javascript:;"
+                = image_tag('a5.png')
+              p Разрушение стен при взрывной технологии
+            .clear
+        .content2
+          h2.bh2 КАК МЫ РЕШАЕМ ВАШИ ПРОБЛЕМЫ
+          .content1-ins
+            .c1i
+              a href="javascript:;" mce_href="javascript:;"
+                = image_tag('b1.png')
+              p На вас работает команда профессионалов
+            .c1i
+              a href="javascript:;" mce_href="javascript:;"
+                = image_tag('b2.png')
+              p Справляемся с любой сложностью
+            .c1i
+              a href="javascript:;" mce_href="javascript:;"
+                = image_tag('b3.png')
+              p Гарантируем порядок
+            .c1i
+              a href="javascript:;" mce_href="javascript:;"
+                = image_tag('b4.png')
+              p Сохраняем интерьер
+            .c1i
+              a href="javascript:;" mce_href="javascript:;"
+                = image_tag('b5.png')
+              p Оправдываем доверие
+            .clear
+        .content3
+          h2.gh2 ОТЗЫВЫ КЛИЕНТОВ
+          .content1-ins
+            table.t-cl-rw.mceItemTable border="0"
+              tbody
+                tr
+                  td.c3i
+                    table.t1.mceItemTable border="0"
+                      tbody
+                        tr
+                          td
+                            = image_tag('anonym.jpg', :style => 'height: 150px;')
+                          td
+                            p Обратился в «Кимберлит» с проблемой: в подвале коттеджа при строительстве забыли сделать вентиляцию, появилась сильная сырость. Оказалось, что перфоратором делать нельзя, так как могут пойти трещины по фундаменту от вибрации. А «Кимберлит» гарантировал безопасность для строения, причем ребята справились за час. Теперь вентиляция в порядке и никаких дефектов — аккуратно и точно!
+                        tr
+                          td colspan="2"
+                            p.client Частный заказчик
+                  td.c3i
+                    table.t1.mceItemTable border="0"
+                      tbody
+                        tr
+                          td
+                            = image_tag('anonym.jpg', :style => 'height: 150px;')
+                          td
+                            p Являюсь директором крупной строительной компании. Строим коммерческую и жилую недвижимость. Очень много бурим и режем бетон. Работаем с «Кимберлит» уже больше двух лет. За весь период сотрудничества проявили себя с лучших сторон, все задачи выполняются профессионально и в срок. Спасибо. Продолжаем работать.
+                        tr
+                          td colspan="2"
+                            p.client Директор Строительной компании
+                tr
+                  td.c3i
+                    table.t1.mceItemTable border="0"
+                      tbody
+                        tr
+                          td
+                            = image_tag('anonym.jpg', :style => 'height: 150px;')
+                          td
+                            p Честные, ответственные ребята, знают, чего хочет клиент, и делают все как в проекте. Задача была как раз для алмазного бурения — отверстия под ряд стояков в 12ти этажном здании. Рекомендую именно «Кимберлит», потому что там работают профессионалы! Правильно оценили фронт работ, быстро установили технику (от меня — только розетка и доступ к водопроводному крану). Спасибо за работу!
+                        tr
+                          td colspan="2"
+                            p.client Директор компании занимающейся монтажом коммуникационных сетей
+                  td.c3i
+                    table.t1.mceItemTable border="0"
+                      tbody
+                        tr
+                          td
+                            = image_tag('anonym.jpg', :style => 'height: 150px;')
+                          td
+                            p Выбрал эту фирму за приемлемые цены, хотя сомневался, не лучше ли заказать алмазное бурение там, где дороже — все-таки хочется не прогадать с качеством услуг. Сомнения рассеялись, когда мастера «Кимберлит» осмотрели объект и привезли оборудование — сразу стало видно, что профессионалы. И сработали на удивление быстро. Результатом доволен на все 100%. Продолжу работу только с ними.
+                        tr
+                          td colspan="2"
+                            p.client Частный заказчик
+            .clear
+        .content8
+      #header
+        .footer-bg
+        #header-top
+          .header-top-bg
+            .header-main
+              .header-left
+                = image_tag('logo-2.png')
+              .header-right
+                p
+                  | +7 (383) 239-59-58
+                  br>/
+                  | +7 (983) 310-59-58
+                a.order-call href="#request2"  Заказать звонок
+              .header-center
+                h2
+                  | Алмазное Бурение
+                  br>/
+                  | в Новосибирске и области
+              .clear
