@@ -7,7 +7,38 @@
   <%= csrf_meta_tags %>
 </head>
 <body id="top-link">
+<header>
+  <div class="container">
+    <!-- Start Social Icons -->
+    <aside>
+      <ul class="social">
+        <li class="facebook"><a href="">Facebook</a></li>
+        <li class="twitter"><a href="http://twitter.com/two2twelve">Twitter</a></li>
+        <li class="email"><a href="" title="info@two2twelve.com">Email</a></li>
+        <li class="rss"><a href="" title="App Updates">RSS</a></li>
+        <!-- More Social Icons:
+        <li class="dribbble"><a href="">Dribbble</a></li>
+        <li class="google"><a href="">Google</a></li>
+        <li class="flickr"><a href="">Flickr</a></li>
+        -->
+      </ul>
+    </aside>
+    <!-- End Social Icons -->
 
+    <!-- Start Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#home">Главная</a></li>
+        <li><a href="#team">Бризеры</a></li>
+        <li><a href="#features">Алмазное бурение</a></li>
+        <li><a href="#screenshots">Документы</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+      <span class="arrow"></span>
+    </nav>
+    <!-- End Navigation -->
+  </div>
+</header>
 <%= yield %>
 <script type="text/javascript" src="//cdn.callbackhunter.com/cbh.js?hunter_code=de4f07b567178c588ccc0a866b555d02" charset="UTF-8"></script>
 </body>

@@ -24,6 +24,27 @@ $(function() {
 
 });
 
+function sendMainOrder() {
+    var name = $('#userName').val();
+    var phone = $('#userPhone').val();
+    $('.form form .send_form').html('Отправляем...');
+    var jqxhr = $.ajax({
+        type: "POST",
+        url: '/client',
+        data: { authenticity_token: AUTH_TOKEN, client: { phone: phone, name: name}}
+    })
+        .done(function() {
+            $('.form form .send_form').html('Отправить');
+            $.arcticmodal('close');
+            $('.popup_true').arcticmodal();
+        })
+        .fail(function() {
+            $('.form form .send_form').html('Отправить');
+            $.arcticmodal('close');
+            $('.popup_fail').arcticmodal();
+        });
+}
+
 $(function () {
     var note = $('#note'),
         ts = new Date(2015, 9, 1),

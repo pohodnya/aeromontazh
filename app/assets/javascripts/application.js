@@ -35,4 +35,5 @@
 //= require scrollup
 //= require jquery.sticky
 //= require jquery-ui
+//= require almaznoe_burenie
 //= require_tree .

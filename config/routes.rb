@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   resources :client, only: :create
   resources :market, only: [:index, :create]
+  resources :brizer, only: [:index]
   resources :almaznoe_burenie, only: [:index, :create]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

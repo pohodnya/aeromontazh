@@ -1,6 +1,11 @@
 // Place all the styles related to the almaznoe_burenie controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+/*
+*= require semantic_ui/semantic_ui
+*= require jquery-ui
+*/
+
 body {
   font-family: verdana, sans;
   background-color: #F1F1F1;
@@ -353,7 +358,14 @@ a.read-more {
 }
 #workcalculator input.calculator_data, #workcalculator select.calculator_data {
   width: 175px;
+  margin: 5px;
+  padding: 3px;
 }
+
+#workcalculator select.calculator_data {
+  width: 184px;
+}
+
 #workcalculator .option_desc {
   font-size: 11px;
   color: #999;

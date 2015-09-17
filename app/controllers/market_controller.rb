@@ -1,6 +1,8 @@
 class MarketController < ApplicationController
   respond_to :js, :html
-
+  def index
+    render layout: 'brizer'
+  end
   def create
     @order = order_params
     if ClientMailer.send_order(@order).deliver_now
