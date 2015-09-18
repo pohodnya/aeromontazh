@@ -1,5 +1,35 @@
 <div id="page_wrapper">
+  <header>
+    <div class="container">
+      <!-- Start Social Icons -->
+      <aside>
+        <ul class="social">
+          <li class="facebook"><a href="">Facebook</a></li>
+          <li class="twitter"><a href="http://twitter.com/two2twelve">Twitter</a></li>
+          <li class="email"><a href="" title="info@two2twelve.com">Email</a></li>
+          <li class="rss"><a href="" title="App Updates">RSS</a></li>
+          <!-- More Social Icons:
+          <li class="dribbble"><a href="">Dribbble</a></li>
+          <li class="google"><a href="">Google</a></li>
+          <li class="flickr"><a href="">Flickr</a></li>
+          -->
+        </ul>
+      </aside>
+      <!-- End Social Icons -->
 
+      <!-- Start Navigation -->
+      <nav>
+        <ul>
+          <li id="brizers_li" class="current"><a href="#" onclick="toFrame('brizers');">Бризеры</a></li>
+          <li id="almaz_li"><a href="#" onclick="toFrame('almaz');">Алмазное бурение</a></li>
+          <li id="documents_li"><a href="#" onclick="toFrame('documents');">Документы</a></li>
+          <li id="contacts_li"><a href="#" onclick="toFrame('contacts');">Контакты</a></li>
+        </ul>
+        <span class="arrow"></span>
+      </nav>
+      <!-- End Navigation -->
+    </div>
+  </header>
   <!-- Start Header -->
 
   <!-- End Header -->
@@ -29,14 +59,87 @@
     <!-- Start Pages -->
     <div id="pages">
       <div id="brizers">
-        <h1 align="center">Бризер Тион О2</h1>
-        <%= image_tag('o2.png') %>
-      </div>
-      <div id="almaz">
-        <h1 align="center">Бризер Тион О2</h1>
-        <%= image_tag('o2.png') %>
-      </div>
+        <span class="big-tagline">Компактная вентиляция Бризер Тион О2</span><br>
 
+        <%= link_to 'Подробнее >', brizer_index_path, :class => 'moreAbout' %>
+        <div class="view view-second">
+          <%= image_tag('o2.png', :style => 'margin-left: -35px;') %>
+          <div class="mask">
+            <h2>Title</h2>
+            <p>Your Text</p>
+            <a href="#" class="info">Узнать больше</a>
+          </div>
+        </div>
+
+      </div>
+      <div id="almaz" style="display: none;">
+        <span class="big-tagline">Алмазное бурение</span><br>
+        <%= link_to 'Подробнее >', almaznoe_burenie_index_path, :class => 'moreAbout' %>
+        <div class="view view-second">
+          <%= image_tag('almaz.png', :style => 'margin-left: 50px;') %>
+          <div class="mask">
+            <h2>Title</h2>
+            <p>Your Text</p>
+            <a href="#" class="info">Узнать больше</a>
+          </div>
+        </div>
+      </div>
+      <div id="documents" style="display: none;">
+        <span class="big-tagline">Документы</span><br>
+        <div class="popup-gallery">
+          <a href="https://pp.vk.me/c622431/v622431638/41ebb/_wWlIWDFiyo.jpg" title=""><img src="https://pp.vk.me/c622431/v622431638/41ebb/_wWlIWDFiyo.jpg" width="100"></a>
+          <a href="https://pp.vk.me/c622431/v622431638/41ea9/70pH-XMe7vI.jpg" title=""><img src="https://pp.vk.me/c622431/v622431638/41ea9/70pH-XMe7vI.jpg" width="100"></a>
+          <a href="https://pp.vk.me/c622431/v622431638/41eb2/Fm-uN4zl12c.jpg" title=""><img src="https://pp.vk.me/c622431/v622431638/41eb2/Fm-uN4zl12c.jpg" width="100"></a>
+          <a href="https://pp.vk.me/c622431/v622431638/41ec4/XqFySHCQBhc.jpg" title=""><img src="https://pp.vk.me/c622431/v622431638/41ec4/XqFySHCQBhc.jpg" width="100"></a>
+          <a href="https://pp.vk.me/c622431/v622431638/41ed6/l4hCWbJq3UM.jpg" title=""><img src="https://pp.vk.me/c622431/v622431638/41ed6/l4hCWbJq3UM.jpg" width="100"></a>
+
+          <a href="https://pp.vk.me/c622431/v622431638/41e97/7Bgz5gZ_TDo.jpg" title=""><img src="https://pp.vk.me/c622431/v622431638/41e97/7Bgz5gZ_TDo.jpg" width="100"></a>
+          <a href="https://pp.vk.me/c622431/v622431638/41e8e/-Rxrq-fTqjo.jpg" title=""><img src="https://pp.vk.me/c622431/v622431638/41e8e/-Rxrq-fTqjo.jpg" width="100"></a>
+          <a href="https://pp.vk.me/c622431/v622431638/41ea0/y26c8py385A.jpg" title=""><img src="https://pp.vk.me/c622431/v622431638/41ea0/y26c8py385A.jpg" width="100"></a>
+          <a href="https://pp.vk.me/c622431/v622431638/41edf/MVd7aAUSK9c.jpg" title=""><img src="https://pp.vk.me/c622431/v622431638/41edf/MVd7aAUSK9c.jpg" width="100"></a>
+          <a href="https://pp.vk.me/c622431/v622431638/41ecd/5AhXEEt9nxE.jpg" title=""><img src="https://pp.vk.me/c622431/v622431638/41ecd/5AhXEEt9nxE.jpg" width="100"></a>
+          <a href="https://pp.vk.me/c622431/v622431638/41ee8/-Z_5q5tRoYc.jpg" title=""><img src="https://pp.vk.me/c622431/v622431638/41ee8/-Z_5q5tRoYc.jpg" width="100"></a>
+        </div>
+      </div>
+      <div id="contacts" style="display: none;">
+        <span class="big-tagline">Контакты</span><br>
+        <p>Если у Вас имеются какие-то вопросы или предложения, вы можете воспользоваться формой обратной связи.</p>
+
+        <div id="contact_form">
+
+          <div class="validation">
+            <p>Oops! Please correct the highlighted fields...</p>
+          </div>
+
+          <div class="success">
+            <p>Thanks! I'll get back to you shortly.</p>
+          </div>
+
+          <form>
+            <div class="row">
+              <p class="left">
+                <input type="text" name="name" id="name" placeholder="Имя *" />
+              </p>
+              <p class="right">
+                <input type="text" name="email" id="email" placeholder="E-mail *" />
+              </p>
+            </div>
+
+            <div class="row">
+              <p class="full">
+                <input type="text" name="subject" id="subject" placeholder="Тема" />
+              </p>
+            </div>
+
+            <p>
+              <textarea class="text" name="message" id="message" placeholder="Сообщение"></textarea>
+            </p>
+
+            <button class="button white" value="">Отправить &#x2192;</button>
+          </form>
+        </div>
+
+      </div>
     </div>
     <!-- End Pages -->
 

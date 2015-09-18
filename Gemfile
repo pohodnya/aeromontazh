@@ -21,6 +21,7 @@ gem 'coffee-rails', '~> 4.1.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'magnific-popup-rails'
 gem 'less-rails-semantic_ui'
 # gem 'autoprefixer-rails'
 gem 'therubyracer'

@@ -35,5 +35,7 @@
 //= require scrollup
 //= require jquery.sticky
 //= require jquery-ui
+//= require magnific-popup
 //= require almaznoe_burenie
+//- require main
 //= require_tree .
