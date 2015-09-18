@@ -28,6 +28,6 @@ class ClientController < ApplicationController
 
   private
   def client_params
-    params.require(:client).permit :name, :phone, :email, :from_form
+    params.require(:client).permit :name, :phone, :email, :subject, :message, :from_form
   end
 end

@@ -9,6 +9,29 @@ function toFrame(frameName) {
 
 }
 
+function sendFeedback() {
+    var name = $('#name').val();
+    var email = $('#email').val();
+    var subject = $('#subject').val();
+    var message = $('#message').val();
+    $('.form form .send_form').html('Отправляем...');
+    var jqxhr = $.ajax({
+        type: "POST",
+        url: '/client',
+        data: { authenticity_token: AUTH_TOKEN, client: { phone: '', email: email, name: name, subject: subject, message: message}}
+    })
+        .done(function() {
+            $('.form form .send_form').html('Отправить');
+            $.arcticmodal('close');
+            $('.popup_true').arcticmodal();
+        })
+        .fail(function() {
+            $('.form form .send_form').html('Отправить');
+            $.arcticmodal('close');
+            $('.popup_fail').arcticmodal();
+        });
+}
+
 $(document).ready(function() {
     $('.popup-gallery').magnificPopup({
         delegate: 'a',

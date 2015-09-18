@@ -2,19 +2,7 @@
   <header>
     <div class="container">
       <!-- Start Social Icons -->
-      <aside>
-        <ul class="social">
-          <li class="facebook"><a href="">Facebook</a></li>
-          <li class="twitter"><a href="http://twitter.com/two2twelve">Twitter</a></li>
-          <li class="email"><a href="" title="info@two2twelve.com">Email</a></li>
-          <li class="rss"><a href="" title="App Updates">RSS</a></li>
-          <!-- More Social Icons:
-          <li class="dribbble"><a href="">Dribbble</a></li>
-          <li class="google"><a href="">Google</a></li>
-          <li class="flickr"><a href="">Flickr</a></li>
-          -->
-        </ul>
-      </aside>
+      <div style="float: left; margin-top: 10px;" data-background-alpha="0.0" data-buttons-color="#ffffff" data-counter-background-color="#ffffff" data-share-counter-size="12" data-top-button="false" data-share-counter-type="disable" data-share-style="2" data-mode="share" data-like-text-enable="false" data-mobile-view="true" data-icon-color="#ffffff" data-orientation="horizontal" data-text-color="#000000" data-share-shape="round" data-sn-ids="fb.vk.tw.ok.gp." data-share-size="30" data-background-color="#ffffff" data-preview-mobile="false" data-mobile-sn-ids="fb.vk.tw.wh.ok.gp." data-pid="1416139" data-counter-background-alpha="1.0" data-following-enable="false" data-exclude-show-more="true" data-selection-enable="true" class="uptolike-buttons" ></div>
       <!-- End Social Icons -->
 
       <!-- Start Navigation -->
@@ -63,24 +51,24 @@
 
         <%= link_to 'Подробнее >', brizer_index_path, :class => 'moreAbout' %>
         <div class="view view-second">
-          <%= image_tag('o2.png', :style => 'margin-left: -35px;') %>
+          <%= image_tag('o2-n.png', :style => 'margin-left: 30px; border: 5px solid rgba(87, 191, 217, 0.7); border-radius: 500px;') %>
           <div class="mask">
-            <h2>Title</h2>
-            <p>Your Text</p>
-            <a href="#" class="info">Узнать больше</a>
+            <h2>Бризеры</h2>
+            <p>Бризер Tion O2 — это бытовая приточная вентиляция для квартиры, дома или офиса. Компактный бризер позволяет проветривать комнату при закрытых окнах, подавая в дом очищенный, насыщенный кислородом воздух. </p>
+            <%= link_to 'Узнать больше', brizer_index_path, :class => 'info' %>
           </div>
         </div>
 
       </div>
       <div id="almaz" style="display: none;">
-        <span class="big-tagline">Алмазное бурение</span><br>
+        <span class="big-tagline">Услуги алмазного бурения</span><br>
         <%= link_to 'Подробнее >', almaznoe_burenie_index_path, :class => 'moreAbout' %>
         <div class="view view-second">
-          <%= image_tag('almaz.png', :style => 'margin-left: 50px;') %>
+          <%= image_tag('almaz.png', :style => 'margin-left: 30px;') %>
           <div class="mask">
-            <h2>Title</h2>
-            <p>Your Text</p>
-            <a href="#" class="info">Узнать больше</a>
+            <h2>Алмазное бурение</h2>
+            <p>Мы предлагаем услуги алмазного бурения на профессиональном оборудовании Hilti. Стоимость конкретного заказа будет зависеть от диаметра и глубины бурения, а также сопутсвующих факторов.</p>
+            <%= link_to 'Узнать больше', almaznoe_burenie_index_path, :class => 'info' %>
           </div>
         </div>
       </div>
@@ -134,8 +122,7 @@
             <p>
               <textarea class="text" name="message" id="message" placeholder="Сообщение"></textarea>
             </p>
-
-            <button class="button white" value="">Отправить &#x2192;</button>
+            <a onclick="sendFeedback();" class="button white">Отправить</a>
           </form>
         </div>
 
@@ -153,3 +140,38 @@
   <!-- End Footer -->
 
 </div>
+
+<div class="disabled">
+  <div class="popup_true">
+    <div class="popup_block">
+      <div class="form">
+        <p><span>Ваше письмо отправлено!</span><br>
+          Мы ответим Вам в ближайшее время.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="disabled">
+  <div class="popup_fail">
+    <div class="popup_block">
+      <div class="form">
+        <p><span>Ошибка при отправке!</span><br>
+          Попробуйте отправить письмо повторно или свяжитесь с нами по телефону +7 (383) 239-59-58.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= javascript_tag "const AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery? %>
+
+<script type="text/javascript">(function(w,doc) {
+  if (!w.__utlWdgt ) {
+    w.__utlWdgt = true;
+    var d = doc, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == w.location.protocol ? 'https' : 'http')  + '://w.uptolike.com/widgets/v1/uptolike.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})(window,document);
+</script>

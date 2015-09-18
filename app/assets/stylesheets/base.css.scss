@@ -177,6 +177,7 @@ section { }
         }
         a.moreAbout {
           float: right;
+          margin-right: 25px;
         }
 		section #app_info p {
 			color: #898989;
@@ -1108,9 +1109,9 @@ img { border: none; }
 .view p {
   font-family: Georgia, serif;
   font-style: italic;
-  font-size: 12px;
+  font-size: 17px;
   position: relative;
-  color: #fff;
+  color: #fff !important;
   padding: 10px 20px 20px;
   text-align: center;
 }
@@ -1132,9 +1133,9 @@ img { border: none; }
 }
 .view-second .mask {
   background-color: rgba(115,146,184, 0.7);
-  width: 400px;
+  width: 331px;
   padding: 60px;
-  height: 400px;
+  height: 331px;
   opacity: 0;
   transform: translate(265px, 145px) rotate(0deg);
   transition: all 0.2s ease-in-out;
@@ -1158,7 +1159,7 @@ img { border: none; }
 
 .view-second:hover .mask {
   opacity:1;
-  transform: translate(15px, 0px) rotate(0deg);
+  transform: translate(30px, 0px) rotate(0deg);
 }
 .view-second:hover h2 {
   transform: translate(0px,0px);
@@ -1171,4 +1172,54 @@ img { border: none; }
 .view-second:hover a.info {
   transform: translate(0px,0px);
   transition-delay: 0.5s;
+}
+
+.disabled {
+  display: none;
+}
+
+.popup_block {
+  margin: 0px;
+  padding: 10px 55px;
+  background: #fff;
+  border: 3px solid #0d4150;
+}
+
+.form {
+  margin: 0px;
+  padding: 0px;
+  width: 490px;
+  text-align: center;
+  z-index: 1000;
+}
+section.sale .form {
+  margin: 80px 0px 0px 490px;
+}
+.form p {
+  margin: 0px 0px 20px;
+  padding: 0px;
+  font: 20px 'OpenSans Light', sans-serif;
+  color: #fff;
+  text-align: center;
+}
+.popup_block .form p {
+  margin: 0px 0px 10px;
+  color: #0d4150;
+}
+.form p span {
+  font: 30px/58px 'OpenSans Bold', sans-serif;
+  text-transform: uppercase;
+}
+.popup_block .form p span {
+  font: 24px/38px 'OpenSans Bold', sans-serif;
+}
+.form p b {
+  font: 20px 'OpenSans Semibold', sans-serif;
+}
+.form b {
+  font: 30px/62px 'OpenSans Rg', sans-serif;
+  color: #fff;
+}
+.popup_block .form b {
+  color: #000;
 }
