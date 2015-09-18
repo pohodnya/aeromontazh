@@ -31,7 +31,7 @@ function sendMainOrder() {
     var jqxhr = $.ajax({
         type: "POST",
         url: '/client',
-        data: { authenticity_token: AUTH_TOKEN, client: { phone: phone, name: name}}
+        data: { authenticity_token: AUTH_TOKEN, client: { phone: phone, name: name, subject: '', message: '', email: ''}}
     })
         .done(function() {
             $('.form form .send_form').html('Отправить');
