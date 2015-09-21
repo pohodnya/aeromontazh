@@ -1374,19 +1374,3 @@ section#configTitleSection {
   cursor: pointer;
 }
 
-@media screen and (max-width: 980px) {
-  header, section, .page {
-    min-width: 950px;
-    width: 950px;
-  }
-  #logoConfig, #configTitleSection {
-    z-index: 10000 !important;
-  }
-  #brizerContext {
-    z-index: 10 !important;
-    float: right !important;
-    position: relative !important;
-    top: -250px !important;
-  }
-
-}
