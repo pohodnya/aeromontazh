@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1fe8182e-cc1d-4cfc-ad60-3b979a60bb37" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/partials/_for_market.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/market/index.html.slim" afterPath="$PROJECT_DIR$/app/views/market/index.html.slim" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="1fe8182e-cc1d-4cfc-ad60-3b979a60bb37" name="Default" comment="" />
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -44,21 +40,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.slim" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html.slim" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/market/index.html.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6142857">
-              <caret line="258" column="30" selection-start-line="258" selection-start-column="30" selection-end-line="258" selection-end-column="30" />
+            <state vertical-scroll-proportion="-3.5555556">
+              <caret line="249" column="12" selection-start-line="249" selection-start-column="12" selection-end-line="249" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_for_market.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/partials/_for_market.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.6666667">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="15" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.5344827">
-              <caret line="1338" column="14" selection-start-line="1338" selection-start-column="14" selection-end-line="1339" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.722365">
+              <caret line="1389" column="34" selection-start-line="1389" selection-start-column="34" selection-end-line="1389" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -125,8 +131,8 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/scrollup.js" />
         <option value="$PROJECT_DIR$/app/views/brizer/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/partials/_for_market.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/main.css.scss" />
         <option value="$PROJECT_DIR$/app/views/market/index.html.slim" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/main.css.scss" />
       </list>
     </option>
   </component>
@@ -1505,18 +1511,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/market/index.html.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5344827">
-          <caret line="1338" column="14" selection-start-line="1338" selection-start-column="14" selection-end-line="1339" selection-end-column="15" />
+        <state vertical-scroll-proportion="-3.5555556">
+          <caret line="249" column="12" selection-start-line="249" selection-start-column="12" selection-end-line="249" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/market/index.html.slim">
+    <entry file="file://$PROJECT_DIR$/app/views/partials/_for_market.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6142857">
-          <caret line="258" column="30" selection-start-line="258" selection-start-column="30" selection-end-line="258" selection-end-column="30" />
+        <state vertical-scroll-proportion="-0.6666667">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="15" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.722365">
+          <caret line="1389" column="34" selection-start-line="1389" selection-start-column="34" selection-end-line="1389" selection-end-column="34" />
           <folding />
         </state>
       </provider>
