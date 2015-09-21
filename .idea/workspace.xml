@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1fe8182e-cc1d-4cfc-ad60-3b979a60bb37" name="Default" comment="" />
+    <list default="true" id="1fe8182e-cc1d-4cfc-ad60-3b979a60bb37" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -19,7 +21,7 @@
     <SUITE FILE_PATH="coverage/untitled@forwarding__untitled.coverage" NAME="forwarding: untitled Coverage Results" MODIFIED="1440830606734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="untitled" />
     <SUITE FILE_PATH="coverage/untitled@deploy_restart__untitled.coverage" NAME="deploy:restart: untitled Coverage Results" MODIFIED="1440853987123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="untitled" />
     <SUITE FILE_PATH="coverage/untitled@unicorn_restart__untitled.coverage" NAME="unicorn:restart: untitled Coverage Results" MODIFIED="1440764341669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="untitled" />
-    <SUITE FILE_PATH="coverage/untitled@Development__untitled.coverage" NAME="Development: untitled Coverage Results" MODIFIED="1442853337274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="untitled" />
+    <SUITE FILE_PATH="coverage/untitled@Development__untitled.coverage" NAME="Development: untitled Coverage Results" MODIFIED="1442854138353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="untitled" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -33,7 +35,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/brizer/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-32.666668">
+            <state vertical-scroll-proportion="67.333336">
               <caret line="394" column="83" selection-start-line="394" selection-start-column="83" selection-end-line="394" selection-end-column="83" />
               <folding />
             </state>
@@ -43,8 +45,8 @@
       <file leaf-file-name="index.html.slim" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/market/index.html.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-28.444445">
-              <caret line="262" column="31" selection-start-line="262" selection-start-column="31" selection-end-line="262" selection-end-column="31" />
+            <state vertical-scroll-proportion="-11.333333">
+              <caret line="261" column="65" selection-start-line="261" selection-start-column="65" selection-end-line="261" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -63,8 +65,8 @@
       <file leaf-file-name="main.css.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.722365">
-              <caret line="1376" column="0" selection-start-line="1376" selection-start-column="0" selection-end-line="1376" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.33167082">
+              <caret line="28" column="1" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -1081,17 +1083,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33443892" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33443892" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37191853" sideWeight="0.50193477" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47588426" sideWeight="0.49806523" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47588426" sideWeight="0.49806523" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2498618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.488746" sideWeight="0.49806523" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.488746" sideWeight="0.49806523" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39978564" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1495,14 +1497,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/brizer/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-32.666668">
-          <caret line="394" column="83" selection-start-line="394" selection-start-column="83" selection-end-line="394" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/base.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7714286">
@@ -1519,18 +1513,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/brizer/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="67.333336">
+          <caret line="394" column="83" selection-start-line="394" selection-start-column="83" selection-end-line="394" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/market/index.html.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-28.444445">
-          <caret line="262" column="31" selection-start-line="262" selection-start-column="31" selection-end-line="262" selection-end-column="31" />
+        <state vertical-scroll-proportion="-11.333333">
+          <caret line="261" column="65" selection-start-line="261" selection-start-column="65" selection-end-line="261" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.722365">
-          <caret line="1376" column="0" selection-start-line="1376" selection-start-column="0" selection-end-line="1376" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.33167082">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="1" />
           <folding />
         </state>
       </provider>
