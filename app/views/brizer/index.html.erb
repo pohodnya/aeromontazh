@@ -391,7 +391,9 @@
   <footer>
     <div class="page">
 
-      <div class="logo"><%= image_tag('aeromontazh_logo.png', width: '410px') %></div>
+      <div class="logo">
+        <%= link_to image_tag('aeromontazh_logo.png', width: "410px"), root_path %>
+      </div>
       <div class="footer_info">
         <br>
         Система очистки воздуха<br>

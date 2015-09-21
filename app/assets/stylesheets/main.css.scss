@@ -1109,6 +1109,8 @@ section.sale .form {
   text-transform: none;
 }
 
+
+
 #navigation {
   display: inline-block;
   margin-top: 5px;
@@ -1135,6 +1137,16 @@ section.sale .form {
     li:hover {
       border: 2px solid #d0e8f1;
     }
+  }
+}
+
+@-moz-document url-prefix() {
+  #navigation ul li {
+    font-size: 9px;
+  }
+  section ul.wind1 li.li3 span {
+    left: -170px;
+    top: -105px;
   }
 }
 
@@ -1175,12 +1187,12 @@ section.sale .form {
   font-style: normal !important;
   font-variant: normal !important;
   font-weight: normal !important;
-  #marketIcon {
-    display: none;
-  }
-  #moreIcon {
-    display: none;
-  }
+  //#marketIcon {
+  //  display: none;
+  //}
+  //#moreIcon {
+  //  display: none;
+  //}
 }
 
 #logoConfig {
@@ -1360,4 +1372,21 @@ section#configTitleSection {
 .withDesc {
   border-bottom: 1px dashed #697DDA;
   cursor: pointer;
+}
+
+@media screen and (max-width: 980px) {
+  header, section, .page {
+    min-width: 950px;
+    width: 950px;
+  }
+  #logoConfig, #configTitleSection {
+    z-index: 10000 !important;
+  }
+  #brizerContext {
+    z-index: 10 !important;
+    float: right !important;
+    position: relative !important;
+    top: -250px !important;
+  }
+
 }

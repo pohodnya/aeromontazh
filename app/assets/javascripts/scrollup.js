@@ -1,6 +1,8 @@
 
 $(function () {
     $.scrollUp();
+    $('#marketIcon').toggle(400);
+    $('#moreIcon').toggle(400);
     $('#buttonToMarket').hover(
         function () {
             $('#marketIcon').toggle(400);

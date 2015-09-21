@@ -239,10 +239,24 @@ section.configurator
           span Введите свои контактные данные
           br
           | Мы свяжемся с вами в течение 20 минут и ответим на все интересующие вас вопросы об очистке воздуха при помощи системы "Tion"</p>
-        = form_for :client, url: client_index_path, method: :post do |form|
-          = form.text_field :name, class: 'name', placeholder: 'Ваше имя (для обращения к Вам)'
-          = form.text_field :phone, class: 'phone', placeholder: 'Ваш телефон для связи'
-          = form.hidden_field :from_form, value: 'Обратный звонок'
-          = form.submit class: 'btn btn_send', value: 'Перезвоните мне!'
+        == render :partial => 'partials/form'
 
+.disabled
+  .popup_true
+    .popup_block
+      .form
+        p
+          span Спасибо за ваш заказ!
+          br
+          | Наш менеджер перезвонит Вам в течение 20 минут, чтобы уточнить все необходимые детали.
+
+
+.disabled
+  .popup_fail
+    .popup_block
+      .form
+        p
+          span Ошибка при отправке!
+          br
+          | Попробуйте отправить заявку повторно или свяжитесь с нами по телефону +7 (383) 239-59-58.
 = javascript_tag "const AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery?
