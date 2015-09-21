@@ -96,3 +96,55 @@ function changePrice() {
         fullPrice = depthPrice * depth * quantity * (1 + high + clear) + anker * quantity + disctance;
     (fullPrice > 3000) ? $('#amount_result').html(fullPrice) : $('#amount_result').html(3000);
 }
+
+function sendAlmazOrder1() {
+    var name = $('form#call-1 .userName').val();
+    var phone = $('form#call-1 .userPhone').val();
+    var email = $('form#call-1 .userEmail').val();
+    $('#call-1-button').html('Отправляем...');
+    var jqxhr = $.ajax({
+        type: "POST",
+        url: '/client',
+        data: { authenticity_token: AUTH_TOKEN, client: { phone: phone, name: name, subject: '', message: '', email: email, from_form: 'Алмазное бурение'}}
+    })
+        .done(function() {
+            $('#call-1-button').html('Отправить');
+            $('form#call-1 .userName').val('');
+            $('form#call-1 .userPhone').val('');
+            $('form#call-1 .userEmail').val('');
+            $('#successOrder').modal('show');
+        })
+        .fail(function() {
+            $('#call-1-button').html('Отправить');
+            $('form#call-1 .userName').val('');
+            $('form#call-1 .userPhone').val('');
+            $('form#call-1 .userEmail').val('');
+            $('#failOrder').modal('show');
+        });
+}
+
+function sendAlmazOrder2() {
+    var name = $('form#call-2 .userName').val();
+    var phone = $('form#call-2 .userPhone').val();
+    var email = $('form#call-2 .userEmail').val();
+    $('#call-2-button').html('Отправляем...');
+    var jqxhr = $.ajax({
+        type: "POST",
+        url: '/client',
+        data: { authenticity_token: AUTH_TOKEN, client: { phone: phone, name: name, subject: '', message: '', email: email, from_form: 'Алмазное бурение'}}
+    })
+        .done(function() {
+            $('#call-2-button').html('Отправить');
+            $('form#call-2 .userName').val('');
+            $('form#call-2 .userPhone').val('');
+            $('form#call-2 .userEmail').val('');
+            $('#successOrder').modal('show');
+        })
+        .fail(function() {
+            $('#call-2-button').html('Отправить');
+            $('form#call-2 .userName').val('');
+            $('form#call-2 .userPhone').val('');
+            $('form#call-2 .userEmail').val('');
+            $('#failOrder').modal('show');
+        });
+}

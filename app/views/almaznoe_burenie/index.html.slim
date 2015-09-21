@@ -26,15 +26,16 @@ div style=("max-width:1400px;margin:0 auto;")
               .form-right
                 p Оставьте заявку
                 small прямо сейчас
-                form#call-1.call onsubmit=("return false;")
+                form#call-1.call
                   div
-                    input.form-name.form-text-field.ord_required name="name" placeholder=("Ваше имя") type="text" value="" /
+                    input.form-name.form-text-field.ord_required.userName name="name" placeholder=("Ваше имя") type="text" value="" /
                   div
-                    input.form-phone.form-text-field.ord_required name="phone" placeholder=("Ваш телефон") type="text" value="" /
+                    input.form-phone.form-text-field.ord_required.userPhone name="phone" placeholder=("Ваш телефон") type="text" value="" /
                   div
-                    input.form-mail.form-text-field name="mail" placeholder=("Ваш e-mail") type="text" value="" /
+                    input.form-mail.form-text-field.userEmail name="mail" placeholder=("Ваш e-mail") type="text" value="" /
                   div
-                    input.order-call.order-submit.ord_required type="submit" value=("ЗАКАЗАТЬ ЗВОНОК") /
+                    a.order-call.order-submit.ord_required#call-1-button onclick='sendAlmazOrder1();'
+                      |ЗАКАЗАТЬ ЗВОНОК
             .deviz-left
               .deviz-left-bg
                 h2 АЛМАЗНОЕ БУРЕНИЕ?
@@ -330,13 +331,14 @@ div style=("max-width:1400px;margin:0 auto;")
                 small прямо сейчас
                 form#call-2.call
                   div
-                    input.form-name.form-text-field.ord_required name="name" placeholder=("Ваше имя") type="text" value="" /
+                    input.form-name.form-text-field.ord_required.userName name="name" placeholder=("Ваше имя") type="text" value="" /
                   div
-                    input.form-phone.form-text-field.ord_required name="phone" placeholder=("Ваш телефон") type="text" value="" /
+                    input.form-phone.form-text-field.ord_required.userPhone name="phone" placeholder=("Ваш телефон") type="text" value="" /
                   div
-                    input.form-mail.form-text-field name="mail" placeholder=("Ваш e-mail") type="text" value="" /
+                    input.form-mail.form-text-field.userEmail name="mail" placeholder=("Ваш e-mail") type="text" value="" /
                   div
-                    input.order-call.order-submit.ord_required type="submit" value=("ЗАКАЗАТЬ ЗВОНОК") /
+                    a.order-call.order-submit.ord_required#call-2-button onclick='sendAlmazOrder2();'
+                      |ЗАКАЗАТЬ ЗВОНОК
             .clear
         .content1
           h2 5 САМЫХ РАСПРОСТРАННЕНЫХ ПРОБЛЕМ НАШИХ КЛИЕНТОВ
@@ -445,7 +447,8 @@ div style=("max-width:1400px;margin:0 auto;")
           .header-top-bg
             .header-main
               .header-left
-                = image_tag('logo-2.png')
+                = link_to root_path
+                  = image_tag('logo-2.png')
               .header-right
                 p
                   | +7 (383) 239-59-58
@@ -458,3 +461,26 @@ div style=("max-width:1400px;margin:0 auto;")
                   br>/
                   | в Новосибирске и области
               .clear
+
+.ui.small.modal#successOrder
+  i.close.icon
+  .header Заказ успешно отправлен
+  .content
+    p
+      | Менеджер свяжется с Вами в ближайшее время
+  .actions
+    .ui.positive.left.labeled.icon.button
+      | Ок
+      i.checkmark.icon
+.ui.small.modal#failOrder
+  i.close.icon
+  .header Ошибка при отправке
+  .content
+    p
+      | При отправке вашего заказа произошла ошибка. Попробуйте отправить заказ повторно или свяжитесь с нами по телефону + 7 (383) 239-59-58
+  .actions
+    .ui.negative.left.labeled.icon.button
+      | Ок
+      i.checkmark.icon
+
+= javascript_tag "const AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery?

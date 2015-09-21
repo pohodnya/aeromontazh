@@ -30,19 +30,19 @@ $(document).ready(function(){
 		$('.popup_call').arcticmodal();
 	});
 	$('.btn_popup_1').click(function(){
-		$('.popup_1').arcticmodal();
+		$('.popup_call').arcticmodal();
 	});
 	$('.btn_popup_2').click(function(){
-		$('.popup_2').arcticmodal();
+		$('.popup_call').arcticmodal();
 	});
 	$('.btn_popup_3').click(function(){
-		$('.popup_3').arcticmodal();
+		$('.popup_call').arcticmodal();
 	});
 	$('.btn_popup_4').click(function(){
-		$('.popup_4').arcticmodal();
+		$('.popup_call').arcticmodal();
 	});
 	$('.btn_popup_5').click(function(){
-		$('.popup_5').arcticmodal();
+		$('.popup_call').arcticmodal();
 	});
 
 	// обработка форм

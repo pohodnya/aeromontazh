@@ -10,7 +10,8 @@ section#logoConfig
   header
     .page#top
       .logo
-        = image_tag('aeromontazh_logo.png', width: "410px")
+        =link_to root_path, data: { no_turbolink: 'true'}
+          = image_tag('aeromontazh_logo.png', width: "410px")
       .header_info
         br
         | Система очистки воздуха

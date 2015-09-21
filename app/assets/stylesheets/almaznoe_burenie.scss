@@ -3,6 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 /*
 *= require semantic_ui/semantic_ui
+*= require scrollup
+*= require top-animate
 *= require jquery-ui
 */
 
@@ -191,9 +193,8 @@ h2 {
   border-radius: 4px;
   line-height: 51px;
   font-size: 22px;
-  padding: 0 22px;
+  padding: 0 5px;
   margin-top: 20px;
-  margin-left: 5px;
 }
 .content1 {
   text-align: center; /* Выравнивание по центру */
@@ -444,4 +445,8 @@ p.min-order {
 }
 h2.black_h2 {
   color: #000000;
+}
+
+#successOrder .content, #failOrder .content {
+  width: 90% !important;
 }

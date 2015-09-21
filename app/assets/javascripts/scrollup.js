@@ -20,11 +20,25 @@ $(function () {
 });
 
 $(function() {
-    $('#logoConfig').sticky({topSpacing: 0});
-    $('#configTitleSection').sticky({topSpacing: 145});
-    $('#brizerExample').sticky({topSpacing:210});
-
+    stickUnstick();
 });
+
+$( window ).resize(function() {
+    stickUnstick();
+});
+
+function stickUnstick() {
+    if(window.screen.width > 1200) {
+        $('#logoConfig').sticky({topSpacing: 0});
+        $('#configTitleSection').sticky({topSpacing: 145});
+        $('#brizerExample').sticky({topSpacing: 210});
+    }
+    else {
+        $('#logoConfig').unstick();
+        $('#configTitleSection').unstick();
+        $('#brizerExample').unstick();
+    }
+}
 
 function sendMainOrder() {
     var name = $('#userName').val();
