@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fe8182e-cc1d-4cfc-ad60-3b979a60bb37" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/almaznoe_burenie.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/almaznoe_burenie.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/brizer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/brizer.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/application/index.html.erb" afterPath="$PROJECT_DIR$/app/views/application/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/brizer/index.html.erb" afterPath="$PROJECT_DIR$/app/views/brizer/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled.iws" />
@@ -34,11 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/application/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.083333336">
-              <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+            <state vertical-scroll-proportion="-2.8888888">
+              <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -52,6 +54,124 @@
             <state vertical-scroll-proportion="-10.666667">
               <caret line="509" column="0" selection-start-line="509" selection-start-column="0" selection-end-line="509" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.slim" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/almaznoe_burenie/index.html.slim">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.555555">
+              <caret line="459" column="20" selection-start-line="459" selection-start-column="20" selection-end-line="459" selection-end-column="20" />
+              <folding>
+                <marker date="1442845480352" expanded="true" signature="144:1678" placeholder="#header" />
+                <marker date="1442845480352" expanded="true" signature="160:170" placeholder=".header-bg" />
+                <marker date="1442845480352" expanded="true" signature="179:1678" placeholder="#header-top" />
+                <marker date="1442845480352" expanded="true" signature="201:729" placeholder=".header-top-bg" />
+                <marker date="1442845480352" expanded="true" signature="228:729" placeholder=".header-main" />
+                <marker date="1442845480352" expanded="true" signature="255:347" placeholder=".header-left" />
+                <marker date="1442845480352" expanded="true" signature="362:555" placeholder=".header-right" />
+                <marker date="1442845480352" expanded="true" signature="570:708" placeholder=".header-center" />
+                <marker date="1442845480352" expanded="true" signature="723:729" placeholder=".clear" />
+                <marker date="1442845480352" expanded="true" signature="740:1678" placeholder=".header-main" />
+                <marker date="1442845480352" expanded="true" signature="765:1505" placeholder="#request1.form-right-bg" />
+                <marker date="1442845480352" expanded="true" signature="803:1505" placeholder=".form-right" />
+                <marker date="1442845480352" expanded="true" signature="1518:1678" placeholder=".deviz-left" />
+                <marker date="1442845480352" expanded="true" signature="1544:1647" placeholder=".deviz-left-bg" />
+                <marker date="1442845480352" expanded="true" signature="1662:1678" placeholder=".deviz-left-flag" />
+                <marker date="1442845480352" expanded="true" signature="1685:20255" placeholder=".content" />
+                <marker date="1442845480352" expanded="true" signature="1702:2263" placeholder=".content7" />
+                <marker date="1442845480352" expanded="true" signature="1757:2263" placeholder=".content1-ins" />
+                <marker date="1442845480352" expanded="true" signature="1783:1870" placeholder=".c1i" />
+                <marker date="1442845480352" expanded="true" signature="1883:1957" placeholder=".c1i" />
+                <marker date="1442845480352" expanded="true" signature="1970:2062" placeholder=".c1i" />
+                <marker date="1442845480352" expanded="true" signature="2075:2153" placeholder=".c1i" />
+                <marker date="1442845480352" expanded="true" signature="2166:2244" placeholder=".c1i" />
+                <marker date="1442845480352" expanded="true" signature="2257:2263" placeholder=".clear" />
+                <marker date="1442845480352" expanded="true" signature="2272:2934" placeholder=".content4" />
+                <marker date="1442845480352" expanded="true" signature="2321:2934" placeholder=".content1-ins" />
+                <marker date="1442845480352" expanded="true" signature="2347:2444" placeholder=".c4i.c4i2" />
+                <marker date="1442845480352" expanded="true" signature="2457:2566" placeholder=".c4i" />
+                <marker date="1442845480352" expanded="true" signature="2579:2672" placeholder=".c4i" />
+                <marker date="1442845480352" expanded="true" signature="2685:2784" placeholder=".c4i" />
+                <marker date="1442845480352" expanded="true" signature="2797:2915" placeholder=".c4i" />
+                <marker date="1442845480352" expanded="true" signature="2928:2934" placeholder=".clear" />
+                <marker date="1442845480352" expanded="true" signature="2943:10523" placeholder="#calc_temp2.content5" />
+                <marker date="1442845480352" expanded="true" signature="2974:10523" placeholder="#workcalculator title=(&quot;Онлайн калькулятор&quot;)" />
+                <marker date="1442845480352" expanded="true" signature="8027:8046" placeholder="#amount_result 3000" />
+                <marker date="1442845480352" expanded="true" signature="14087:15006" placeholder=".content6" />
+                <marker date="1442845480352" expanded="true" signature="14107:15006" placeholder=".header-main" />
+                <marker date="1442845480352" expanded="true" signature="14132:14261" placeholder=".deviz-left" />
+                <marker date="1442845480352" expanded="true" signature="14158:14261" placeholder=".deviz-left-bg" />
+                <marker date="1442845480352" expanded="true" signature="14274:14987" placeholder="#request2.form-right-bg" />
+                <marker date="1442845480352" expanded="true" signature="14312:14987" placeholder=".form-right" />
+                <marker date="1442845480352" expanded="true" signature="15000:15006" placeholder=".clear" />
+                <marker date="1442845480352" expanded="true" signature="15015:15936" placeholder=".content1" />
+                <marker date="1442845480352" expanded="true" signature="15096:15936" placeholder=".content1-ins" />
+                <marker date="1442845480352" expanded="true" signature="15122:15282" placeholder=".c1i" />
+                <marker date="1442845480352" expanded="true" signature="15295:15429" placeholder=".c1i" />
+                <marker date="1442845480352" expanded="true" signature="15442:15582" placeholder=".c1i" />
+                <marker date="1442845480352" expanded="true" signature="15595:15746" placeholder=".c1i" />
+                <marker date="1442845480352" expanded="true" signature="15759:15917" placeholder=".c1i" />
+                <marker date="1442845480352" expanded="true" signature="15930:15936" placeholder=".clear" />
+                <marker date="1442845480352" expanded="true" signature="15945:16826" placeholder=".content2" />
+                <marker date="1442845480352" expanded="true" signature="16010:16826" placeholder=".content1-ins" />
+                <marker date="1442845480352" expanded="true" signature="16036:16193" placeholder=".c1i" />
+                <marker date="1442845480352" expanded="true" signature="16206:16355" placeholder=".c1i" />
+                <marker date="1442845480352" expanded="true" signature="16368:16506" placeholder=".c1i" />
+                <marker date="1442845480352" expanded="true" signature="16519:16656" placeholder=".c1i" />
+                <marker date="1442845480352" expanded="true" signature="16669:16807" placeholder=".c1i" />
+                <marker date="1442845480352" expanded="true" signature="16820:16826" placeholder=".clear" />
+                <marker date="1442845480352" expanded="true" signature="16835:20237" placeholder=".content3" />
+                <marker date="1442845480352" expanded="true" signature="16888:20237" placeholder=".content1-ins" />
+                <marker date="1442845480352" expanded="true" signature="20231:20237" placeholder=".clear" />
+                <marker date="1442845480352" expanded="true" signature="20246:20255" placeholder=".content8" />
+                <marker date="1442845480352" expanded="true" signature="20262:20811" placeholder="#header" />
+                <marker date="1442845480352" expanded="true" signature="20278:20288" placeholder=".footer-bg" />
+                <marker date="1442845480352" expanded="true" signature="20297:20811" placeholder="#header-top" />
+                <marker date="1442845480352" expanded="true" signature="20319:20811" placeholder=".header-top-bg" />
+                <marker date="1442845480352" expanded="true" signature="20346:20811" placeholder=".header-main" />
+                <marker date="1442845480352" expanded="true" signature="20373:20427" placeholder=".header-left" />
+                <marker date="1442845480352" expanded="true" signature="20442:20637" placeholder=".header-right" />
+                <marker date="1442845480352" expanded="true" signature="20652:20790" placeholder=".header-center" />
+                <marker date="1442845480352" expanded="true" signature="20805:20811" placeholder=".clear                " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.222222">
+              <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="almaznoe_burenie.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/almaznoe_burenie.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.222222">
+              <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="brizer.html.erb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/brizer.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9142857">
+              <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,7 +209,6 @@
         <option value="$PROJECT_DIR$/app/views/market/index.html.erb" />
         <option value="$PROJECT_DIR$/vendor/assets/javascripts/jquery.scrollUp.js" />
         <option value="$PROJECT_DIR$/app/controllers/almaznoe_burenie_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/almaznoe_burenie.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/almaznoe_burenie.scss" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/almaznoe_burenie.js" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
@@ -100,25 +219,26 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/brizer.scss" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/brizer.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/brizer_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/market_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/base.css" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/client_controller.rb" />
         <option value="$PROJECT_DIR$/app/mailers/client_mailer.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/main.js" />
-        <option value="$PROJECT_DIR$/app/views/almaznoe_burenie/index.html.slim" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/scrollup.js" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/market/index.html.slim" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/main.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/base.css.scss" />
         <option value="$PROJECT_DIR$/app/views/brizer/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/almaznoe_burenie/index.html.slim" />
         <option value="$PROJECT_DIR$/app/views/application/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/almaznoe_burenie.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/brizer.html.erb" />
       </list>
     </option>
   </component>
@@ -241,6 +361,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aeromontazh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="brizer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -264,6 +406,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aeromontazh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="almaznoe_burenie" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -987,9 +1151,9 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47588426" sideWeight="0.49806523" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47588426" sideWeight="0.49806523" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2498618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.488746" sideWeight="0.49806523" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.488746" sideWeight="0.49806523" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39978564" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1229,13 +1393,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="3" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/almaznoe_burenie.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20729366">
-          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1253,13 +1411,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/brizer.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27639157">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/brizer_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1272,13 +1423,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1349,14 +1493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/almaznoe_burenie/index.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/scrollup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1413,12 +1549,122 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/almaznoe_burenie/index.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.555555">
+          <caret line="459" column="20" selection-start-line="459" selection-start-column="20" selection-end-line="459" selection-end-column="20" />
+          <folding>
+            <marker date="1442845480352" expanded="true" signature="144:1678" placeholder="#header" />
+            <marker date="1442845480352" expanded="true" signature="160:170" placeholder=".header-bg" />
+            <marker date="1442845480352" expanded="true" signature="179:1678" placeholder="#header-top" />
+            <marker date="1442845480352" expanded="true" signature="201:729" placeholder=".header-top-bg" />
+            <marker date="1442845480352" expanded="true" signature="228:729" placeholder=".header-main" />
+            <marker date="1442845480352" expanded="true" signature="255:347" placeholder=".header-left" />
+            <marker date="1442845480352" expanded="true" signature="362:555" placeholder=".header-right" />
+            <marker date="1442845480352" expanded="true" signature="570:708" placeholder=".header-center" />
+            <marker date="1442845480352" expanded="true" signature="723:729" placeholder=".clear" />
+            <marker date="1442845480352" expanded="true" signature="740:1678" placeholder=".header-main" />
+            <marker date="1442845480352" expanded="true" signature="765:1505" placeholder="#request1.form-right-bg" />
+            <marker date="1442845480352" expanded="true" signature="803:1505" placeholder=".form-right" />
+            <marker date="1442845480352" expanded="true" signature="1518:1678" placeholder=".deviz-left" />
+            <marker date="1442845480352" expanded="true" signature="1544:1647" placeholder=".deviz-left-bg" />
+            <marker date="1442845480352" expanded="true" signature="1662:1678" placeholder=".deviz-left-flag" />
+            <marker date="1442845480352" expanded="true" signature="1685:20255" placeholder=".content" />
+            <marker date="1442845480352" expanded="true" signature="1702:2263" placeholder=".content7" />
+            <marker date="1442845480352" expanded="true" signature="1757:2263" placeholder=".content1-ins" />
+            <marker date="1442845480352" expanded="true" signature="1783:1870" placeholder=".c1i" />
+            <marker date="1442845480352" expanded="true" signature="1883:1957" placeholder=".c1i" />
+            <marker date="1442845480352" expanded="true" signature="1970:2062" placeholder=".c1i" />
+            <marker date="1442845480352" expanded="true" signature="2075:2153" placeholder=".c1i" />
+            <marker date="1442845480352" expanded="true" signature="2166:2244" placeholder=".c1i" />
+            <marker date="1442845480352" expanded="true" signature="2257:2263" placeholder=".clear" />
+            <marker date="1442845480352" expanded="true" signature="2272:2934" placeholder=".content4" />
+            <marker date="1442845480352" expanded="true" signature="2321:2934" placeholder=".content1-ins" />
+            <marker date="1442845480352" expanded="true" signature="2347:2444" placeholder=".c4i.c4i2" />
+            <marker date="1442845480352" expanded="true" signature="2457:2566" placeholder=".c4i" />
+            <marker date="1442845480352" expanded="true" signature="2579:2672" placeholder=".c4i" />
+            <marker date="1442845480352" expanded="true" signature="2685:2784" placeholder=".c4i" />
+            <marker date="1442845480352" expanded="true" signature="2797:2915" placeholder=".c4i" />
+            <marker date="1442845480352" expanded="true" signature="2928:2934" placeholder=".clear" />
+            <marker date="1442845480352" expanded="true" signature="2943:10523" placeholder="#calc_temp2.content5" />
+            <marker date="1442845480352" expanded="true" signature="2974:10523" placeholder="#workcalculator title=(&quot;Онлайн калькулятор&quot;)" />
+            <marker date="1442845480352" expanded="true" signature="8027:8046" placeholder="#amount_result 3000" />
+            <marker date="1442845480352" expanded="true" signature="14087:15006" placeholder=".content6" />
+            <marker date="1442845480352" expanded="true" signature="14107:15006" placeholder=".header-main" />
+            <marker date="1442845480352" expanded="true" signature="14132:14261" placeholder=".deviz-left" />
+            <marker date="1442845480352" expanded="true" signature="14158:14261" placeholder=".deviz-left-bg" />
+            <marker date="1442845480352" expanded="true" signature="14274:14987" placeholder="#request2.form-right-bg" />
+            <marker date="1442845480352" expanded="true" signature="14312:14987" placeholder=".form-right" />
+            <marker date="1442845480352" expanded="true" signature="15000:15006" placeholder=".clear" />
+            <marker date="1442845480352" expanded="true" signature="15015:15936" placeholder=".content1" />
+            <marker date="1442845480352" expanded="true" signature="15096:15936" placeholder=".content1-ins" />
+            <marker date="1442845480352" expanded="true" signature="15122:15282" placeholder=".c1i" />
+            <marker date="1442845480352" expanded="true" signature="15295:15429" placeholder=".c1i" />
+            <marker date="1442845480352" expanded="true" signature="15442:15582" placeholder=".c1i" />
+            <marker date="1442845480352" expanded="true" signature="15595:15746" placeholder=".c1i" />
+            <marker date="1442845480352" expanded="true" signature="15759:15917" placeholder=".c1i" />
+            <marker date="1442845480352" expanded="true" signature="15930:15936" placeholder=".clear" />
+            <marker date="1442845480352" expanded="true" signature="15945:16826" placeholder=".content2" />
+            <marker date="1442845480352" expanded="true" signature="16010:16826" placeholder=".content1-ins" />
+            <marker date="1442845480352" expanded="true" signature="16036:16193" placeholder=".c1i" />
+            <marker date="1442845480352" expanded="true" signature="16206:16355" placeholder=".c1i" />
+            <marker date="1442845480352" expanded="true" signature="16368:16506" placeholder=".c1i" />
+            <marker date="1442845480352" expanded="true" signature="16519:16656" placeholder=".c1i" />
+            <marker date="1442845480352" expanded="true" signature="16669:16807" placeholder=".c1i" />
+            <marker date="1442845480352" expanded="true" signature="16820:16826" placeholder=".clear" />
+            <marker date="1442845480352" expanded="true" signature="16835:20237" placeholder=".content3" />
+            <marker date="1442845480352" expanded="true" signature="16888:20237" placeholder=".content1-ins" />
+            <marker date="1442845480352" expanded="true" signature="20231:20237" placeholder=".clear" />
+            <marker date="1442845480352" expanded="true" signature="20246:20255" placeholder=".content8" />
+            <marker date="1442845480352" expanded="true" signature="20262:20811" placeholder="#header" />
+            <marker date="1442845480352" expanded="true" signature="20278:20288" placeholder=".footer-bg" />
+            <marker date="1442845480352" expanded="true" signature="20297:20811" placeholder="#header-top" />
+            <marker date="1442845480352" expanded="true" signature="20319:20811" placeholder=".header-top-bg" />
+            <marker date="1442845480352" expanded="true" signature="20346:20811" placeholder=".header-main" />
+            <marker date="1442845480352" expanded="true" signature="20373:20427" placeholder=".header-left" />
+            <marker date="1442845480352" expanded="true" signature="20442:20637" placeholder=".header-right" />
+            <marker date="1442845480352" expanded="true" signature="20652:20790" placeholder=".header-center" />
+            <marker date="1442845480352" expanded="true" signature="20805:20811" placeholder=".clear                " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/application/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.083333336">
-          <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+        <state vertical-scroll-proportion="-2.8888888">
+          <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.222222">
+          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/almaznoe_burenie.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.222222">
+          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/brizer.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9142857">
+          <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
