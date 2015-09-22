@@ -1223,3 +1223,9 @@ section.sale .form {
 .popup_block .form b {
   color: #000;
 }
+
+@media screen and (max-width: 980px) {
+  #brizers .view .mask, #almaz .view .mask {
+    left: 30px !important;
+  }
+}
