@@ -63,7 +63,7 @@ function sendMainOrder() {
 
 $(function () {
     var note = $('#note'),
-        ts = new Date(2015, 9, 1),
+        ts = new Date(2015, 9, 7),
         newYear = true;
 
     if((new Date()) > ts){
@@ -89,30 +89,34 @@ $(function () {
 });
 
 $(function () {
-    $('.hasTooltip').qtip({
-        content: {
-            text: $('#qtip-0') // Use the "div" element next to this for the content
-        },
-        position: {
-            my: 'bottom center',
-            at: 'top center',
-        },
-        show: {
-            effect: function() {
-                $(this).slideDown();
-            }
-        },
-        hide: {
-            event: 'unfocus',
-            effect: function() {
-                $(this).slideUp();
-            }
-        },
-        style: {
-            classes: 'qtip-blue qtip-shadow'
-        }
-    });
+    $('[data-toggle="tooltip"]').tooltip()
 });
+
+//$(function () {
+//    $('.hasTooltip').qtip({
+//        content: {
+//            text: $('#qtip-0') // Use the "div" element next to this for the content
+//        },
+//        position: {
+//            my: 'bottom center',
+//            at: 'top center',
+//        },
+//        show: {
+//            effect: function() {
+//                $(this).slideDown();
+//            }
+//        },
+//        hide: {
+//            event: 'unfocus',
+//            effect: function() {
+//                $(this).slideUp();
+//            }
+//        },
+//        style: {
+//            classes: 'qtip-blue qtip-shadow'
+//        }
+//    });
+//});
 
 $(function () {
     $('#scrollUp').animate({bottom: "+=20"}, 1000);
