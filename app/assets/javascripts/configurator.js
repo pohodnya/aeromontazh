@@ -9,8 +9,7 @@ var
 // Отправка заявки
 function sendOrder() {
     var fullName = $('#brizerName').html();
-    if (mount){
-        fullName += ' + Монтаж';
+    if (mount){fullName += ' + Монтаж';
     }
 
     var jqxhr = $.ajax({
@@ -169,6 +168,7 @@ function changeClimat(flag) {
     }
     changeDescription();
 }
+
 
 function changeMount(flag) {
     if (flag != mount) {
