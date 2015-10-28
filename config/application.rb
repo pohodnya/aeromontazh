@@ -30,6 +30,8 @@ module Myapp
 
     # config.mailgun_api_key = 'key-8d0au3n6g4-yn4wklb4pu7qi49ywe5u8'
 
+    config.assets.paths << Rails.root.join("app", "assets", "fonts")
+
     ActionMailer::Base.default from: 'AeroMontazh <noreply.aeromontazh@gmail.com>'
   end
 end

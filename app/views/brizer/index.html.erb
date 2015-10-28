@@ -1,3 +1,4 @@
+<%= render 'partials/main_top_menu' %>
 <section class="top-menu">
   <div class="page">
     <div id="navigation">
@@ -458,5 +459,8 @@
 
 
 
+<script type="text/javascript">
+  $('#brizer_item').addClass('current');
+</script>
 
 <%= javascript_tag "const AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery? %>

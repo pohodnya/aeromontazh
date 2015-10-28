@@ -1,0 +1,280 @@
+body {
+  margin: 0;
+}
+
+#main-top-header nav ul {
+  padding: 10px 0px 0px 0px !important;
+}
+
+
+#main-top-header nav ul li a {
+  text-decoration: none;
+}
+
+.wrapper, .graywrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  .content {
+    width: 980px;
+    margin: 0 auto;
+  }
+}
+.graywrapper {
+  background-color: #f7f7f7;
+  clear: both;
+}
+
+#magic_air_start {
+  margin-top: 60px;
+  background: asset_url('magic_air.png') -25px 0 no-repeat;
+  height: 400px;
+}
+
+#long_menu {
+  background-color: #8e8e8e;
+  width: 100%;
+  ul {
+    list-style: none;
+    li {
+      display: inline-block;
+      margin: 10px 0;
+      text-align: center;
+      vertical-align: middle;
+      width: 19%;
+      a {
+        font-family: MyriadPro-Regular, sans-serif;
+        font-size: 13px;
+        font-stretch: normal;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 200;
+        text-transform: uppercase;
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        margin: 0 auto;
+        width: 120px;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.razd {
+  background: asset_url('razd.png') top center no-repeat;
+  height: 35px;
+}
+.razd2 {
+  background: asset_url('razd2.png') top center no-repeat;
+  height: 35px;
+}
+.razd3 {
+  background: asset_url('razd3.png') top center no-repeat;
+  height: 35px;
+}
+
+@font-face {
+  font-family: 'MyriadPro-Light';
+  src: asset_url('Myriad-Pro-Light.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: asset_url('MyriadPro-Regular.otf');
+}
+
+h2 {
+  font-family: MyriadPro-Light, sans-serif;
+  font-size: 42px;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: MyriadPro-Light, sans-serif;
+  font-size: 26px;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+h5 {
+  font-family: MyriadPro-Light, sans-serif;
+  font-size: 16px;
+  margin-top: -20px;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  text-align: center;
+  font-weight: 300;
+}
+
+.description {
+  width: 800px;
+  margin: 0 auto;
+  p {
+    color: rgb(102, 102, 102);
+    display: block;
+    font-family: MyriadPro-Light, sans-serif;
+    font-size: 22px;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 200;
+    text-align: center;
+  }
+}
+
+#what {
+  padding-top: 30px;
+}
+
+#where {
+  width: 100%;
+  padding-top: 30px;
+  .cont {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    img {
+      width: 90%;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+  }
+}
+
+#works {
+  padding-top: 30px;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+  img {
+    display: inline-block;
+    width: 45%;
+  }
+  .rdescription {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    p {
+      color: rgb(102, 102, 102);
+      display: block;
+      font-family: MyriadPro-Light, sans-serif;
+      font-size: 22px;
+      font-stretch: normal;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 200;
+      text-align: justify;
+    }
+  }
+}
+
+
+.indent {
+  margin-top: 45px;
+}
+
+#inside {
+  padding-top: 30px;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+  img {
+    display: inline-block;
+    width: 50%;
+    float: right;
+  }
+  .ldescription {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    p {
+      color: rgb(102, 102, 102);
+      display: block;
+      font-family: MyriadPro-Light, sans-serif;
+      font-size: 22px;
+      font-stretch: normal;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 200;
+      text-align: justify;
+    }
+  }
+}
+
+#goods {
+  height: 884px;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+  padding-top: 60px;
+  h2 {
+    margin-top: 0px !important;
+  }
+  img {
+    display: inline-block;
+    width: 45%;
+  }
+  .rdescription {
+    width: 50%;
+    max-width: 600px;
+    height: 200px;
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    ul {
+      list-style: none;
+      li {
+        .icon, .iconlast {
+          display: inline-block;
+          width: 20%;
+          vertical-align: top;
+          background: asset_url('dashed.png') 3px 0px repeat-y;
+          height: 200px;
+          img {
+            width: 70px;
+          }
+        }
+        .iconlast {
+          background: none;
+        }
+        .rcolumn {
+          display: inline-block;
+          width: 78%;
+          h3 {
+            text-align: left;
+            margin-top: 0px;
+          }
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    p {
+      color: rgb(102, 102, 102);
+      display: block;
+      font-family: MyriadPro-Light, sans-serif;
+      font-size: 22px;
+      font-stretch: normal;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 200;
+      text-align: justify;
+    }
+  }
+}
+

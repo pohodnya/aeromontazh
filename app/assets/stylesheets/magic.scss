@@ -1,4 +1,4 @@
-// Place all the styles related to the almaznoe_burenie controller here.
+// Place all the styles related to the magic controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 /*
@@ -6,15 +6,6 @@
 *= require scrollup
 *= require top-animate
 *= require jquery-ui
-*= require almaz-main
+*= require magic/magic
 *= require main-top
 */
-
-#main-top-header nav ul {
-  padding: 10px 0px 0px 0px;
-}
-
-
-#main-top-header nav ul li a {
-  text-decoration: none;
-}

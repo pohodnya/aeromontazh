@@ -1,6 +1,7 @@
 function toFrame(frameName) {
     $('#brizers').hide();
     $('#almaz').hide();
+    $('#magic').hide();
     $('#documents').hide();
     $('#contacts').hide();
     $('#' + frameName).show();

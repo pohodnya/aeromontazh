@@ -9,6 +9,7 @@
       <nav>
         <ul>
           <li id="brizers_li" class="current"><a href="#" onclick="toFrame('brizers');">Бризеры</a></li>
+          <li id="magic_li"><a href="#" onclick="toFrame('magic');">Magic Air <sup style="color: #319ebc !important;">new</sup></a></li>
           <li id="almaz_li"><a href="#" onclick="toFrame('almaz');">Алмазное бурение</a></li>
           <li id="documents_li"><a href="#" onclick="toFrame('documents');">Документы</a></li>
           <li id="contacts_li"><a href="#" onclick="toFrame('contacts');">Контакты</a></li>
@@ -58,7 +59,20 @@
             <%= link_to 'Узнать больше', brizer_index_path, :class => 'info' %>
           </div>
         </div>
+      </div>
 
+      <div id="magic" style="display: none;">
+        <span class="big-tagline">Tion Magic Air</span><br>
+
+        <%= link_to 'Подробнее >', magic_index_path, :class => 'moreAbout' %>
+        <div class="view view-second">
+          <%= image_tag('magic.png', :style => 'margin-left: 30px; border: 5px solid rgba(87, 191, 217, 0.7); border-radius: 500px;') %>
+          <div class="mask">
+            <h2>Tion Magic Air</h2>
+            <p>Tion Magic Air — это система умного микроклимата. Компактный гаджет собирает данные о состоянии воздуха и самостоятельно управляет климатическими бытовыми устройствами (бризер, кондиционер, очиститель, увлажнитель и т.п.) </p>
+            <%= link_to 'Узнать больше', magic_index_path, :class => 'info' %>
+          </div>
+        </div>
       </div>
       <div id="almaz" style="display: none;">
         <span class="big-tagline">Услуги алмазного бурения</span><br>

@@ -1,0 +1,74 @@
+#main-top-header {
+  background: #f6f6f6;
+  height: 58px;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 40px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 10000;
+  font-family: 'Helvetica Neue', helvetica, sans-serif !important;
+  font-size: 12px;
+}
+/* Social Links */
+#main-top-header aside ul {
+  padding-top: 18px;
+}
+/* Main Navigation */
+#main-top-header .select-menu { display: none; }
+#main-top-header nav { position: relative; }
+#main-top-header nav ul {
+  list-style: none;
+  float: right;
+  padding: 22px 0px 0px 0px;
+}
+#main-top-header nav ul li {
+  float: left;
+  margin-left: 30px;
+  position: relative;
+}
+#main-top-header nav ul li a{
+  color: #b5b5b5;
+  font-size: 12px;
+  -webkit-transition:color 0.2s ease-in;
+  -moz-transition:color 0.2s ease-in;
+  -o-transition:color 0.2s ease-in;
+  transition:color 0.2s ease-in;
+}
+#main-top-header nav ul li a:hover { color: #777; }
+#main-top-header nav ul li.current a{ color: #555; font-weight: bold; }
+#main-top-header nav span.arrow {
+  width: 24px;
+  height: 13px;
+  background: url('../images/light-nav_arrow.png') no-repeat;
+  display: none;
+  position: absolute;
+  top: 58px;
+}
+#main-top-header nav select {
+  float: right;
+  margin: 17px 10px 0px 0px;
+  -webkit-appearance: button;
+  -webkit-border-radius: 2px;
+  -webkit-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -webkit-user-select: none;
+  background-image: url(../images/select-arrow.png),
+  -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+  background-position: center right;
+  background-repeat: no-repeat;
+  border: 1px solid #ccc;
+  color: #555;
+  font-size: 13px;
+  padding: 3px 3px 3px 5px;
+  width: 115px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+#main-top-header .container {
+  width: 950px;
+  margin: 0 auto;
+}
+

@@ -38,5 +38,5 @@
 //= require magnific-popup
 //= require bootstrap.min
 //= require almaznoe_burenie
-//- require main
+//= require main
 //= require_tree .
