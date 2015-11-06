@@ -30,8 +30,8 @@ $( window ).resize(function() {
 function stickUnstick() {
     if(window.screen.width > 1200) {
         $('#logoConfig').sticky({topSpacing: 0});
-        $('#configTitleSection').sticky({topSpacing: 145});
-        $('#brizerExample').sticky({topSpacing: 210});
+        $('#configTitleSection').sticky({topSpacing: 210});
+        $('#brizerExample').sticky({topSpacing: 275});
     }
     else {
         $('#logoConfig').unstick();
