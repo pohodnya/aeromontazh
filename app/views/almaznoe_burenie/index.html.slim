@@ -486,3 +486,28 @@ div style=("max-width:1400px;margin:0 auto; margin-top: 57px;")
       i.checkmark.icon
 
 = javascript_tag "const AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery?
+
+javascript:
+  $(".calculator_data").change(function () {
+    changePrice();
+  });
+  $(".calculator_data").keyup(function () {
+    changePrice();
+  });
+  $('#drilling_anker').change(function () {
+    changePrice();
+  });
+  $('#drilling_inoblast').change(function () {
+    changePrice();
+  });
+  $('#drilling_clear').change(function () {
+    changePrice();
+  });
+  $("#drilling_depth").keyup(function () {
+    changePrice();
+  });
+  $("#drilling_inoblast").change(function () {
+    $("#distance_tr").toggle(400);
+    //if ($("drilling_inoblast").val() == true)
+    //
+  });
