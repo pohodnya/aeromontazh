@@ -73,7 +73,6 @@ group :development do
   gem 'capistrano-bundler'
   # Добавление поддержки Rbenv (менеджера версий для Ruby)
   gem 'capistrano-rbenv'
-  gem 'capistrano-rvm'
   # Интеграция пумы и капистрано
   gem 'capistrano3-puma'
 end
