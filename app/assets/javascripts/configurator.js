@@ -197,35 +197,35 @@ function changeDescription() {
     switch (brizerType) {
         case 'lite':
             $('#brizerName').html('Бризер Тион О2 Lite');
-            price = 18300;
+            price = 20700;
             break;
         case 'liteHepa':
             $('#brizerName').html('Бризер Тион О2 Lite + HEPA');
-            price = 20190;
+            price = 22690;
             break;
         case 'liteAK':
             $('#brizerName').html('Бризер Тион О2 Lite + AK');
-            price = 19790;
+            price = 22290;
             break;
         case 'liteHepaAK':
             $('#brizerName').html('Бризер Тион О2 Lite + HEPA + AK');
-            price = 21680;
+            price = 24280;
             break;
         case 'base':
             $('#brizerName').html('Бризер Тион О2 Base');
-            price = 21300;
+            price = 23900;
             break;
         case 'baseHepa':
             $('#brizerName').html('Бризер Тион О2 Base + HEPA');
-            price = 23190;
+            price = 25890;
             break;
         case 'baseAK':
             $('#brizerName').html('Бризер Тион О2 Base + AK');
-            price = 22790;
+            price = 25490;
             break;
         case 'standart':
             $('#brizerName').html('Бризер Тион О2 Standart');
-            price = 23900;
+            price = 26900;
             break;
     }
     $('#brizerPrice').html(price + rubleIcon);
