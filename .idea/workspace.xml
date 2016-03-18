@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fe8182e-cc1d-4cfc-ad60-3b979a60bb37" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/untitled.iml" afterPath="$PROJECT_DIR$/.idea/untitled.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled.iws" />
@@ -21,7 +23,7 @@
     <SUITE FILE_PATH="coverage/untitled@forwarding__untitled.coverage" NAME="forwarding: untitled Coverage Results" MODIFIED="1440830606734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="untitled" />
     <SUITE FILE_PATH="coverage/untitled@deploy_restart__untitled.coverage" NAME="deploy:restart: untitled Coverage Results" MODIFIED="1440853987123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="untitled" />
     <SUITE FILE_PATH="coverage/untitled@unicorn_restart__untitled.coverage" NAME="unicorn:restart: untitled Coverage Results" MODIFIED="1440764341669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="untitled" />
-    <SUITE FILE_PATH="coverage/untitled@Development__untitled.coverage" NAME="Development: untitled Coverage Results" MODIFIED="1457933606186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="untitled" />
+    <SUITE FILE_PATH="coverage/untitled@Development__untitled.coverage" NAME="Development: untitled Coverage Results" MODIFIED="1458316870600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="untitled" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -37,6 +39,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.slim" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/almaznoe_burenie/index.html.slim">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.9345795">
+              <caret line="258" column="31" selection-start-line="258" selection-start-column="31" selection-end-line="258" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -65,9 +77,14 @@
       <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/brizer/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="83" column="40" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
-              <folding />
+            <state vertical-scroll-proportion="-8.035714">
+              <caret line="70" column="40" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
+              <folding>
+                <marker date="1458316184875" expanded="false" signature="1609:1683" placeholder="..." />
+                <marker date="1458316184875" expanded="true" signature="1805:3023" placeholder="..." />
+                <marker date="1458316184875" expanded="true" signature="1832:1911" placeholder="..." />
+                <marker date="1458316184875" expanded="true" signature="1939:3012" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,7 +104,98 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="242" column="0" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1458316025247" expanded="true" signature="53:248" placeholder=".page" />
+                <marker date="1458316025247" expanded="true" signature="63:248" placeholder="#navigation.floatedLeft" />
+                <marker date="1458316025247" expanded="true" signature="281:632" placeholder=".page#top" />
+                <marker date="1458316025247" expanded="true" signature="297:422" placeholder=".logo" />
+                <marker date="1458316025247" expanded="true" signature="429:532" placeholder=".header_info" />
+                <marker date="1458316025247" expanded="true" signature="539:632" placeholder=".call" />
+                <marker date="1458316025247" expanded="true" signature="662:765" placeholder=".page" />
+                <marker date="1458316025247" expanded="true" signature="789:6825" placeholder=".page" />
+                <marker date="1458316025247" expanded="true" signature="1371:6825" placeholder=".ui.grid" />
+                <marker date="1458316025247" expanded="true" signature="1386:2854" placeholder=".five.wide.column#brizerExample" />
+                <marker date="1458316025247" expanded="true" signature="1852:2854" placeholder=".description" />
+                <marker date="1458316025247" expanded="true" signature="1910:2854" placeholder=".ui.middle.aligned.divided.list" />
+                <marker date="1458316025247" expanded="true" signature="1954:2206" placeholder=".item" />
+                <marker date="1458316025247" expanded="true" signature="1974:2062" placeholder=".right.floated.content#brizerPrice" />
+                <marker date="1458316025247" expanded="true" signature="2145:2206" placeholder=".content#brizerName" />
+                <marker date="1458316025247" expanded="true" signature="2219:2447" placeholder=".item#mountItem" />
+                <marker date="1458316025247" expanded="true" signature="2249:2323" placeholder=".right.floated.content" />
+                <marker date="1458316025247" expanded="true" signature="2406:2447" placeholder=".content" />
+                <marker date="1458316025247" expanded="true" signature="2460:2593" placeholder=".item#allItem" />
+                <marker date="1458316025247" expanded="true" signature="2488:2593" placeholder=".right.floated.content" />
+                <marker date="1458316025247" expanded="true" signature="2606:2854" placeholder=".item" />
+                <marker date="1458316025247" expanded="true" signature="2626:2854" placeholder=".right.floated.content" />
+                <marker date="1458316025247" expanded="true" signature="2684:2854" placeholder=".ui.positive.left.labeled.icon.button#createOrder onclick='$(&quot;.ui.modal#newOrder&quot;).modal(&quot;show&quot;);'" />
+                <marker date="1458316025247" expanded="true" signature="2861:6825" placeholder=".nine.wide.column.right.floated#brizerContext" />
+                <marker date="1458316025247" expanded="true" signature="2988:3345" placeholder=".ui.grid" />
+                <marker date="1458316025247" expanded="true" signature="3007:3166" placeholder=".four.wide.column" />
+                <marker date="1458316025247" expanded="true" signature="3037:3166" placeholder=".ui.black.basic.button.climatButton#withoutHeater onclick='changeClimat(false);'" />
+                <marker date="1458316025247" expanded="true" signature="3177:3345" placeholder=".four.wide.column" />
+                <marker date="1458316025247" expanded="true" signature="3207:3345" placeholder=".ui.inverted.blue.basic.button.active.climatButton#withHeater onclick='changeClimat(true);'" />
+                <marker date="1458316025247" expanded="true" signature="3354:3510" placeholder=".description.aboutFilter#aboutWithHeater Функция подогрева с климат-контролем позволяет использовать прибор в холодное время года при температурах ниже 0°С." />
+                <marker date="1458316025247" expanded="true" signature="3519:3676" placeholder=".description.aboutFilter.hidden#aboutWithoutHeater Бризер без подогрева подходит для теплых регионов, где температура в зимнее время не опускается ниже 0°С." />
+                <marker date="1458316025247" expanded="true" signature="3761:4372" placeholder=".ui.grid" />
+                <marker date="1458316025247" expanded="true" signature="3780:3930" placeholder=".four.wide.column" />
+                <marker date="1458316025247" expanded="true" signature="3810:3930" placeholder=".ui.black.basic.button.filterButton" />
+                <marker date="1458316025247" expanded="true" signature="3941:4154" placeholder=".four.wide.column" />
+                <marker date="1458316025247" expanded="true" signature="3971:4154" placeholder=".ui.inverted.blue.active.basic.button.filterButton#hepa onclick='changeFilter(&quot;hepa&quot;);'" />
+                <marker date="1458316025247" expanded="true" signature="4165:4372" placeholder=".four.wide.column" />
+                <marker date="1458316025247" expanded="true" signature="4195:4372" placeholder=".ui.inverted.blue.active.basic.button.filterButton#ak onclick='changeFilter(&quot;ak&quot;);'" />
+                <marker date="1458316025247" expanded="true" signature="4381:4782" placeholder=".description.aboutFilter#aboutF7" />
+                <marker date="1458316025247" expanded="true" signature="4791:5306" placeholder=".description.aboutFilter#aboutHepa" />
+                <marker date="1458316025247" expanded="true" signature="5315:5750" placeholder=".description.aboutFilter#aboutAk" />
+                <marker date="1458316025247" expanded="true" signature="5821:6217" placeholder=".ui.grid" />
+                <marker date="1458316025247" expanded="true" signature="5840:6054" placeholder=".four.wide.column" />
+                <marker date="1458316025247" expanded="true" signature="5870:6054" placeholder=".ui.black.basic.button.climatButton#withMount onclick='changeMount(true);'" />
+                <marker date="1458316025247" expanded="true" signature="6065:6217" placeholder=".four.wide.column" />
+                <marker date="1458316025247" expanded="true" signature="6095:6217" placeholder=".ui.inverted.blue.basic.button.active.climatButton#withoutMount onclick='changeMount(false);'" />
+                <marker date="1458316025247" expanded="true" signature="6226:6737" placeholder=".description.aboutFilter#aboutWithHeater" />
+                <marker date="1458316025247" expanded="true" signature="6828:7892" placeholder=".ui.modal#newOrder" />
+                <marker date="1458316025247" expanded="true" signature="6864:6889" placeholder=".header Оформление заказа" />
+                <marker date="1458316025247" expanded="true" signature="6892:7699" placeholder=".content" />
+                <marker date="1458316025247" expanded="true" signature="6976:7228" placeholder=".three.fields" />
+                <marker date="1458316025247" expanded="true" signature="6998:7070" placeholder=".field" />
+                <marker date="1458316025247" expanded="true" signature="7079:7146" placeholder=".field" />
+                <marker date="1458316025247" expanded="true" signature="7155:7228" placeholder=".field" />
+                <marker date="1458316025247" expanded="true" signature="7235:7397" placeholder=".two.fields" />
+                <marker date="1458316025247" expanded="true" signature="7255:7321" placeholder=".field" />
+                <marker date="1458316025247" expanded="true" signature="7330:7397" placeholder=".field" />
+                <marker date="1458316025247" expanded="true" signature="7463:7699" placeholder=".three.fields" />
+                <marker date="1458316025247" expanded="true" signature="7485:7551" placeholder=".field" />
+                <marker date="1458316025247" expanded="true" signature="7560:7623" placeholder=".field" />
+                <marker date="1458316025247" expanded="true" signature="7632:7699" placeholder=".field" />
+                <marker date="1458316025247" expanded="true" signature="7702:7892" placeholder=".actions" />
+                <marker date="1458316025247" expanded="true" signature="7715:7787" placeholder=".ui.negative.left.labeled.icon.button" />
+                <marker date="1458316025247" expanded="true" signature="7792:7892" placeholder=".ui.positive.left.labeled.icon.button onclick='sendOrder();'" />
+                <marker date="1458316025247" expanded="true" signature="7895:8127" placeholder=".ui.small.modal#successOrder" />
+                <marker date="1458316025247" expanded="true" signature="7941:7972" placeholder=".header Заказ успешно отправлен" />
+                <marker date="1458316025247" expanded="true" signature="7975:8040" placeholder=".content" />
+                <marker date="1458316025247" expanded="true" signature="8043:8127" placeholder=".actions" />
+                <marker date="1458316025247" expanded="true" signature="8056:8127" placeholder=".ui.positive.left.labeled.icon.button" />
+                <marker date="1458316025247" expanded="true" signature="8128:8444" placeholder=".ui.small.modal#failOrder" />
+                <marker date="1458316025247" expanded="true" signature="8171:8198" placeholder=".header Ошибка при отправке" />
+                <marker date="1458316025247" expanded="true" signature="8201:8357" placeholder=".content" />
+                <marker date="1458316025247" expanded="true" signature="8360:8444" placeholder=".actions" />
+                <marker date="1458316025247" expanded="true" signature="8373:8444" placeholder=".ui.negative.left.labeled.icon.button" />
+                <marker date="1458316025247" expanded="true" signature="8446:10394" placeholder=".ui.modal#aboutMount" />
+                <marker date="1458316025247" expanded="true" signature="8484:8521" placeholder=".header Что такое Стандартный монтаж?" />
+                <marker date="1458316025247" expanded="true" signature="8524:10394" placeholder=".content" />
+                <marker date="1458316025247" expanded="true" signature="10308:10394" placeholder=".content#maxWidth  Все работы согласовываются с пользователем до начала их проведения." />
+                <marker date="1458316025247" expanded="true" signature="10427:10735" placeholder=".disabled" />
+                <marker date="1458316025247" expanded="true" signature="10439:10735" placeholder=".popup_call" />
+                <marker date="1458316025247" expanded="true" signature="10455:10735" placeholder=".popup_block" />
+                <marker date="1458316025247" expanded="true" signature="10474:10735" placeholder=".form" />
+                <marker date="1458316025247" expanded="true" signature="10737:10950" placeholder=".disabled" />
+                <marker date="1458316025247" expanded="true" signature="10749:10950" placeholder=".popup_true" />
+                <marker date="1458316025247" expanded="true" signature="10765:10950" placeholder=".popup_block" />
+                <marker date="1458316025247" expanded="true" signature="10784:10950" placeholder=".form" />
+                <marker date="1458316025247" expanded="true" signature="10951:11164" placeholder=".disabled" />
+                <marker date="1458316025247" expanded="true" signature="10963:11164" placeholder=".popup_fail" />
+                <marker date="1458316025247" expanded="true" signature="10979:11164" placeholder=".popup_block" />
+                <marker date="1458316025247" expanded="true" signature="10998:11164" placeholder=".form" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,10 +210,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Capfile" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Capfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Capfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29616088">
+            <state vertical-scroll-proportion="0.0">
               <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
               <folding />
             </state>
@@ -178,13 +286,13 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/main.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/top-animate.css" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/almaznoe_burenie.js" />
-        <option value="$PROJECT_DIR$/app/views/almaznoe_burenie/index.html.slim" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/scrollup.js" />
-        <option value="$PROJECT_DIR$/app/views/brizer/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/configurator.js" />
         <option value="$PROJECT_DIR$/app/views/market/index.html.slim" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/Capfile" />
+        <option value="$PROJECT_DIR$/app/views/brizer/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/almaznoe_burenie/index.html.slim" />
       </list>
     </option>
   </component>
@@ -204,9 +312,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1855" />
-    <option name="height" value="1056" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -231,6 +339,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -346,6 +456,50 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aeromontazh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="almaznoe_burenie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aeromontazh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -390,8 +544,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="RailsProjectView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -419,90 +571,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Rails.Development: untitled">
-    <configuration default="false" name="Rails console: untitled" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
-      <module name="untitled" />
-      <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <IRB_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <IRB_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
-      <IRB_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
-      <IRB_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/bin/rails" />
-      <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="console" />
-      <IRB_RUN_CONFIG NAME="IS_RAILS_CONSOLE" VALUE="true" />
-      <method />
-    </configuration>
-    <configuration default="false" name="unicorn:restart: untitled" type="CapistranoRunConfigurationType" factoryName="Capistrano" temporary="true">
-      <module name="untitled" />
-      <CAPISTRANO_RUN_CONFIGURATION NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <CAPISTRANO_RUN_CONFIGURATION NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <CAPISTRANO_RUN_CONFIGURATION NAME="SHOULD_USE_SDK" VALUE="false" />
-      <CAPISTRANO_RUN_CONFIGURATION NAME="ALTERN_SDK_NAME" VALUE="" />
-      <CAPISTRANO_RUN_CONFIGURATION NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <CAPISTRANO_RUN_CONFIG_SETTINGS_ID NAME="CAPISTRANO_TASK_NAME" VALUE="unicorn:restart" />
-      <CAPISTRANO_RUN_CONFIG_SETTINGS_ID NAME="CAPISTRANO_TASK_ARGS" VALUE="" />
-      <CAPISTRANO_RUN_CONFIG_SETTINGS_ID NAME="CAPISTRANO_STAGE" VALUE="" />
-      <method />
-    </configuration>
-    <configuration default="false" name="forwarding: untitled" type="CapistranoRunConfigurationType" factoryName="Capistrano" temporary="true">
-      <module name="untitled" />
-      <CAPISTRANO_RUN_CONFIGURATION NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <CAPISTRANO_RUN_CONFIGURATION NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <CAPISTRANO_RUN_CONFIGURATION NAME="SHOULD_USE_SDK" VALUE="false" />
-      <CAPISTRANO_RUN_CONFIGURATION NAME="ALTERN_SDK_NAME" VALUE="" />
-      <CAPISTRANO_RUN_CONFIGURATION NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <CAPISTRANO_RUN_CONFIG_SETTINGS_ID NAME="CAPISTRANO_TASK_NAME" VALUE="forwarding" />
-      <CAPISTRANO_RUN_CONFIG_SETTINGS_ID NAME="CAPISTRANO_TASK_ARGS" VALUE="" />
-      <CAPISTRANO_RUN_CONFIG_SETTINGS_ID NAME="CAPISTRANO_STAGE" VALUE="" />
-      <method />
-    </configuration>
-    <configuration default="false" name="deploy:restart: untitled" type="CapistranoRunConfigurationType" factoryName="Capistrano" temporary="true">
-      <module name="untitled" />
-      <CAPISTRANO_RUN_CONFIGURATION NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <CAPISTRANO_RUN_CONFIGURATION NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <CAPISTRANO_RUN_CONFIGURATION NAME="SHOULD_USE_SDK" VALUE="false" />
-      <CAPISTRANO_RUN_CONFIGURATION NAME="ALTERN_SDK_NAME" VALUE="" />
-      <CAPISTRANO_RUN_CONFIGURATION NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <CAPISTRANO_RUN_CONFIG_SETTINGS_ID NAME="CAPISTRANO_TASK_NAME" VALUE="deploy:restart" />
-      <CAPISTRANO_RUN_CONFIG_SETTINGS_ID NAME="CAPISTRANO_TASK_ARGS" VALUE="" />
-      <CAPISTRANO_RUN_CONFIG_SETTINGS_ID NAME="CAPISTRANO_STAGE" VALUE="" />
-      <method />
-    </configuration>
     <configuration default="true" type="CapistranoRunConfigurationType" factoryName="Capistrano">
       <module name="" />
       <CAPISTRANO_RUN_CONFIGURATION NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -722,24 +790,12 @@
       <envs />
       <method />
     </configuration>
-    <list size="8">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Rake.test: untitled" />
       <item index="1" class="java.lang.String" itemvalue="Rake.spec: untitled" />
       <item index="2" class="java.lang.String" itemvalue="Rails.Production: untitled" />
       <item index="3" class="java.lang.String" itemvalue="Rails.Development: untitled" />
-      <item index="4" class="java.lang.String" itemvalue="IRB console.Rails console: untitled" />
-      <item index="5" class="java.lang.String" itemvalue="Capistrano.unicorn:restart: untitled" />
-      <item index="6" class="java.lang.String" itemvalue="Capistrano.forwarding: untitled" />
-      <item index="7" class="java.lang.String" itemvalue="Capistrano.deploy:restart: untitled" />
     </list>
-    <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Capistrano.deploy:restart: untitled" />
-        <item index="1" class="java.lang.String" itemvalue="Capistrano.forwarding: untitled" />
-        <item index="2" class="java.lang.String" itemvalue="Capistrano.unicorn:restart: untitled" />
-        <item index="3" class="java.lang.String" itemvalue="IRB console.Rails console: untitled" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="StructureViewFactory">
@@ -1056,28 +1112,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19568823" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19789939" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37191853" sideWeight="0.50193477" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36548766" sideWeight="0.49806523" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2498618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3504823" sideWeight="0.49806523" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3504823" sideWeight="0.49806523" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39978564" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36548766" sideWeight="0.49806523" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3386924" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39978564" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1406,25 +1462,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/almaznoe_burenie/index.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.1785064">
-          <caret line="581" column="50" selection-start-line="581" selection-start-column="50" selection-end-line="581" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09375">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/almaznoe_burenie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1440,14 +1481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="65" column="33" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/brizer/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="83" column="40" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -1472,7 +1505,98 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="242" column="0" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1458316025247" expanded="true" signature="53:248" placeholder=".page" />
+            <marker date="1458316025247" expanded="true" signature="63:248" placeholder="#navigation.floatedLeft" />
+            <marker date="1458316025247" expanded="true" signature="281:632" placeholder=".page#top" />
+            <marker date="1458316025247" expanded="true" signature="297:422" placeholder=".logo" />
+            <marker date="1458316025247" expanded="true" signature="429:532" placeholder=".header_info" />
+            <marker date="1458316025247" expanded="true" signature="539:632" placeholder=".call" />
+            <marker date="1458316025247" expanded="true" signature="662:765" placeholder=".page" />
+            <marker date="1458316025247" expanded="true" signature="789:6825" placeholder=".page" />
+            <marker date="1458316025247" expanded="true" signature="1371:6825" placeholder=".ui.grid" />
+            <marker date="1458316025247" expanded="true" signature="1386:2854" placeholder=".five.wide.column#brizerExample" />
+            <marker date="1458316025247" expanded="true" signature="1852:2854" placeholder=".description" />
+            <marker date="1458316025247" expanded="true" signature="1910:2854" placeholder=".ui.middle.aligned.divided.list" />
+            <marker date="1458316025247" expanded="true" signature="1954:2206" placeholder=".item" />
+            <marker date="1458316025247" expanded="true" signature="1974:2062" placeholder=".right.floated.content#brizerPrice" />
+            <marker date="1458316025247" expanded="true" signature="2145:2206" placeholder=".content#brizerName" />
+            <marker date="1458316025247" expanded="true" signature="2219:2447" placeholder=".item#mountItem" />
+            <marker date="1458316025247" expanded="true" signature="2249:2323" placeholder=".right.floated.content" />
+            <marker date="1458316025247" expanded="true" signature="2406:2447" placeholder=".content" />
+            <marker date="1458316025247" expanded="true" signature="2460:2593" placeholder=".item#allItem" />
+            <marker date="1458316025247" expanded="true" signature="2488:2593" placeholder=".right.floated.content" />
+            <marker date="1458316025247" expanded="true" signature="2606:2854" placeholder=".item" />
+            <marker date="1458316025247" expanded="true" signature="2626:2854" placeholder=".right.floated.content" />
+            <marker date="1458316025247" expanded="true" signature="2684:2854" placeholder=".ui.positive.left.labeled.icon.button#createOrder onclick='$(&quot;.ui.modal#newOrder&quot;).modal(&quot;show&quot;);'" />
+            <marker date="1458316025247" expanded="true" signature="2861:6825" placeholder=".nine.wide.column.right.floated#brizerContext" />
+            <marker date="1458316025247" expanded="true" signature="2988:3345" placeholder=".ui.grid" />
+            <marker date="1458316025247" expanded="true" signature="3007:3166" placeholder=".four.wide.column" />
+            <marker date="1458316025247" expanded="true" signature="3037:3166" placeholder=".ui.black.basic.button.climatButton#withoutHeater onclick='changeClimat(false);'" />
+            <marker date="1458316025247" expanded="true" signature="3177:3345" placeholder=".four.wide.column" />
+            <marker date="1458316025247" expanded="true" signature="3207:3345" placeholder=".ui.inverted.blue.basic.button.active.climatButton#withHeater onclick='changeClimat(true);'" />
+            <marker date="1458316025247" expanded="true" signature="3354:3510" placeholder=".description.aboutFilter#aboutWithHeater Функция подогрева с климат-контролем позволяет использовать прибор в холодное время года при температурах ниже 0°С." />
+            <marker date="1458316025247" expanded="true" signature="3519:3676" placeholder=".description.aboutFilter.hidden#aboutWithoutHeater Бризер без подогрева подходит для теплых регионов, где температура в зимнее время не опускается ниже 0°С." />
+            <marker date="1458316025247" expanded="true" signature="3761:4372" placeholder=".ui.grid" />
+            <marker date="1458316025247" expanded="true" signature="3780:3930" placeholder=".four.wide.column" />
+            <marker date="1458316025247" expanded="true" signature="3810:3930" placeholder=".ui.black.basic.button.filterButton" />
+            <marker date="1458316025247" expanded="true" signature="3941:4154" placeholder=".four.wide.column" />
+            <marker date="1458316025247" expanded="true" signature="3971:4154" placeholder=".ui.inverted.blue.active.basic.button.filterButton#hepa onclick='changeFilter(&quot;hepa&quot;);'" />
+            <marker date="1458316025247" expanded="true" signature="4165:4372" placeholder=".four.wide.column" />
+            <marker date="1458316025247" expanded="true" signature="4195:4372" placeholder=".ui.inverted.blue.active.basic.button.filterButton#ak onclick='changeFilter(&quot;ak&quot;);'" />
+            <marker date="1458316025247" expanded="true" signature="4381:4782" placeholder=".description.aboutFilter#aboutF7" />
+            <marker date="1458316025247" expanded="true" signature="4791:5306" placeholder=".description.aboutFilter#aboutHepa" />
+            <marker date="1458316025247" expanded="true" signature="5315:5750" placeholder=".description.aboutFilter#aboutAk" />
+            <marker date="1458316025247" expanded="true" signature="5821:6217" placeholder=".ui.grid" />
+            <marker date="1458316025247" expanded="true" signature="5840:6054" placeholder=".four.wide.column" />
+            <marker date="1458316025247" expanded="true" signature="5870:6054" placeholder=".ui.black.basic.button.climatButton#withMount onclick='changeMount(true);'" />
+            <marker date="1458316025247" expanded="true" signature="6065:6217" placeholder=".four.wide.column" />
+            <marker date="1458316025247" expanded="true" signature="6095:6217" placeholder=".ui.inverted.blue.basic.button.active.climatButton#withoutMount onclick='changeMount(false);'" />
+            <marker date="1458316025247" expanded="true" signature="6226:6737" placeholder=".description.aboutFilter#aboutWithHeater" />
+            <marker date="1458316025247" expanded="true" signature="6828:7892" placeholder=".ui.modal#newOrder" />
+            <marker date="1458316025247" expanded="true" signature="6864:6889" placeholder=".header Оформление заказа" />
+            <marker date="1458316025247" expanded="true" signature="6892:7699" placeholder=".content" />
+            <marker date="1458316025247" expanded="true" signature="6976:7228" placeholder=".three.fields" />
+            <marker date="1458316025247" expanded="true" signature="6998:7070" placeholder=".field" />
+            <marker date="1458316025247" expanded="true" signature="7079:7146" placeholder=".field" />
+            <marker date="1458316025247" expanded="true" signature="7155:7228" placeholder=".field" />
+            <marker date="1458316025247" expanded="true" signature="7235:7397" placeholder=".two.fields" />
+            <marker date="1458316025247" expanded="true" signature="7255:7321" placeholder=".field" />
+            <marker date="1458316025247" expanded="true" signature="7330:7397" placeholder=".field" />
+            <marker date="1458316025247" expanded="true" signature="7463:7699" placeholder=".three.fields" />
+            <marker date="1458316025247" expanded="true" signature="7485:7551" placeholder=".field" />
+            <marker date="1458316025247" expanded="true" signature="7560:7623" placeholder=".field" />
+            <marker date="1458316025247" expanded="true" signature="7632:7699" placeholder=".field" />
+            <marker date="1458316025247" expanded="true" signature="7702:7892" placeholder=".actions" />
+            <marker date="1458316025247" expanded="true" signature="7715:7787" placeholder=".ui.negative.left.labeled.icon.button" />
+            <marker date="1458316025247" expanded="true" signature="7792:7892" placeholder=".ui.positive.left.labeled.icon.button onclick='sendOrder();'" />
+            <marker date="1458316025247" expanded="true" signature="7895:8127" placeholder=".ui.small.modal#successOrder" />
+            <marker date="1458316025247" expanded="true" signature="7941:7972" placeholder=".header Заказ успешно отправлен" />
+            <marker date="1458316025247" expanded="true" signature="7975:8040" placeholder=".content" />
+            <marker date="1458316025247" expanded="true" signature="8043:8127" placeholder=".actions" />
+            <marker date="1458316025247" expanded="true" signature="8056:8127" placeholder=".ui.positive.left.labeled.icon.button" />
+            <marker date="1458316025247" expanded="true" signature="8128:8444" placeholder=".ui.small.modal#failOrder" />
+            <marker date="1458316025247" expanded="true" signature="8171:8198" placeholder=".header Ошибка при отправке" />
+            <marker date="1458316025247" expanded="true" signature="8201:8357" placeholder=".content" />
+            <marker date="1458316025247" expanded="true" signature="8360:8444" placeholder=".actions" />
+            <marker date="1458316025247" expanded="true" signature="8373:8444" placeholder=".ui.negative.left.labeled.icon.button" />
+            <marker date="1458316025247" expanded="true" signature="8446:10394" placeholder=".ui.modal#aboutMount" />
+            <marker date="1458316025247" expanded="true" signature="8484:8521" placeholder=".header Что такое Стандартный монтаж?" />
+            <marker date="1458316025247" expanded="true" signature="8524:10394" placeholder=".content" />
+            <marker date="1458316025247" expanded="true" signature="10308:10394" placeholder=".content#maxWidth  Все работы согласовываются с пользователем до начала их проведения." />
+            <marker date="1458316025247" expanded="true" signature="10427:10735" placeholder=".disabled" />
+            <marker date="1458316025247" expanded="true" signature="10439:10735" placeholder=".popup_call" />
+            <marker date="1458316025247" expanded="true" signature="10455:10735" placeholder=".popup_block" />
+            <marker date="1458316025247" expanded="true" signature="10474:10735" placeholder=".form" />
+            <marker date="1458316025247" expanded="true" signature="10737:10950" placeholder=".disabled" />
+            <marker date="1458316025247" expanded="true" signature="10749:10950" placeholder=".popup_true" />
+            <marker date="1458316025247" expanded="true" signature="10765:10950" placeholder=".popup_block" />
+            <marker date="1458316025247" expanded="true" signature="10784:10950" placeholder=".form" />
+            <marker date="1458316025247" expanded="true" signature="10951:11164" placeholder=".disabled" />
+            <marker date="1458316025247" expanded="true" signature="10963:11164" placeholder=".popup_fail" />
+            <marker date="1458316025247" expanded="true" signature="10979:11164" placeholder=".popup_block" />
+            <marker date="1458316025247" expanded="true" signature="10998:11164" placeholder=".form" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1486,8 +1610,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Capfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29616088">
+        <state vertical-scroll-proportion="0.0">
           <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/brizer/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.035714">
+          <caret line="70" column="40" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
+          <folding>
+            <marker date="1458316184875" expanded="false" signature="1609:1683" placeholder="..." />
+            <marker date="1458316184875" expanded="true" signature="1805:3023" placeholder="..." />
+            <marker date="1458316184875" expanded="true" signature="1832:1911" placeholder="..." />
+            <marker date="1458316184875" expanded="true" signature="1939:3012" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/almaznoe_burenie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/almaznoe_burenie/index.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.9345795">
+          <caret line="258" column="31" selection-start-line="258" selection-start-column="31" selection-end-line="258" selection-end-column="31" />
           <folding />
         </state>
       </provider>
