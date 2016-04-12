@@ -63,7 +63,7 @@ function sendMainOrder() {
 
 $(function () {
     var note = $('#note'),
-        ts = new Date(2016, 2, 31),
+        ts = new Date(2016, 3, 30),
         newYear = true;
 
     if((new Date()) > ts){
