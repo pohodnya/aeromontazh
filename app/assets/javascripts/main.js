@@ -1,54 +1,45 @@
-function toFrame(frameName) {
-    $('#brizers').hide();
-    $('#almaz').hide();
-    $('#magic').hide();
-    $('#documents').hide();
-    $('#contacts').hide();
-    $('#' + frameName).show();
-    $('#' + frameName + '_li').parent().children('li').removeClass('current');
-    $('#' + frameName + '_li').addClass('current');
-
-}
-
-function sendFeedback() {
-    var name = $('#name').val();
-    var email = $('#email').val();
-    var subject = $('#subject').val();
-    var message = $('#message').val();
-    $('.form form .send_form').html('Отправляем...');
+function sendMainOrder(subject) {
+    var name = $('#userName').val();
+    var phone = $('#userPhone').val();
     var jqxhr = $.ajax({
-        type: "POST",
-        url: '/client',
-        data: { authenticity_token: AUTH_TOKEN, client: { phone: '', email: email, name: name, subject: subject, message: message}}
-    })
+            type: "POST",
+            url: '/client',
+            data: { authenticity_token: AUTH_TOKEN, client: { phone: phone, name: name, subject: subject, message: '', email: ''}}
+        })
         .done(function() {
-            $('.form form .send_form').html('Отправить');
-            $.arcticmodal('close');
-            $('.popup_true').arcticmodal();
+            $('.main-form').modal('hide');
+            $('.popup_true').modal('show');
         })
         .fail(function() {
-            $('.form form .send_form').html('Отправить');
-            $.arcticmodal('close');
-            $('.popup_fail').arcticmodal();
+            $('.main-form').modal('hide');
+            $('.popup_fail').modal('show');
         });
 }
 
-$(document).ready(function() {
-    $('.popup-gallery').magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        tLoading: 'Loading image #%curr%...',
-        mainClass: 'mfp-img-mobile',
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-        },
-        image: {
-            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-            titleSrc: function(item) {
-                return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
-            }
-        }
-    });
-});
+function sendFeedback() {
+    $('#sendButton').html('Отправляем');
+    var name = $('#first-name').val() + ' ' + $('#last-name').val();
+    var phone = $('#phone').val();
+    var email = $('#email').val();
+    var message = $('#message').val();
+    var jqxhr = $.ajax({
+            type: "POST",
+            url: '/client',
+            data: { authenticity_token: AUTH_TOKEN, client: { phone: phone, name: name, subject: 'С формы обратной связи', message: message, email: email}}
+        })
+        .done(function() {
+            $('.ui.page.dimmer.donemail').dimmer('show');
+            $('#sendButton').html('Отправить сообщение');
+            $('#first-name').val('');
+            $('#last-name').val('');
+            $('#phone').val('');
+            $('#email').val('');
+            $('#message').val('');
+            setTimeout("$('.ui.page.dimmer.donemail').dimmer('hide');", 5000);
+        })
+        .fail(function() {
+            $('.ui.page.dimmer.failmail').dimmer('show');
+            $('#sendButton').html('Отправить сообщение');
+            setTimeout("$('.ui.page.dimmer.failmail').dimmer('hide');", 5000);
+        });
+}

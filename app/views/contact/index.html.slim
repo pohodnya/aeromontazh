@@ -1,0 +1,62 @@
+.ui.segment.main-container.contacts-container
+  .ui.horizontal.divider.main-header
+    | Наши контакты
+
+  .ui.grid
+    .four.wide.column
+      .ui.list.contact-list
+        .item
+          i.icon.mail
+          .content info@aero-montazh.ru
+        .item
+          i.icon.phone
+          .content +7 (983) 310-59-58
+        .item
+          i.icon.phone
+          .content +7 (383) 239-59-58
+        .item
+          i.icon.vk
+          .content
+            a href="https://vk.com/aeromontazh" vk.com/aeromontazh
+        .item
+          i.icon.world
+          .content aero-montazh.ru
+    .two.wide.column
+    .ten.wide.column
+      form.ui.form
+        .field
+          label Имя
+          .two.fields
+            .field
+              input type="text" name="first-name" id='first-name' placeholder="Имя"
+            .field
+              input type="text" name="last-name" id='last-name' placeholder="Фамилия"
+        .field
+          label Контакты
+          .two.fields
+            .field
+              input type="text" name="phone" id='phone' placeholder="Телефон"
+            .field
+              input type="text" name="email" id='email' placeholder="E-mail"
+        .field
+          label Сообщение
+          textarea rows="3" name="message" id='message' placeholder="Текст сообщения"
+        .ui.button.right.floated#sendButton onclick='sendFeedback();' Отправить сообщение
+
+.ui.page.dimmer.donemail
+  .content
+    .center
+      h2.ui.inverted.icon.header
+        i.checkmark.icon
+        | Ваше сообщение отправлено
+        .sub.header Наши специалисты свяжутся с Вами в ближайшее время.
+
+.ui.page.dimmer.failmail
+  .content
+    .center
+      h2.ui.inverted.icon.header
+        i.frown.icon
+        | Ошибка отправки
+        .sub.header Попробуйте еще раз или свяжитесь с нами по телефону.
+
+= javascript_tag "const AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery?

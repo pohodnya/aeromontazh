@@ -1,187 +1,79 @@
-<div id="page_wrapper">
-  <header>
-    <div class="container">
-      <!-- Start Social Icons -->
-      <div style="float: left; margin-top: 10px;" data-background-alpha="0.0" data-buttons-color="#ffffff" data-counter-background-color="#ffffff" data-share-counter-size="12" data-top-button="false" data-share-counter-type="disable" data-share-style="2" data-mode="share" data-like-text-enable="false" data-mobile-view="true" data-icon-color="#ffffff" data-orientation="horizontal" data-text-color="#000000" data-share-shape="round" data-sn-ids="fb.vk.tw.ok.gp." data-share-size="30" data-background-color="#ffffff" data-preview-mobile="false" data-mobile-sn-ids="fb.vk.tw.wh.ok.gp." data-pid="1416139" data-counter-background-alpha="1.0" data-following-enable="false" data-exclude-show-more="true" data-selection-enable="true" class="uptolike-buttons" ></div>
-      <!-- End Social Icons -->
 
-      <!-- Start Navigation -->
-      <nav>
-        <ul>
-          <li id="brizers_li" class="current"><a href="#" onclick="toFrame('brizers');">Бризеры</a></li>
-          <li id="magic_li"><a href="#" onclick="toFrame('magic');">Magic Air <sup style="color: #319ebc !important;">new</sup></a></li>
-          <li id="almaz_li"><a href="#" onclick="toFrame('almaz');">Алмазное бурение</a></li>
-          <li id="documents_li"><a href="#" onclick="toFrame('documents');">Документы</a></li>
-          <li id="contacts_li"><a href="#" onclick="toFrame('contacts');">Контакты</a></li>
-        </ul>
-        <span class="arrow"></span>
-      </nav>
-      <!-- End Navigation -->
+  <div class="ui segment main-container" style="margin-top: 70px;">
+    <div class="ui horizontal divider main-header">
+      Наши продукты и услуги
     </div>
-  </header>
-  <!-- Start Header -->
+    <br/>
+    <div class="ui grid padding">
+      <div class="three wide column">
+        <%= image_tag('breez-320x320.png') %>
+      </div>
+      <div class="one wide column"></div>
+      <div class="ten wide column">
+        <h2 class="ui header">Бризер Tion O<sub>2</sub></h2>
+        <p class="ui left floated">Бризер Tion O2 — это бытовая приточная вентиляция для квартиры, дома или офиса. Компактный бризер позволяет проветривать комнату при закрытых окнах, подавая в дом очищенный, подогретый до комфортной температуры, насыщенный кислородом воздух. Поможет забыть о проблемах из-за духоты или холода от проветриваний окном. Поможет аллергикам или астматикам, нужен если в семье есть маленькие дети. Монтаж Tion O2 занимает всего за 1 час и не портит ремонт.</p>
+        <%= link_to 'Узнать больше', brizer_index_path, :class => "ui blue basic button right floated" %>
+      </div>
 
-  <!-- End Header -->
 
-  <section class="container">
-
-    <!-- Start App Info -->
-    <div id="app_info">
-      <!-- Start Logo -->
-      <a href="#home" class="logo">
-        <%= image_tag('aeromontazh_logo.png', width: "350px") %>
-      </a>
-      <!-- End Logo -->
-      <span class="tagline">Официальный дилер компании Тион.</span>
-      <p>
-        Наш город Новосибирск - крупный мегаполис. И никуда не деться от большого количества транспорта и выхлопных газов, пыли и шума за окном, тополиного пуха и аллергенов на улице.
-      </p>
-      <p>
-        Технологии не стоят на месте и наши ученые из Технопарка Новосибирского Академгородка разработали приборы, решающие вышеописанные проблемы. Это компактная приточная вентиляция Бризер Тион О2 и рециркулятор воздуха Тион Clever.
-      </p>
-      <p>
-        Позвольте Вашей семье дышать дома чистым воздухом, наслаждаться крепким и здоровым сном. Мы являемся официальным дилером компании производителя, а также у нас в штате имеются сертифицированные монтажники, которые доставят, установят и научат Вас пользоваться этим маленьким чудом.
-      </p>
     </div>
-    <!-- End App Info -->
 
-    <!-- Start Pages -->
-    <div id="pages">
-      <div id="brizers">
-        <span class="big-tagline">Компактная вентиляция Бризер Тион О2</span><br>
+    <!--<div class="ui divider"></div>-->
 
-        <%= link_to 'Подробнее >', brizer_index_path, :class => 'moreAbout' %>
-        <div class="view view-second">
-          <%= image_tag('o2-n.png', :style => 'margin-left: 30px; border: 5px solid rgba(87, 191, 217, 0.7); border-radius: 500px;') %>
-          <div class="mask">
-            <h2>Бризеры</h2>
-            <p>Бризер Tion O2 — это бытовая приточная вентиляция для квартиры, дома или офиса. Компактный бризер позволяет проветривать комнату при закрытых окнах, подавая в дом очищенный, насыщенный кислородом воздух. </p>
-            <%= link_to 'Узнать больше', brizer_index_path, :class => 'info' %>
-          </div>
-        </div>
+    <!--<div class="ui grid padding">-->
+      <!--<div class="three wide column">-->
+        <!--<%= image_tag('clev-320x320.jpg') %>-->
+      <!--</div>-->
+      <!--<div class="one wide column"></div>-->
+      <!--<div class="ten wide column">-->
+        <!--<h2 class="ui header">Очиститель Tion Clever</h2>-->
+        <!--<p class="ui item right floated">Профессиональный очиститель-обеззараживатель Tion Clever разработан для медицины и адаптирован для дома и офиса.  Уникальная «фишка» этого прибора — инактивация. Благодаря ей, прибор не только очищает воздух от пыли, аллергенов, вредных веществ и запахов, но и уничтожает абсолютно все виды инфекций. Эффективен от вируса свиного гриппа H1N1. Фильтры при этом остаются стерильными. Работает 24 часа в присутствии людей!</p>-->
+        <!--<%= link_to 'Узнать больше',clever_index_path, :class => "ui blue basic button right floated" %>-->
+      <!--</div>-->
+    <!--</div>-->
+
+    <div class="ui divider"></div>
+
+    <div class="ui grid padding">
+      <div class="ten wide column">
+        <h2 class="ui header">MagicAir</h2>
+        <p class="ui left floated">Tion MagicAir — это система умного микроклимата. Компактный гаджет собирает данные о состоянии воздуха и дает команды бытовым климатическим устройствам (бризер, кондиционер, увлажнитель и т.п.). Вы следите за параметрами микроклимата и управляете ими со смартфона!</p>
+        <%= link_to 'Узнать больше', magic_index_path, :class => "ui blue basic button right floated" %>
       </div>
-
-      <div id="magic" style="display: none;">
-        <span class="big-tagline">Tion Magic Air</span><br>
-
-        <%= link_to 'Подробнее >', magic_index_path, :class => 'moreAbout' %>
-        <div class="view view-second">
-          <%= image_tag('magic.png', :style => 'margin-left: 30px; border: 5px solid rgba(87, 191, 217, 0.7); border-radius: 500px;') %>
-          <div class="mask">
-            <h2>Tion Magic Air</h2>
-            <p>Tion Magic Air — это система умного микроклимата. Компактный гаджет собирает данные о состоянии воздуха и самостоятельно управляет климатическими бытовыми устройствами (бризер, кондиционер, очиститель, увлажнитель и т.п.) </p>
-            <%= link_to 'Узнать больше', magic_index_path, :class => 'info' %>
-          </div>
-        </div>
-      </div>
-      <div id="almaz" style="display: none;">
-        <span class="big-tagline">Услуги алмазного бурения</span><br>
-        <%= link_to 'Подробнее >', almaznoe_burenie_index_path, :class => 'moreAbout' %>
-        <div class="view view-second">
-          <%= image_tag('almaz.png', :style => 'margin-left: 30px;') %>
-          <div class="mask">
-            <h2>Алмазное бурение</h2>
-            <p>Мы предлагаем услуги алмазного бурения на профессиональном оборудовании Hilti. Стоимость конкретного заказа будет зависеть от диаметра и глубины бурения, а также сопутсвующих факторов.</p>
-            <%= link_to 'Узнать больше', almaznoe_burenie_index_path, :class => 'info' %>
-          </div>
-        </div>
-      </div>
-      <div id="documents" style="display: none;">
-        <span class="big-tagline">Документы</span><br>
-        <div class="popup-gallery">
-
-          <a href="https://pp.vk.me/c628220/v628220638/1ad22/Tngyd3iFUoo.jpg" title=""><img src="https://pp.vk.me/c628220/v628220638/1ad22/Tngyd3iFUoo.jpg" width="100"></a>
-          <a href="https://pp.vk.me/c628220/v628220638/1ad2c/wPz65a1NIX4.jpg" title=""><img src="https://pp.vk.me/c628220/v628220638/1ad2c/wPz65a1NIX4.jpg" width="100"></a>
-
-          <a href="https://pp.vk.me/c622431/v622431638/41ebb/_wWlIWDFiyo.jpg" title=""><img src="https://pp.vk.me/c622431/v622431638/41ebb/_wWlIWDFiyo.jpg" width="100"></a>
-          <a href="https://pp.vk.me/c622431/v622431638/41ea9/70pH-XMe7vI.jpg" title=""><img src="https://pp.vk.me/c622431/v622431638/41ea9/70pH-XMe7vI.jpg" width="100"></a>
-          <a href="https://pp.vk.me/c622431/v622431638/41eb2/Fm-uN4zl12c.jpg" title=""><img src="https://pp.vk.me/c622431/v622431638/41eb2/Fm-uN4zl12c.jpg" width="100"></a>
-          <a href="https://pp.vk.me/c622431/v622431638/41ec4/XqFySHCQBhc.jpg" title=""><img src="https://pp.vk.me/c622431/v622431638/41ec4/XqFySHCQBhc.jpg" width="100"></a>
-          <a href="https://pp.vk.me/c622431/v622431638/41ed6/l4hCWbJq3UM.jpg" title=""><img src="https://pp.vk.me/c622431/v622431638/41ed6/l4hCWbJq3UM.jpg" width="100"></a>
-
-          <a href="https://pp.vk.me/c622431/v622431638/41e97/7Bgz5gZ_TDo.jpg" title=""><img src="https://pp.vk.me/c622431/v622431638/41e97/7Bgz5gZ_TDo.jpg" width="100"></a>
-          <a href="https://pp.vk.me/c622431/v622431638/41e8e/-Rxrq-fTqjo.jpg" title=""><img src="https://pp.vk.me/c622431/v622431638/41e8e/-Rxrq-fTqjo.jpg" width="100"></a>
-          <a href="https://pp.vk.me/c622431/v622431638/41ea0/y26c8py385A.jpg" title=""><img src="https://pp.vk.me/c622431/v622431638/41ea0/y26c8py385A.jpg" width="100"></a>
-          <a href="https://pp.vk.me/c622431/v622431638/41edf/MVd7aAUSK9c.jpg" title=""><img src="https://pp.vk.me/c622431/v622431638/41edf/MVd7aAUSK9c.jpg" width="100"></a>
-          <a href="https://pp.vk.me/c622431/v622431638/41ecd/5AhXEEt9nxE.jpg" title=""><img src="https://pp.vk.me/c622431/v622431638/41ecd/5AhXEEt9nxE.jpg" width="100"></a>
-          <a href="https://pp.vk.me/c622431/v622431638/41ee8/-Z_5q5tRoYc.jpg" title=""><img src="https://pp.vk.me/c622431/v622431638/41ee8/-Z_5q5tRoYc.jpg" width="100"></a>
-        </div>
-      </div>
-      <div id="contacts" style="display: none;">
-        <span class="big-tagline">Контакты</span><br>
-        <p>Если у Вас имеются какие-то вопросы или предложения, вы можете воспользоваться формой обратной связи.</p>
-
-        <div id="contact_form">
-
-          <div class="validation">
-            <p>Oops! Please correct the highlighted fields...</p>
-          </div>
-
-          <div class="success">
-            <p>Thanks! I'll get back to you shortly.</p>
-          </div>
-
-          <form>
-            <div class="row">
-              <p class="left">
-                <input type="text" name="name" id="name" placeholder="Имя *" />
-              </p>
-              <p class="right">
-                <input type="text" name="email" id="email" placeholder="E-mail *" />
-              </p>
-            </div>
-
-            <div class="row">
-              <p class="full">
-                <input type="text" name="subject" id="subject" placeholder="Тема" />
-              </p>
-            </div>
-
-            <p>
-              <textarea class="text" name="message" id="message" placeholder="Сообщение"></textarea>
-            </p>
-            <a onclick="sendFeedback();" class="button white">Отправить</a>
-          </form>
-        </div>
-
+      <div class="one wide column"></div>
+      <div class="three wide column">
+        <%= image_tag('ma6.jpg') %>
       </div>
     </div>
-    <!-- End Pages -->
 
-    <div class="clear"></div>
-  </section>
+    <div class="ui divider"></div>
 
-  <!-- Start Footer -->
-  <footer class="container">
-    <p>info@aero-montazh.ru &copy;</p>
-  </footer>
-  <!-- End Footer -->
+    <div class="ui grid padding">
+      <div class="three wide column">
+        <%= image_tag('montage.png') %>
+      </div>
+      <div class="one wide column"></div>
+      <div class="ten wide column">
+        <h2 class="ui header">Монтаж бризера</h2>
+        <p class="ui item right floated">Правильный монтаж — гарантия исправной работы прибора. Все наши монтажники имеют лицензию на установку бризера. Специалисты помогут Вам выбрать лучшее место для установки, а затем быстро, четко, без пыли и грязи выполнят комплекс работ по монтажу. Вам останется только послушать инструкцию и наслаждаться свежим воздухом.</p>
+        <%= link_to 'Узнать больше', montage_index_path, :class => "ui blue basic button right floated" %>
+      </div>
+    </div>
 
-</div>
+    <div class="ui divider"></div>
 
-<div class="disabled">
-  <div class="popup_true">
-    <div class="popup_block">
-      <div class="form">
-        <p><span>Ваше письмо отправлено!</span><br>
-          Мы ответим Вам в ближайшее время.</p>
+    <div class="ui grid padding">
+      <div class="ten wide column">
+        <h2 class="ui header">Услуги алмазного бурения</h2>
+        <p class="ui left floated">Мы производим бурение технологических отверстий в камне, кирпиче, бетоне, ФБС, асфальте, пеноблоках и других строительных материалах диаметром от 52 мм до 202 мм. Отверстия большего размера можно получить пробурив несколько отверстий. Обратившись к нам, Вы можете быть уверенны в высоком качестве конечного результата и исполнении работ точно в срок. Чтобы рассчитать приблизительную стоимость, нажмите кнопку ниже.</p>
+        <%= link_to 'Узнать больше', almaznoe_burenie_index_path, :class => "ui blue basic button right floated" %>
+      </div>
+      <div class="one wide column"></div>
+      <div class="three wide column">
+        <%= image_tag('almaznoe.png') %>
       </div>
     </div>
   </div>
-</div>
-
-<div class="disabled">
-  <div class="popup_fail">
-    <div class="popup_block">
-      <div class="form">
-        <p><span>Ошибка при отправке!</span><br>
-          Попробуйте отправить письмо повторно или свяжитесь с нами по телефону +7 (383) 239-59-58.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 
 <%= javascript_tag "const AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery? %>
 

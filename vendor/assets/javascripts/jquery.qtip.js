@@ -1149,13 +1149,13 @@ PROTOTYPE.hide = function(event) { return this.toggle(FALSE, event); };
 		newIndex = QTIP.zindex + qtips.length,
 		focusedElem;
 
-	// Only update the z-index if it has changed and tooltip is not already focused
+	// Only update the z-index_old if it has changed and tooltip is not already focused
 	if(!tooltip.hasClass(CLASS_FOCUS)) {
 		// tooltipfocus event
 		if(this._trigger('focus', [newIndex], event)) {
-			// Only update z-index's if they've changed
+			// Only update z-index_old's if they've changed
 			if(curIndex !== newIndex) {
-				// Reduce our z-index's and keep them properly ordered
+				// Reduce our z-index_old's and keep them properly ordered
 				qtips.each(function() {
 					if(this.style.zIndex > curIndex) {
 						this.style.zIndex = this.style.zIndex - 1;
@@ -1166,7 +1166,7 @@ PROTOTYPE.hide = function(event) { return this.toggle(FALSE, event); };
 				qtips.filter('.' + CLASS_FOCUS).qtip('blur', event);
 			}
 
-			// Set the new z-index
+			// Set the new z-index_old
 			tooltip.addClass(CLASS_FOCUS)[0].style.zIndex = newIndex;
 		}
 	}
@@ -1665,7 +1665,7 @@ $(function() {
 
 		// On mouseenter...
 		if(state) {
-			// Focus the tooltip on mouseenter (z-index stacking)
+			// Focus the tooltip on mouseenter (z-index_old stacking)
 			this.focus(event);
 
 			// Clear hide timer on tooltip hover to prevent it from closing
@@ -1924,7 +1924,7 @@ QTIP.nextid = 0;
 // Inactive events array
 QTIP.inactiveEvents = INACTIVE_EVENTS;
 
-// Base z-index for all qTips
+// Base z-index_old for all qTips
 QTIP.zindex = 15000;
 
 // Define configuration defaults
@@ -3139,7 +3139,7 @@ $.extend(Modal.prototype, {
 		// Set overlay reference
 		qtip.elements.overlay = OVERLAY.elem;
 
-		// Add unique attribute so we can grab modal tooltips easily via a SELECTOR, and set z-index
+		// Add unique attribute so we can grab modal tooltips easily via a SELECTOR, and set z-index_old
 		tooltip.addClass(MODALCLASS).css('z-index', QTIP.modal_zindex + $(MODALSELECTOR).length);
 
 		// Apply our show/hide/focus modal events
@@ -3157,7 +3157,7 @@ $.extend(Modal.prototype, {
 			}
 		}, this._ns, this);
 
-		// Adjust modal z-index on tooltip focus
+		// Adjust modal z-index_old on tooltip focus
 		qtip._bind(tooltip, 'tooltipfocus', function(event, api) {
 			// If focus was cancelled before it reached us, don't do anything
 			if(event.isDefaultPrevented() || event.target !== tooltip[0]) { return; }
@@ -3168,10 +3168,10 @@ $.extend(Modal.prototype, {
 			newIndex = QTIP.modal_zindex + qtips.length,
 			curIndex = parseInt(tooltip[0].style.zIndex, 10);
 
-			// Set overlay z-index
+			// Set overlay z-index_old
 			OVERLAY.elem[0].style.zIndex = newIndex - 1;
 
-			// Reduce modal z-index's and keep them properly ordered
+			// Reduce modal z-index_old's and keep them properly ordered
 			qtips.each(function() {
 				if(this.style.zIndex > curIndex) {
 					this.style.zIndex -= 1;
@@ -3181,7 +3181,7 @@ $.extend(Modal.prototype, {
 			// Fire blur event for focused tooltip
 			qtips.filter('.' + CLASS_FOCUS).qtip('blur', event.originalEvent);
 
-			// Set the new z-index
+			// Set the new z-index_old
 			tooltip.addClass(CLASS_FOCUS)[0].style.zIndex = newIndex;
 
 			// Set current
@@ -3233,7 +3233,7 @@ MODAL.sanitize = function(opts) {
 	}
 };
 
-// Base z-index for all modal tooltips (use qTip core z-index as a base)
+// Base z-index_old for all modal tooltips (use qTip core z-index_old as a base)
 QTIP.modal_zindex = QTIP.zindex - 200;
 
 // Plugin needs to be initialized on render
@@ -3272,7 +3272,7 @@ $.extend(TRUE, QTIP.defaults, {
  * Special thanks to Brandon Aaron
  */
 BGIFRAME = '<iframe class="qtip-bgiframe" frameborder="0" tabindex="-1" src="javascript:\'\';" ' +
-	' style="display:block; position:absolute; z-index:-1; filter:alpha(opacity=0); ' +
+	' style="display:block; position:absolute; z-index_old:-1; filter:alpha(opacity=0); ' +
 		'-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";"></iframe>';
 
 function Ie6(api, qtip) {

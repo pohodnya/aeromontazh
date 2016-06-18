@@ -23,9 +23,10 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'magnific-popup-rails'
 gem 'less-rails-semantic_ui'
-# gem 'autoprefixer-rails'
+gem 'autoprefixer-rails'
 gem 'therubyracer'
 gem 'less-rails'
+gem 'magnific-popup-rails'
 
 
 

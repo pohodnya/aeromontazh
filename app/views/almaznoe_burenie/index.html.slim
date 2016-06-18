@@ -1,28 +1,9 @@
-=render 'partials/main_top_menu'
-
-div style=("max-width:1400px;margin:0 auto; margin-top: 57px;")
+div style=("max-width:1400px;margin:0 auto; margin-top: 35px;")
   div style=("min-width:1000px;margin:0 auto;")
     div style=("width:100%;margin:0 auto;")
       #header
         .header-bg
         #header-top
-          .header-top-bg
-            .header-main
-              .header-left
-                = link_to root_path
-                  = image_tag('logo-2.png')
-              .header-right
-                p
-                  | +7 (383) 239-59-58
-                  br>/
-                  | +7 (983) 310-59-58
-                a.order-call href="#calc_temp2"  КАЛЬКУЛЯТОР
-              .header-center
-                h2
-                  | Алмазное Бурение
-                  br>/
-                  | в Новосибирске и области
-              .clear
           .header-main
             #request1.form-right-bg
               .form-right
@@ -45,7 +26,7 @@ div style=("max-width:1400px;margin:0 auto; margin-top: 57px;")
               .deviz-left-flag
       .content
         .content7
-          h2.gh2 ПОЧЕМУ ИМЕННО МЫ?
+          h2.orange.gh2 ПОЧЕМУ ИМЕННО МЫ?
           .content1-ins
             .c1i
               = image_tag('d1.png')
@@ -64,7 +45,7 @@ div style=("max-width:1400px;margin:0 auto; margin-top: 57px;")
               p Аккуратность в работе
             .clear
         .content4
-          h2 КАК МЫ РАБОТАЕМ
+          h2.black_h2 КАК МЫ РАБОТАЕМ
           .content1-ins
             .c4i.c4i2
               = image_tag('c1.png')
@@ -84,13 +65,13 @@ div style=("max-width:1400px;margin:0 auto; margin-top: 57px;")
             .clear
         #calc_temp2.content5
           #workcalculator title=("Онлайн калькулятор")
-            h2.bh2 Наши цены
-            h2.black_h2 Минимальный выезд 3000 рублей
+            h2.orange.bh2 Наши цены
+            h3.black_h2 Минимальный выезд 3000 рублей
             table.content1-ins border="0" cellpadding="0" cellspacing="3"
               tbody
                 tr
                   td style=("vertical-align: top;")
-                    h2.bh2 Онлайн калькулятор
+                    h3.orange Онлайн калькулятор
                     table border="0"
                       tbody
                         tr
@@ -182,7 +163,7 @@ div style=("max-width:1400px;margin:0 auto; margin-top: 57px;")
                           td.print
                             a#calc_print.orange_button href="javascript:;" style=("display: none;")  Распечатать
                   td.price-list-parent style=("vertical-align: top;")
-                    h2.bh2 Прайс-лист
+                    h3.orange Прайс-лист
                     p
                       i
                         | Алмазное бурение.
@@ -260,79 +241,7 @@ div style=("max-width:1400px;margin:0 auto; margin-top: 57px;")
                           td 42
                           td 45
                           td 47
-        /.content9
-        /  h2.bh2 Наши объекты
-        /  .content1-ins
-        /    table.ex-of-works.mceItemTable border="0"
-        /      tbody
-        /        tr
-        /          td
-        /            table.t2.mceItemTable border="0"
-        /              tbody
-        /                tr
-        /                  td
-        /                    .over
-        /                      = image_tag('fe1.jpg')
-        /                tr
-        /                  td
-        /                    p mce_style=("text-align: center;") style=("text-align: center;")  Строительство ЖК по ул. Богатырской, г. Киев
-        /          td
-        /            table.t2.mceItemTable border="0"
-        /              tbody
-        /                tr
-        /                  td
-        /                    .over
-        /                      = image_tag('fe2.jpg')
-        /                tr
-        /                  td
-        /                    p mce_style=("text-align: center;") style=("text-align: center;")  Строительство ЖК Липинка, г. Киев
-        /          td
-        /            table.t2.mceItemTable border="0"
-        /              tbody
-        /                tr
-        /                  td
-        /                    .over
-        /                      = image_tag('fe3.jpg')
-        /                tr
-        /                  td
-        /                    p mce_style=("text-align: center;") style=("text-align: center;")  Строительство магазинов "Новус", &nbsp; &nbsp; &nbsp;г. Киев
-        /        tr
-        /          td
-        /            table.t2.mceItemTable border="0"
-        /              tbody
-        /                tr
-        /                  td
-        /                    .over
-        /                      = image_tag('fe4.jpg')
-        /                tr
-        /                  td
-        /                    p mce_style=("text-align: center;") style=("text-align: center;")
-        /                      | Строительство ЖК, по ул. Туманяна г. Киев
-        /          td
-        /            table.t2.mceItemTable border="0"
-        /              tbody
-        /                tr
-        /                  td
-        /                    .over
-        /                      = image_tag('fe5.jpg')
-        /                tr
-        /                  td
-        /                    p mce_style=("text-align: center;") style=("text-align: center;")  &nbsp; &nbsp;Строительство ЖК "Golden Park", &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;г. Киев
-        /          td
-        /            table.t2.mceItemTable border="0"
-        /              tbody
-        /                tr
-        /                  td
-        /                    .over
-        /                      = image_tag('fe6.jpg')
-        /                tr
-        /                  td
-        /                    p mce_style=("text-align: center;") style=("text-align: center;")  &nbsp; &nbsp;Строительство ЖК "Южные врата", &nbsp; &nbsp; &nbsp;г. Киев
-        /  .content1-ins mce_style=("text-align: center;") style=("text-align: center;")
-        /    span mce_style=("background-color: initial;") style=("background-color: initial;")
-        /      span mce_style=("font-size: medium;") style=("font-size: medium;")
-        /        span.Apple-style-span mce_fixed="1" mce_name="strong" mce_style=("font-weight: bold;") style=("font-weight: bold;")  "...и еще сотни объектов больших и маленьких, с одним отверстием и с полным сопровождением в течении всего строительства."
-        /.clear
+
         .content6
           .header-main
             .deviz-left
@@ -355,7 +264,7 @@ div style=("max-width:1400px;margin:0 auto; margin-top: 57px;")
                       |ЗАКАЗАТЬ ЗВОНОК
             .clear
         .content1
-          h2 5 САМЫХ РАСПРОСТРАННЕНЫХ ПРОБЛЕМ НАШИХ КЛИЕНТОВ
+          h2.orange 5 САМЫХ РАСПРОСТРАННЕНЫХ ПРОБЛЕМ НАШИХ КЛИЕНТОВ
           .content1-ins
             .c1i
               a href="javascript:;" mce_href="javascript:;"
@@ -379,7 +288,7 @@ div style=("max-width:1400px;margin:0 auto; margin-top: 57px;")
               p Разрушение стен при взрывной технологии
             .clear
         .content2
-          h2.bh2 КАК МЫ РЕШАЕМ ВАШИ ПРОБЛЕМЫ
+          h2.black_h2 КАК МЫ РЕШАЕМ ВАШИ ПРОБЛЕМЫ
           .content1-ins
             .c1i
               a href="javascript:;" mce_href="javascript:;"
@@ -403,7 +312,7 @@ div style=("max-width:1400px;margin:0 auto; margin-top: 57px;")
               p Оправдываем доверие
             .clear
         .content3
-          h2.gh2 ОТЗЫВЫ КЛИЕНТОВ
+          h2.orange.gh2 ОТЗЫВЫ КЛИЕНТОВ
           .content1-ins
             table.t-cl-rw.mceItemTable border="0"
               tbody
@@ -455,49 +364,8 @@ div style=("max-width:1400px;margin:0 auto; margin-top: 57px;")
                             p.client Частный заказчик
             .clear
         .content8
-      #header
-        .footer-bg
-        #header-top
-          .header-top-bg
-            .header-main
-              .header-left
-                = link_to root_path
-                  = image_tag('logo-2.png')
-              .header-right
-                p
-                  | +7 (383) 239-59-58
-                  br>/
-                  | +7 (983) 310-59-58
-                a.order-call href="#request2"  Заказать звонок
-              .header-center
-                h2
-                  | Алмазное Бурение
-                  br>/
-                  | в Новосибирске и области
-              .clear
 
-.ui.small.modal#successOrder
-  i.close.icon
-  .header Заказ успешно отправлен
-  .content
-    p
-      | Менеджер свяжется с Вами в ближайшее время
-  .actions
-    .ui.positive.left.labeled.icon.button
-      | Ок
-      i.checkmark.icon
-.ui.small.modal#failOrder
-  i.close.icon
-  .header Ошибка при отправке
-  .content
-    p
-      | При отправке вашего заказа произошла ошибка. Попробуйте отправить заказ повторно или свяжитесь с нами по телефону + 7 (383) 239-59-58
-  .actions
-    .ui.negative.left.labeled.icon.button
-      | Ок
-      i.checkmark.icon
-
-= javascript_tag "const AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery?
+        = javascript_tag "const AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery?
 
 javascript:
   var kirpich = [];

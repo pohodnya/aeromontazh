@@ -1,5 +1,5 @@
 class MagicController < ApplicationController
   def index
-    render layout: 'magic'
+    render layout: 'application'
   end
 end

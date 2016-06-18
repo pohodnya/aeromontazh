@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -9,6 +10,9 @@ Rails.application.routes.draw do
   resources :market, only: [:index, :create]
   resources :brizer, only: [:index]
   resources :magic, only: [:index]
+  resources :clever, only: [:index]
+  resources :montage, only: [:index]
+  resources :contact, only: [:index]
   resources :almaznoe_burenie, only: [:index, :create]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

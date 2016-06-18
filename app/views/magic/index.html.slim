@@ -1,4 +1,3 @@
-=render 'partials/main_top_menu'
 .wrapper
   .content
     #magic_air_start
@@ -60,13 +59,135 @@
           .rcolumn
             h3 НА ВЫРОСТ
             p Magic Air – это гибкая и универсальная платформа, которая будет поддерживаться и расширяться. Новые датчики, новые устройства, новые функции — целый арсенал для апгрейда Вашего Magic Air в будущем.
-.wrapper
+.wrapper.bottom-margin
   #where
-    h2 КОГДА МОЖНО КУПИТЬ
-    h5 Продажи Tion Magic Air начнутся в 2016 году. А вот где мы сейчас:
+    h2 ЗАКАЗАТЬ MAGIC AIR
     .razd3
-    .indent
-    .cont
-      = image_tag('wherebuy.png')
-javascript:
-  $('#magic_item').addClass('current');
+  .ui.grid
+    .three.column.row
+      .column.center.aligned
+        h3.ui.header MAGICAIR
+        p.short-description ЕСЛИ У ВАС ЕСТЬ БРИЗЕР TION O2 MAC
+        = image_tag('ma_1.jpg')
+        h4.ui.header.maheader БАЗОВАЯ СТАНЦИЯ MAGICAIR
+        .ui.list.malist
+          .item
+            i.right.triangle.icon
+            .content
+              .description
+                | Датчики: CO
+                sub 2
+                |, температура, влажность
+          .item
+            i.right.triangle.icon
+            .content
+              .description Wi-Fi модуль
+          .item
+            i.right.triangle.icon
+            .content
+              .description USB-кабель и сетевой адаптер
+      .column.center.aligned
+        h3.ui.header MAGICAIR + БРИЗЕР TION O2 MAC
+        p.short-description ЕСЛИ У ВАС ЕЩЕ НЕТ БРИЗЕРА
+        = image_tag('ma_2.jpg')
+        h4.ui.header.maheader БАЗОВАЯ СТАНЦИЯ MAGICAIR
+        .ui.list.malist
+          .item
+            i.right.triangle.icon
+            .content
+              .description
+                | Датчики: CO
+                sub 2
+                |, температура, влажность
+          .item
+            i.right.triangle.icon
+            .content
+              .description Wi-Fi модуль
+          .item
+            i.right.triangle.icon
+            .content
+              .description USB-кабель и сетевой адаптер
+        h4.ui.header.maheader БРИЗЕР TION O2 MAC
+        .ui.list.malist
+          .item
+            i.right.triangle.icon
+            .content
+              .description Блок связи с MagicAir
+          .item
+            i.right.triangle.icon
+            .content
+              .description Подогрев воздуха
+          .item
+            i.right.triangle.icon
+            .content
+              .description Фильтры: F7 / HEPA / АК
+      .column.center.aligned
+        h3.ui.header MAGICAIR + АПГРЕЙД БРИЗЕРА
+        p.short-description ЕСЛИ У ВАС ЕСТЬ БРИЗЕР TION O2 (STANDARD, BASE)
+        = image_tag('ma_333.jpg')
+        h4.ui.header.maheader БАЗОВАЯ СТАНЦИЯ MAGICAIR
+        .ui.list.malist
+          .item
+            i.right.triangle.icon
+            .content
+              .description
+                | Датчики: CO
+                sub 2
+                |, температура, влажность
+          .item
+            i.right.triangle.icon
+            .content
+              .description Wi-Fi модуль
+          .item
+            i.right.triangle.icon
+            .content
+              .description USB-кабель и сетевой адаптер
+        h4.ui.header.maheader АПГРЕЙД БРИЗЕРА ЗА 7 ДНЕЙ
+        .ui.list.malist
+          .item
+            i.right.triangle.icon
+            .content
+              .description Установка в бризер блока связи с MagicAir
+          .item
+            i.right.triangle.icon
+            .content
+              .description Подменный прибор на время апгрейда
+      .column.center.aligned
+        h2.ui.header.ma2header
+          | 8 900
+          i.icon.ruble
+        button.ui.primary.button.ordermodal onclick="$('.small.modal.main-form').modal('show');" Заказать
+      .column.center.aligned
+        h2.ui.header.ma2header
+          | 37 800
+          i.icon.ruble
+        button.ui.primary.button.ordermodal onclick="$('.small.modal.main-form').modal('show');" Заказать
+      .column.center.aligned
+        h2.ui.header.ma2header
+          | от 10 900
+          i.icon.ruble
+        button.ui.primary.button.ordermodal onclick="$('.small.modal.main-form').modal('show');" Заказать
+
+.ui.small.modal.main-form
+  .header Введите свои данные
+  .content
+    form.ui.form
+      .field
+        label Имя
+        input type='text' name='userName' id='userName' placeholder='Имя'
+      .field
+        label Телефон
+        input type='text' name='userPhone' id='userPhone' placeholder='Телефон'
+      a.ui.blue.basic.button onclick="sendMainOrder('MagicAir');"
+        | Оставить заявку
+
+.ui.small.modal.popup_true
+  .header Спасибо за ваш заказ!
+  .content Наш менеджер перезвонит Вам в течение 20 минут, чтобы уточнить все необходимые детали.
+
+.ui.small.modal.popup_fail
+  .header Ошибка при отправке!
+  .content Попробуйте отправить заявку повторно или свяжитесь с нами по телефону +7 (383) 239-59-58.
+
+
+= javascript_tag "const AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery?

@@ -1,5 +1,5 @@
 class BrizerController < ApplicationController
   def index
-    render layout: 'brizer'
+    render layout: 'application'
   end
 end

@@ -4,12 +4,17 @@ body {
   background-color: #F1F1F1;
   margin: 0;
 }
-h2 {
-  font-family: IntroRegular;
+h2.orange {
   color: #eb4619;
+  font-size: 32px;
   font-weight: normal;
   margin: 0;
   padding: 0;
+  font-family: MyriadPro-Light, sans-serif;
+}
+
+h3.orange {
+  color: #eb4619;
 }
 #header {
   position: relative;
@@ -102,7 +107,6 @@ h2 {
   top: 31px;
   left: 474px;
   z-index: 2;
-  background: asset_url('flag.png') no-repeat;
 }
 .deviz-left-bg {
   float: left;
@@ -194,11 +198,11 @@ h2 {
 }
 .content1-ins {
   padding-top: 40px;
-  width:950px;
+  width:95%;
   margin:0 auto;
 }
 .c1i {
-  width: 181px; /* Ширина блока */
+  width: 20%; /* Ширина блока */
   padding-left: 9px;
   float: left;
 }
@@ -234,12 +238,13 @@ a.read-more {
 }
 .c3i{
   background: asset_url('hbg3.png') repeat;
-  width: 462px; /* Ширина блока */
+  width: 50%; /* Ширина блока */
   min-height: 180px;
   height: 100%;
   padding-left: 0px;
   box-shadow: 0 0 30px rgba(156, 156, 156, 0.5);
 }
+
 .c3i p {
   font-family: verdana;
   font-style: normal;
@@ -272,7 +277,7 @@ a.read-more {
 .c4i {
   background: asset_url('ar.png') no-repeat;
   float: left;
-  width: 170px;
+  width: 20%;
   padding-left: 18px;
 }
 .c4i2 {
@@ -321,7 +326,7 @@ a.read-more {
 }
 .content6 {
   text-align: center; /* Выравнивание по центру */
-  background: #fff asset_url('c6bg.png'); /* Цвет фона левой колонки */
+  background: #fff asset_url('c6bg.png') -6px 0px; /* Цвет фона левой колонки */
   height: 468px;
 }
 .content7 {
@@ -346,7 +351,7 @@ a.read-more {
 #workcalculator table td {
   vertical-align: middle;
   text-align: left;
-  font-size: 12px;
+  font-size: 15px;
 }
 #workcalculator input.calculator_data, #workcalculator select.calculator_data {
   width: 175px;
@@ -436,6 +441,11 @@ p.min-order {
 }
 h2.black_h2 {
   color: #000000;
+  font-size: 32px;
+}
+
+h3.black_h2 {
+  margin: 0;
 }
 
 #successOrder .content, #failOrder .content {

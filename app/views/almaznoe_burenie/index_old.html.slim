@@ -1,0 +1,607 @@
+=render 'partials/main_top_menu'
+
+div style=("max-width:1400px;margin:0 auto; margin-top: 57px;")
+  div style=("min-width:1000px;margin:0 auto;")
+    div style=("width:100%;margin:0 auto;")
+      #header
+        .header-bg
+        #header-top
+          .header-top-bg
+            .header-main
+              .header-left
+                = link_to root_path
+                  = image_tag('logo-2.png')
+              .header-right
+                p
+                  | +7 (383) 239-59-58
+                  br>/
+                  | +7 (983) 310-59-58
+                a.order-call href="#calc_temp2"  КАЛЬКУЛЯТОР
+              .header-center
+                h2
+                  | Алмазное Бурение
+                  br>/
+                  | в Новосибирске и области
+              .clear
+          .header-main
+            #request1.form-right-bg
+              .form-right
+                p Оставьте заявку
+                small прямо сейчас
+                form#call-1.call
+                  div
+                    input.form-name.form-text-field.ord_required.userName name="name" placeholder=("Ваше имя") type="text" value="" /
+                  div
+                    input.form-phone.form-text-field.ord_required.userPhone name="phone" placeholder=("Ваш телефон") type="text" value="" /
+                  div
+                    input.form-mail.form-text-field.userEmail name="mail" placeholder=("Ваш e-mail") type="text" value="" /
+                  div
+                    a.order-call.order-submit.ord_required#call-1-button onclick='sendAlmazOrder1();'
+                      |ЗАКАЗАТЬ ЗВОНОК
+            .deviz-left
+              .deviz-left-bg
+                h2 АЛМАЗНОЕ БУРЕНИЕ?
+                p Предоставьте дело профессионалам!
+              .deviz-left-flag
+      .content
+        .content7
+          h2.gh2 ПОЧЕМУ ИМЕННО МЫ?
+          .content1-ins
+            .c1i
+              = image_tag('d1.png')
+              p Приемлимые цены в Новосибирске
+            .c1i
+              = image_tag('d2.png')
+              p Гарантия качества
+            .c1i
+              = image_tag('d3.png')
+              p Более 8000 просверленных отверствий
+            .c1i
+              = image_tag('d4.png')
+              p Индивидуальный подход
+            .c1i
+              = image_tag('d5.png')
+              p Аккуратность в работе
+            .clear
+        .content4
+          h2 КАК МЫ РАБОТАЕМ
+          .content1-ins
+            .c4i.c4i2
+              = image_tag('c1.png')
+              p Вы оставляете заявку на нашем сайте
+            .c4i
+              = image_tag('c2.png')
+              p Наш менеджер Вам перезванивает и уточняет все детали
+            .c4i
+              = image_tag('c3.png')
+              p Наши рабочие приезжают на Ваш обьект
+            .c4i
+              = image_tag('c4_1.png')
+              p Мы профессионально выполняем свою работу
+            .c4i
+              = image_tag('c5.png')
+              p Вы остаетесь довольны нашей работой и полученным результатом!
+            .clear
+        #calc_temp2.content5
+          #workcalculator title=("Онлайн калькулятор")
+            h2.bh2 Наши цены
+            h2.black_h2 Минимальный выезд 3000 рублей
+            table.content1-ins border="0" cellpadding="0" cellspacing="3"
+              tbody
+                tr
+                  td style=("vertical-align: top;")
+                    h2.bh2 Онлайн калькулятор
+                    table border="0"
+                      tbody
+                        tr
+                          td colspan="3" style=("text-align: center;")
+                            p.ord_legend * - Обязательное поле
+                        tr.dismantling.cutting.drilling
+                          td
+                            label for="material"  Материал *
+                          td
+                            select#material.calculator_data name="material"
+                              option selected="selected" value="0"  Выберите материал
+                              option value="brick"  Кирпич
+                              option value="concrete"  Бетон
+                              option value="ferroconcrete"  Железобетон
+                          td.option_desc
+                        tr.drilling.brick
+                          td
+                            label for="drilling_anker"  Нужен хим. анкер или шпилька
+                          td
+                            input#drilling_anker name="drilling_anker" type="checkbox"
+                          td.option_desc При сверлении мягких материалов (кирпич, пенобетон)
+                        tr.drilling.brick.concrete.ferroconcrete.add_diam_1
+                          td
+                            label for="1_drilling_diametr"  Диаметр, мм *
+                          td
+                            select#drilling_diametr.calculator_data name="drilling_diametr[]"
+                              option selected="selected" value="0"  Выберите диаметр
+                              option value="52"  52
+                              option value="62"  62
+                              option value="72"  72
+                              option value="82"  82
+                              option value="102"  102
+                              option value="112"  112
+                              option value="122"  122
+                              option value="132"  132
+                              option value="152"  152
+                              option value="162"  162
+                              option value="182"  182
+                              option value="192"  192
+                              option value="202"  202
+                          td.option_desc
+                        tr.drilling.add_diam_1
+                          td
+                            label for="1_drilling_depth"  Глубина, см *
+                          td
+                            input#drilling_depth.calculator_data name="drilling_depth[]" placeholder=("Например: 20") type="text"
+                          td.option_desc
+                        tr.drilling.add_diam_1
+                          td
+                            label for="1_drilling_quantity"  Количество отверствий, шт *
+                          td
+                            input#drilling_quantity.calculator_data name="drilling_quantity[]" placeholder=("Например: 2") type="text"
+                          td.option_desc
+                        tr.drilling.add_diam_1
+                          td
+                            label for="1_drilling_high"  Высота бурения, м *
+                          td
+                            input#drilling_high.calculator_data name="drilling_high[]" placeholder=("Например: 1.9") type="text"
+                          td.option_desc На какой высоте от уровня пола нужно бурить?
+                        /tr.drilling
+                        /  td
+                        /    label for="drilling_temperature"  Работа при температуре ниже 0°C
+                        /  td
+                        /    input#drilling_temperature name="drilling_temperature" type="checkbox" /
+                        /  td.option_desc
+                        tr
+                          td
+                            label for="drilling_clear"  Чистовое бурение
+                          td
+                            input#drilling_clear name="drilling_clear" type="checkbox"
+                          td.option_desc
+                        tr
+                          td
+                            label for="is_away"  Объект находится не в Новосибирске?
+                          td
+                            input#drilling_inoblast name="drilling_inoblast" type="checkbox"
+                          td.option_desc
+                        tr.is_away.hidden_opt#distance_tr
+                          td
+                            label for="distance"  Растояние от Новосибирска, км *
+                          td
+                            input#distance.calculator_data name="distance" type="text"
+                          td.option_desc
+                        tr
+                          td.amount_label Стоимость Вашего заказа:
+                          td.amount
+                            #amount_result 3000
+                            small рублей (с учетом НДС)
+                          td.print
+                            a#calc_print.orange_button href="javascript:;" style=("display: none;")  Распечатать
+                  td.price-list-parent style=("vertical-align: top;")
+                    h2.bh2 Прайс-лист
+                    p
+                      i
+                        | Алмазное бурение.
+                        br
+                        | Цена за 1 см. пог. в рублях с НДС
+                    table.price-list
+                      tbody
+                        tr
+                          td ø диаметр, мм
+                          td Кирпич
+                          td Бетон
+                          td Армированный бетон
+                        tr
+                          td ø 52
+                          td 16
+                          td 18
+                          td 20
+                        tr
+                          td ø 62
+                          td 17
+                          td 20
+                          td 22
+                        tr
+                          td ø 72
+                          td 19
+                          td 21
+                          td 23
+                        tr
+                          td ø 82
+                          td 20
+                          td 22
+                          td 24
+                        tr
+                          td ø 102
+                          td 25
+                          td 27
+                          td 29
+                        tr
+                          td ø 112
+                          td 26
+                          td 28
+                          td 30
+                        tr
+                          td ø 122
+                          td 27
+                          td 29
+                          td 31
+                        tr
+                          td ø 132
+                          td 28
+                          td 30
+                          td 32
+                        tr
+                          td ø 152
+                          td 32
+                          td 35
+                          td 38
+                        tr
+                          td ø 162
+                          td 35
+                          td 38
+                          td 41
+                        tr
+                          td ø 182
+                          td 37
+                          td 40
+                          td 43
+                        tr
+                          td ø 192
+                          td 40
+                          td 42
+                          td 45
+                        tr
+                          td ø 202
+                          td 42
+                          td 45
+                          td 47
+        /.content9
+        /  h2.bh2 Наши объекты
+        /  .content1-ins
+        /    table.ex-of-works.mceItemTable border="0"
+        /      tbody
+        /        tr
+        /          td
+        /            table.t2.mceItemTable border="0"
+        /              tbody
+        /                tr
+        /                  td
+        /                    .over
+        /                      = image_tag('fe1.jpg')
+        /                tr
+        /                  td
+        /                    p mce_style=("text-align: center;") style=("text-align: center;")  Строительство ЖК по ул. Богатырской, г. Киев
+        /          td
+        /            table.t2.mceItemTable border="0"
+        /              tbody
+        /                tr
+        /                  td
+        /                    .over
+        /                      = image_tag('fe2.jpg')
+        /                tr
+        /                  td
+        /                    p mce_style=("text-align: center;") style=("text-align: center;")  Строительство ЖК Липинка, г. Киев
+        /          td
+        /            table.t2.mceItemTable border="0"
+        /              tbody
+        /                tr
+        /                  td
+        /                    .over
+        /                      = image_tag('fe3.jpg')
+        /                tr
+        /                  td
+        /                    p mce_style=("text-align: center;") style=("text-align: center;")  Строительство магазинов "Новус", &nbsp; &nbsp; &nbsp;г. Киев
+        /        tr
+        /          td
+        /            table.t2.mceItemTable border="0"
+        /              tbody
+        /                tr
+        /                  td
+        /                    .over
+        /                      = image_tag('fe4.jpg')
+        /                tr
+        /                  td
+        /                    p mce_style=("text-align: center;") style=("text-align: center;")
+        /                      | Строительство ЖК, по ул. Туманяна г. Киев
+        /          td
+        /            table.t2.mceItemTable border="0"
+        /              tbody
+        /                tr
+        /                  td
+        /                    .over
+        /                      = image_tag('fe5.jpg')
+        /                tr
+        /                  td
+        /                    p mce_style=("text-align: center;") style=("text-align: center;")  &nbsp; &nbsp;Строительство ЖК "Golden Park", &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;г. Киев
+        /          td
+        /            table.t2.mceItemTable border="0"
+        /              tbody
+        /                tr
+        /                  td
+        /                    .over
+        /                      = image_tag('fe6.jpg')
+        /                tr
+        /                  td
+        /                    p mce_style=("text-align: center;") style=("text-align: center;")  &nbsp; &nbsp;Строительство ЖК "Южные врата", &nbsp; &nbsp; &nbsp;г. Киев
+        /  .content1-ins mce_style=("text-align: center;") style=("text-align: center;")
+        /    span mce_style=("background-color: initial;") style=("background-color: initial;")
+        /      span mce_style=("font-size: medium;") style=("font-size: medium;")
+        /        span.Apple-style-span mce_fixed="1" mce_name="strong" mce_style=("font-weight: bold;") style=("font-weight: bold;")  "...и еще сотни объектов больших и маленьких, с одним отверстием и с полным сопровождением в течении всего строительства."
+        /.clear
+        .content6
+          .header-main
+            .deviz-left
+              .deviz-left-bg
+                h2 АЛМАЗНОЕ БУРЕНИЕ?
+                p Предоставьте дело профессионалам!
+            #request2.form-right-bg
+              .form-right
+                p Оставьте заявку
+                small прямо сейчас
+                form#call-2.call
+                  div
+                    input.form-name.form-text-field.ord_required.userName name="name" placeholder=("Ваше имя") type="text" value="" /
+                  div
+                    input.form-phone.form-text-field.ord_required.userPhone name="phone" placeholder=("Ваш телефон") type="text" value="" /
+                  div
+                    input.form-mail.form-text-field.userEmail name="mail" placeholder=("Ваш e-mail") type="text" value="" /
+                  div
+                    a.order-call.order-submit.ord_required#call-2-button onclick='sendAlmazOrder2();'
+                      |ЗАКАЗАТЬ ЗВОНОК
+            .clear
+        .content1
+          h2 5 САМЫХ РАСПРОСТРАННЕНЫХ ПРОБЛЕМ НАШИХ КЛИЕНТОВ
+          .content1-ins
+            .c1i
+              a href="javascript:;" mce_href="javascript:;"
+                = image_tag('a1.png')
+              p Негативный опыт бурения старыми способами
+            .c1i
+              a href="javascript:;" mce_href="javascript:;"
+                = image_tag('a2.png')
+              p «Сложные» стены
+            .c1i
+              a href="javascript:;" mce_href="javascript:;"
+                = image_tag('a3.png')
+              p Пылеобразование и шум
+            .c1i
+              a href="javascript:;" mce_href="javascript:;"
+                = image_tag('a4.png')
+              p Низкая квалификация исполнителей
+            .c1i
+              a href="javascript:;" mce_href="javascript:;"
+                = image_tag('a5.png')
+              p Разрушение стен при взрывной технологии
+            .clear
+        .content2
+          h2.bh2 КАК МЫ РЕШАЕМ ВАШИ ПРОБЛЕМЫ
+          .content1-ins
+            .c1i
+              a href="javascript:;" mce_href="javascript:;"
+                = image_tag('b1.png')
+              p На вас работает команда профессионалов
+            .c1i
+              a href="javascript:;" mce_href="javascript:;"
+                = image_tag('b2.png')
+              p Справляемся с любой сложностью
+            .c1i
+              a href="javascript:;" mce_href="javascript:;"
+                = image_tag('b3.png')
+              p Гарантируем порядок
+            .c1i
+              a href="javascript:;" mce_href="javascript:;"
+                = image_tag('b4.png')
+              p Сохраняем интерьер
+            .c1i
+              a href="javascript:;" mce_href="javascript:;"
+                = image_tag('b5.png')
+              p Оправдываем доверие
+            .clear
+        .content3
+          h2.gh2 ОТЗЫВЫ КЛИЕНТОВ
+          .content1-ins
+            table.t-cl-rw.mceItemTable border="0"
+              tbody
+                tr
+                  td.c3i
+                    table.t1.mceItemTable border="0"
+                      tbody
+                        tr
+                          td
+                            = image_tag('anonym.jpg', :style => 'height: 150px;')
+                          td
+                            p Обратился в «АэроМонтаж» с проблемой: в подвале коттеджа при строительстве забыли сделать вентиляцию, появилась сильная сырость. Оказалось, что перфоратором делать нельзя, так как могут пойти трещины по фундаменту от вибрации. А «АэроМонтаж» гарантировал безопасность для строения, причем ребята справились за час. Теперь вентиляция в порядке и никаких дефектов — аккуратно и точно!
+                        tr
+                          td colspan="2"
+                            p.client Частный заказчик
+                  td.c3i
+                    table.t1.mceItemTable border="0"
+                      tbody
+                        tr
+                          td
+                            = image_tag('anonym.jpg', :style => 'height: 150px;')
+                          td
+                            p Являюсь директором крупной строительной компании. Строим коммерческую и жилую недвижимость. Очень много бурим. Работаем с «АэроМонтаж» уже больше двух лет. За весь период сотрудничества проявили себя с лучших сторон, все задачи выполняются профессионально и в срок. Спасибо. Продолжаем работать.
+                        tr
+                          td colspan="2"
+                            p.client Директор Строительной компании
+                tr
+                  td.c3i
+                    table.t1.mceItemTable border="0"
+                      tbody
+                        tr
+                          td
+                            = image_tag('anonym.jpg', :style => 'height: 150px;')
+                          td
+                            p Честные, ответственные ребята, знают, чего хочет клиент, и делают все как в проекте. Задача была как раз для алмазного бурения — отверстия под ряд стояков в 12ти этажном здании. Рекомендую именно «АэроМонтаж», потому что там работают профессионалы! Правильно оценили фронт работ, быстро установили технику (от меня — только розетка и доступ к водопроводному крану). Спасибо за работу!
+                        tr
+                          td colspan="2"
+                            p.client Директор компании занимающейся монтажом коммуникационных сетей
+                  td.c3i
+                    table.t1.mceItemTable border="0"
+                      tbody
+                        tr
+                          td
+                            = image_tag('anonym.jpg', :style => 'height: 150px;')
+                          td
+                            p Выбрал эту фирму за приемлемые цены, хотя сомневался, не лучше ли заказать алмазное бурение там, где дороже — все-таки хочется не прогадать с качеством услуг. Сомнения рассеялись, когда мастера «АэроМонтаж» осмотрели объект и привезли оборудование — сразу стало видно, что профессионалы. И сработали на удивление быстро. Результатом доволен на все 100%. Продолжу работу только с ними.
+                        tr
+                          td colspan="2"
+                            p.client Частный заказчик
+            .clear
+        .content8
+      #header
+        .footer-bg
+        #header-top
+          .header-top-bg
+            .header-main
+              .header-left
+                = link_to root_path
+                  = image_tag('logo-2.png')
+              .header-right
+                p
+                  | +7 (383) 239-59-58
+                  br>/
+                  | +7 (983) 310-59-58
+                a.order-call href="#request2"  Заказать звонок
+              .header-center
+                h2
+                  | Алмазное Бурение
+                  br>/
+                  | в Новосибирске и области
+              .clear
+
+.ui.small.modal#successOrder
+  i.close.icon
+  .header Заказ успешно отправлен
+  .content
+    p
+      | Менеджер свяжется с Вами в ближайшее время
+  .actions
+    .ui.positive.left.labeled.icon.button
+      | Ок
+      i.checkmark.icon
+.ui.small.modal#failOrder
+  i.close.icon
+  .header Ошибка при отправке
+  .content
+    p
+      | При отправке вашего заказа произошла ошибка. Попробуйте отправить заказ повторно или свяжитесь с нами по телефону + 7 (383) 239-59-58
+  .actions
+    .ui.negative.left.labeled.icon.button
+      | Ок
+      i.checkmark.icon
+
+= javascript_tag "const AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery?
+
+javascript:
+  var kirpich = [];
+  kirpich['52'] = 16;
+  kirpich['62'] = 17;
+  kirpich['72'] = 19;
+  kirpich['82'] = 20;
+  kirpich['102'] = 25;
+  kirpich['112'] = 26;
+  kirpich['122'] = 27;
+  kirpich['132'] = 28;
+  kirpich['152'] = 32;
+  kirpich['162'] = 35;
+  kirpich['182'] = 37;
+  kirpich['192'] = 40;
+  kirpich['202'] = 42;
+  var beton = [];
+  beton['52'] = 18;
+  beton['62'] = 20;
+  beton['72'] = 21;
+  beton['82'] = 22;
+  beton['102'] = 27;
+  beton['112'] = 28;
+  beton['122'] = 29;
+  beton['132'] = 30;
+  beton['152'] = 35;
+  beton['162'] = 38;
+  beton['182'] = 40;
+  beton['192'] = 42;
+  beton['202'] = 45;
+  var armobeton = [];
+  armobeton['52'] = 20;
+  armobeton['62'] = 22;
+  armobeton['72'] = 23;
+  armobeton['82'] = 24;
+  armobeton['102'] = 29;
+  armobeton['112'] = 30;
+  armobeton['122'] = 31;
+  armobeton['132'] = 32;
+  armobeton['152'] = 38;
+  armobeton['162'] = 41;
+  armobeton['182'] = 43;
+  armobeton['192'] = 45;
+  armobeton['202'] = 47;
+
+
+  $(function () {
+    $(".calculator_data").change(function () {
+      changePrice();
+    });
+    $(".calculator_data").keyup(function () {
+      changePrice();
+    });
+    $('#drilling_anker').change(function () {
+      changePrice();
+    });
+    $('#drilling_inoblast').change(function () {
+      changePrice();
+    });
+    $('#drilling_clear').change(function () {
+      changePrice();
+    });
+    $("#drilling_depth").keyup(function () {
+      changePrice();
+    });
+    $("#drilling_inoblast").change(function () {
+      $("#distance_tr").toggle(400);
+      //if ($("drilling_inoblast").val() == true)
+      //
+    });
+  });
+
+  function changePrice() {
+    var depthPrice = 0;
+    var depth = 0;
+    var diametr = 0;
+    var quantity = 1;
+    var high = 0;
+    var clear = 0;
+    var disctance = 0;
+    var anker = 0;
+    var fullPrice = 0;
+    switch ($('#material').val()) {
+      case 'brick':
+        depthPrice = kirpich[$('#drilling_diametr').val()];
+        break;
+      case 'concrete':
+        depthPrice = beton[$('#drilling_diametr').val()];
+        break;
+      case 'ferroconcrete':
+        depthPrice = armobeton[$('#drilling_diametr').val()];
+        break;
+    }
+    if ($('#drilling_diametr').val())
+      diametr = $('#drilling_diametr').val();
+    if ($('#drilling_quantity').val())
+      quantity = $('#drilling_quantity').val();
+    if ($('#drilling_depth').val())
+      depth = $('#drilling_depth').val();
+    $('#drilling_inoblast').is(':checked') ? disctance = $('#distance').val() * 25 : true;
+    $('#drilling_anker').is(':checked') ? anker = 1000 : true;
+    ($('#drilling_high').val() > 1.8) ? high = 0.2 : true;
+    $('#drilling_clear').is(':checked') ? clear = 0.2 : true;
+    if (depthPrice && depth)
+      fullPrice = depthPrice * depth * quantity * (1 + high + clear) + anker * quantity + disctance;
+    (fullPrice > 3000) ? $('#amount_result').html(fullPrice) : $('#amount_result').html(3000);
+  }

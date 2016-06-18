@@ -337,12 +337,12 @@
         },
 
         /**
-         * Checks whether a list element exists for the given index (or index range).
+         * Checks whether a list element exists for the given index_old (or index_old range).
          *
          * @method get
          * @return bool
-         * @param i {Number} The index of the (first) element.
-         * @param i2 {Number} The index of the last element.
+         * @param i {Number} The index_old of the (first) element.
+         * @param i2 {Number} The index_old of the last element.
          */
         has: function(i, i2) {
             if (i2 === undefined || !i2) {
@@ -364,24 +364,24 @@
         },
 
         /**
-         * Returns a jQuery object with list element for the given index.
+         * Returns a jQuery object with list element for the given index_old.
          *
          * @method get
          * @return jQuery
-         * @param i {Number} The index of the element.
+         * @param i {Number} The index_old of the element.
          */
         get: function(i) {
             return $('>.jcarousel-item-' + i, this.list);
         },
 
         /**
-         * Adds an element for the given index to the list.
+         * Adds an element for the given index_old to the list.
          * If the element already exists, it updates the inner html.
          * Returns the created element as jQuery object.
          *
          * @method add
          * @return jQuery
-         * @param i {Number} The index of the element.
+         * @param i {Number} The index_old of the element.
          * @param s {String} The innerHTML of the element.
          */
         add: function(i, s) {
@@ -427,11 +427,11 @@
         },
 
         /**
-         * Removes an element for the given index from the list.
+         * Removes an element for the given index_old from the list.
          *
          * @method remove
          * @return undefined
-         * @param i {Number} The index of the element.
+         * @param i {Number} The index_old of the element.
          */
         remove: function(i) {
             var e = this.get(i);
@@ -511,7 +511,7 @@
          *
          * @method scroll
          * @return undefined
-         * @param i {Number} The index of the element to scoll to.
+         * @param i {Number} The index_old of the element to scoll to.
          * @param a {Boolean} Flag indicating whether to perform animation.
          */
         scroll: function(i, a) {
@@ -524,11 +524,11 @@
         },
 
         /**
-         * Prepares the carousel and return the position for a certian index.
+         * Prepares the carousel and return the position for a certian index_old.
          *
          * @method pos
          * @return {Number}
-         * @param i {Number} The index of the element to scoll to.
+         * @param i {Number} The index_old of the element to scoll to.
          * @param fv {Boolean} Whether to force last item to be visible.
          */
         pos: function(i, fv) {
