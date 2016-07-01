@@ -23,7 +23,11 @@ div style=("max-width:1400px;margin:0 auto; margin-top: 35px;")
               .deviz-left-bg
                 h2 АЛМАЗНОЕ БУРЕНИЕ?
                 p Предоставьте дело профессионалам!
+                h2 До 7 июля скидка 10%
+                p до конца акции осталось:
+                #DateCountdown data-date="2016-07-07 00:00:00" style="width: 100%;"
               .deviz-left-flag
+
       .content
         .content7
           h2.orange.gh2 ПОЧЕМУ ИМЕННО МЫ?
@@ -473,3 +477,32 @@ javascript:
       fullPrice = depthPrice * depth * quantity * (1 + high + clear) + anker * quantity + disctance;
     (fullPrice > 3000) ? $('#amount_result').html(fullPrice) : $('#amount_result').html(3000);
   }
+
+  $("#DateCountdown").TimeCircles({
+    "animation": "ticks",
+    "bg_width": 0.1,
+    "fg_width": 0.04,
+    "circle_bg_color": "#ffffff",
+    "time": {
+      "Days": {
+        "text": "Дней",
+        "color": "#eb4619",
+        "show": true
+      },
+      "Hours": {
+        "text": "Часов",
+        "color": "#eb4619",
+        "show": true
+      },
+      "Minutes": {
+        "text": "Минут",
+        "color": "#eb4619",
+        "show": true
+      },
+      "Seconds": {
+        "text": "Секунд",
+        "color": "#eb4619",
+        "show": true
+      }
+    }
+  });

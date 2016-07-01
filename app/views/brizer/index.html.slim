@@ -1,6 +1,14 @@
 = image_tag('top-baner.png', class: 'banner')
 
 .ui.segment.main-container
+  .ui.grid
+    .six.wide.column.top-brizer-description
+      h3.ui.header#header1 до 15 июля фильтр в подарок
+      h3.ui.header#header2 при покупке Tion O2 Standart
+      button.ui.primary.button.ordermodal onclick="$('.small.modal.main-form').modal('show');" Заказать
+    .ten.wide.column.top-main-brizer-description
+      h3.ui.header#header3 До конца акции осталось:
+      #DateCountdown data-date="2016-07-07 00:00:00" style="width: 100%;"
   .ui.horizontal.divider.main-header
     | Бризер Тион О
     sub 2
@@ -171,22 +179,24 @@
             .description Фильтр от вредных газов AK
     .four.wide.column.center.aligned
       h2.ui.header
-        | 20 700
+        | 21 300
         i.icon.ruble
       button.ui.primary.button.ordermodal onclick="$('.small.modal.main-form').modal('show');" Заказать
     .four.wide.column.center.aligned
       h2.ui.header
-        | 23 900
+        | 25 900
         i.icon.ruble
       button.ui.primary.button.ordermodal onclick="$('.small.modal.main-form').modal('show');" Заказать
     .four.wide.column.center.aligned
       h2.ui.header
-        | 26 900
+        | 27 900
         i.icon.ruble
       button.ui.primary.button.ordermodal onclick="$('.small.modal.main-form').modal('show');" Заказать
+      h3.ui.header#header3 До конца акции осталось:
+      #DateCountdown2 data-date="2016-07-07 00:00:00" style="width: 100%;"
     .four.wide.column.center.aligned
       h2.ui.header
-        | 28 900
+        | 29 900
         i.icon.ruble
       button.ui.primary.button.ordermodal onclick="$('.small.modal.main-form').modal('show');" Заказать
   br
@@ -291,3 +301,61 @@ javascript:
     if (currentTab == 'bad-ecology') return 'vlazhnost';
     if (currentTab == 'vlazhnost') return 'duhota';
   }
+
+  $("#DateCountdown").TimeCircles({
+    "animation": "ticks",
+    "bg_width": 0.1,
+    "fg_width": 0.04,
+    "circle_bg_color": "#ffffff",
+    "time": {
+      "Days": {
+        "text": "Дней",
+        "color": "#99CCFF",
+        "show": true
+      },
+      "Hours": {
+        "text": "Часов",
+        "color": "#99CCFF",
+        "show": true
+      },
+      "Minutes": {
+        "text": "Минут",
+        "color": "#99CCFF",
+        "show": true
+      },
+      "Seconds": {
+        "text": "Секунд",
+        "color": "#99CCFF",
+        "show": true
+      }
+    }
+  });
+
+  $("#DateCountdown2").TimeCircles({
+    "animation": "ticks",
+    "bg_width": 0.1,
+    "fg_width": 0.04,
+    "circle_bg_color": "#ffffff",
+    "time": {
+      "Days": {
+        "text": "Дней",
+        "color": "#99CCFF",
+        "show": true
+      },
+      "Hours": {
+        "text": "Часов",
+        "color": "#99CCFF",
+        "show": true
+      },
+      "Minutes": {
+        "text": "Минут",
+        "color": "#99CCFF",
+        "show": true
+      },
+      "Seconds": {
+        "text": "Секунд",
+        "color": "#99CCFF",
+        "show": true
+      }
+    }
+  });

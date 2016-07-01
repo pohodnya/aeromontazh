@@ -18,4 +18,5 @@
 //= require semantic_ui/semantic_ui
 //= require jquery.sticky
 //= require main
+//= require TimeCircles
 //= require_tree .
