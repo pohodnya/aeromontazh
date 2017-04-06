@@ -4,6 +4,21 @@
       Наши продукты и услуги
     </div>
     <br/>
+
+    <div class="ui grid padding">
+      <div class="ten wide column">
+        <h2 class="ui header">Tion Бризер 3S</h2>
+        <p class="ui left floated">Tion Бризер 3S — это компактная вентиляция для квартиры, дома и офиса. Он забирает воздух с улицы, подогревает, очищает его и подает в помещение. Бризер также может работать в режиме очистителя воздуха и фильтровать воздух внутри помещения. Высокий класс фильтрации, низкий уровень шума, удобное управление — с бризером воздух станет здоровым и комфортным. Монтаж занимает всего 1 час и не портит ремонт.</p>
+        <%= link_to 'Узнать больше', brizer_index_path, :class => "ui blue basic button right floated" %>
+      </div>
+      <div class="one wide column"></div>
+      <div class="three wide column">
+        <%= image_tag('breezer3S_350_350.png') %>
+      </div>
+    </div>
+
+    <div class="ui divider"></div>
+
     <div class="ui grid padding">
       <div class="three wide column">
         <%= image_tag('breez-320x320.png') %>
@@ -14,23 +29,7 @@
         <p class="ui left floated">Бризер Tion O2 — это бытовая приточная вентиляция для квартиры, дома или офиса. Компактный бризер позволяет проветривать комнату при закрытых окнах, подавая в дом очищенный, подогретый до комфортной температуры, насыщенный кислородом воздух. Поможет забыть о проблемах из-за духоты или холода от проветриваний окном. Поможет аллергикам или астматикам, нужен если в семье есть маленькие дети. Монтаж Tion O2 занимает всего за 1 час и не портит ремонт.</p>
         <%= link_to 'Узнать больше', brizer_index_path, :class => "ui blue basic button right floated" %>
       </div>
-
-
     </div>
-
-    <!--<div class="ui divider"></div>-->
-
-    <!--<div class="ui grid padding">-->
-      <!--<div class="three wide column">-->
-        <!--<%= image_tag('clev-320x320.jpg') %>-->
-      <!--</div>-->
-      <!--<div class="one wide column"></div>-->
-      <!--<div class="ten wide column">-->
-        <!--<h2 class="ui header">Очиститель Tion Clever</h2>-->
-        <!--<p class="ui item right floated">Профессиональный очиститель-обеззараживатель Tion Clever разработан для медицины и адаптирован для дома и офиса.  Уникальная «фишка» этого прибора — инактивация. Благодаря ей, прибор не только очищает воздух от пыли, аллергенов, вредных веществ и запахов, но и уничтожает абсолютно все виды инфекций. Эффективен от вируса свиного гриппа H1N1. Фильтры при этом остаются стерильными. Работает 24 часа в присутствии людей!</p>-->
-        <!--<%= link_to 'Узнать больше',clever_index_path, :class => "ui blue basic button right floated" %>-->
-      <!--</div>-->
-    <!--</div>-->
 
     <div class="ui divider"></div>
 
@@ -43,6 +42,20 @@
       <div class="one wide column"></div>
       <div class="three wide column">
         <%= image_tag('ma6.jpg') %>
+      </div>
+    </div>
+
+    <div class="ui divider"></div>
+
+    <div class="ui grid padding">
+      <div class="three wide column">
+        <%= image_tag('CO2-main.jpg') %>
+      </div>
+      <div class="one wide column"></div>
+      <div class="ten wide column">
+        <h2 class="ui header">Модуль CO<sub>2</sub>+</h2>
+        <p class="ui left floated">Расширяет и дополняет систему умного микроклимата Тион MagicAir. Базовая станция собирает данные о качестве воздуха только в комнате, где она установлена, и на их основе автоматически поддерживает заданные пользователем параметры. Модули СО2+ измеряет параметры микроклимата в других комнатах: уровень углекислого газа, температуру и влажность и передает их базовой станции. Таким образом, базовая станция может автоматически регулировать работу всех бризеров в доме.</p>
+        <%= link_to 'Узнать больше', magic_index_path, :class => "ui blue basic button right floated" %>
       </div>
     </div>
 
