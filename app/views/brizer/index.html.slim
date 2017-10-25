@@ -1,4 +1,5 @@
 = image_tag('top-baner.png', class: 'banner')
+= image_tag('top-baner.png', class: 'banner')
 
 .ui.segment.main-container
   /.ui.grid
@@ -206,19 +207,19 @@
       .three.column.row
         .column.center.aligned
           h2.ui.header
-            | 33 900
-            i.icon.ruble
-          button.ui.primary.button.ordermodal onclick="$('.small.modal.main-form').modal('show');" Предзаказ
-        .column.center.aligned
-          h2.ui.header
             | 34 900
             i.icon.ruble
-          button.ui.primary.button.ordermodal onclick="$('.small.modal.main-form').modal('show');" Предзаказ
+          button.ui.primary.button.ordermodal onclick="$('.small.modal.main-form').modal('show');" Заказать
         .column.center.aligned
           h2.ui.header
-            | 42 900
+            | 35 900
             i.icon.ruble
-          button.ui.primary.button.ordermodal onclick="$('.small.modal.main-form').modal('show');" Предзаказ
+          button.ui.primary.button.ordermodal onclick="$('.small.modal.main-form').modal('show');" Заказать
+        .column.center.aligned
+          h2.ui.header
+            | 43 900
+            i.icon.ruble
+          button.ui.primary.button.ordermodal onclick="$('.small.modal.main-form').modal('show');" Заказать
 
 
   br
@@ -227,102 +228,144 @@
     | Бризер Тион О
     sub 2
   .ui.grid
-    .four.wide.column.center.aligned
-      h3.ui.header Lite
-      p.short-description Для жителей теплых регионов
-      = image_tag('lite.jpg')
-      .ui.list
-        .item
-          i.right.triangle.icon
-          .content
-            .description Нет подогрева воздуха
-        .item
-          i.right.triangle.icon
-          .content
-            .description Фильтр от крупной пыли F7
-    .four.wide.column.center.aligned
-      h3.ui.header Base
-      p.short-description Для городов с хорошей экологией
-      = image_tag('Base.jpg')
-      .ui.list
-        .item
-          i.right.triangle.icon
-          .content
-            .description Есть подогрев воздуха
-        .item
-          i.right.triangle.icon
-          .content
-            .description Фильтр от крупной пыли F7
-    .four.wide.column.center.aligned
-      h3.ui.header Standart
-      p.short-description Для жителей мегаполисов
-      = image_tag('Standard.jpg')
-      .ui.list
-        .item
-          i.right.triangle.icon
-          .content
-            .description Есть подогрев воздуха
-        .item
-          i.right.triangle.icon
-          .content
-            .description Фильтр от крупной пыли F7
-        .item
-          i.right.triangle.icon
-          .content
-            .description Фильтр от мелкой пыли HEPA
-        .item
-          i.right.triangle.icon
-          .content
-            .description Фильтр от вредных газов AK
-    .four.wide.column.center.aligned
-      h3.ui.header MAC
-      p.short-description Для умного дома
-      = image_tag('mac_240.jpg')
-      .ui.list
-        .item
-          i.right.triangle.icon
-          .content
-            .description
-              | Совместим с
-              =link_to(' Magic Air', magic_index_path)
-        .item
-          i.right.triangle.icon
-          .content
-            .description Есть подогрев воздуха
-        .item
-          i.right.triangle.icon
-          .content
-            .description Фильтр от крупной пыли F7
-        .item
-          i.right.triangle.icon
-          .content
-            .description Фильтр от мелкой пыли HEPA
-        .item
-          i.right.triangle.icon
-          .content
-            .description Фильтр от вредных газов AK
-    .four.wide.column.center.aligned
-      h2.ui.header
-        | 19 700
-        i.icon.ruble
-      button.ui.primary.button.ordermodal onclick="$('.small.modal.main-form').modal('show');" Заказать
-    .four.wide.column.center.aligned
-      h2.ui.header
-        | 21 900
-        i.icon.ruble
-      button.ui.primary.button.ordermodal onclick="$('.small.modal.main-form').modal('show');" Заказать
-    .four.wide.column.center.aligned
-      h2.ui.header
-        | 23 900
-        i.icon.ruble
-      button.ui.primary.button.ordermodal onclick="$('.small.modal.main-form').modal('show');" Заказать
-      /h3.ui.header#header3 До конца акции осталось:
-      /#DateCountdown2 data-date="2016-07-31 00:00:00" style="width: 100%;"
-    .four.wide.column.center.aligned
-      h2.ui.header
-        | 24 900
-        i.icon.ruble
-      button.ui.primary.button.ordermodal onclick="$('.small.modal.main-form').modal('show');" Заказать
+    .three.column.row
+      .column.center.aligned
+        h3.ui.header Lite
+        p.short-description Для жителей теплых регионов
+        = image_tag('Lite.jpg')
+        .ui.list
+          .item
+            i.right.triangle.icon
+            .content
+              .description Нет подогрева воздуха
+          .item
+            i.right.triangle.icon
+            .content
+              .description Фильтр от крупной пыли F7
+
+      .column.center.aligned
+        h3.ui.header Base
+        p.short-description Для городов с хорошей экологией
+        = image_tag('Base.jpg')
+        .ui.list
+          .item
+            i.right.triangle.icon
+            .content
+              .description Есть подогрев воздуха
+          .item
+            i.right.triangle.icon
+            .content
+              .description Фильтр от крупной пыли F7
+
+      .column.center.aligned
+        h3.ui.header Standart
+        p.short-description Для жителей мегаполисов
+        = image_tag('Standard.jpg')
+        .ui.list
+          .item
+            i.right.triangle.icon
+            .content
+              .description Есть подогрев воздуха
+          .item
+            i.right.triangle.icon
+            .content
+              .description Фильтр от крупной пыли F7
+          .item
+            i.right.triangle.icon
+            .content
+              .description Фильтр от мелкой пыли HEPA
+          .item
+            i.right.triangle.icon
+            .content
+              .description Фильтр от вредных газов AK
+
+
+      .column.center.aligned
+        h2.ui.header
+          | 19 700
+          i.icon.ruble
+          button.ui.primary.button.ordermodal onclick="$('.small.modal.main-form').modal('show');" Заказать
+      .column.center.aligned
+        h2.ui.header
+          | 21 900
+          i.icon.ruble
+        button.ui.primary.button.ordermodal onclick="$('.small.modal.main-form').modal('show');" Заказать
+      .column.center.aligned
+        h2.ui.header
+          | 23 900
+          i.icon.ruble
+        button.ui.primary.button.ordermodal onclick="$('.small.modal.main-form').modal('show');" Заказать
+
+  .ui.grid
+    .three.column.row
+      .column.center.aligned
+        h3.ui.header MAC
+        p.short-description Для умного дома
+        = image_tag('Mac.jpg')
+        .ui.list
+          .item
+            i.right.triangle.icon
+            .content
+              .description
+                | Совместим с
+                =link_to(' Magic Air', magic_index_path)
+          .item
+            i.right.triangle.icon
+            .content
+              .description Есть подогрев воздуха
+          .item
+            i.right.triangle.icon
+            .content
+              .description Фильтр от крупной пыли F7
+          .item
+            i.right.triangle.icon
+            .content
+              .description Фильтр от мелкой пыли HEPA
+          .item
+            i.right.triangle.icon
+            .content
+              .description Фильтр от вредных газов AK
+
+      .column.center.aligned
+        h3.ui.header TOP
+        p.short-description Для ценителей удобств
+        = image_tag('Top.jpg')
+        .ui.list
+          .item
+            i.right.triangle.icon
+            .content
+              .description
+                = link_to(' Magic Air', magic_index_path)
+                | в комплекте
+          .item
+            i.right.triangle.icon
+            .content
+              .description Есть подогрев воздуха
+          .item
+            i.right.triangle.icon
+            .content
+              .description Фильтр от крупной пыли F7
+          .item
+            i.right.triangle.icon
+            .content
+              .description Фильтр от мелкой пыли HEPA
+          .item
+            i.right.triangle.icon
+            .content
+              .description Фильтр от вредных газов AK
+
+      .column.center.aligned
+      .column.center.aligned
+        h2.ui.header
+          | 24 900
+          i.icon.ruble
+        button.ui.primary.button.ordermodal onclick="$('.small.modal.main-form').modal('show');" Заказать
+      .column.center.aligned
+        h2.ui.header
+          | 32 900
+          i.icon.ruble
+        button.ui.primary.button.ordermodal onclick="$('.small.modal.main-form').modal('show');" Заказать
+
   br
   .ui.horizontal.divider.main-header Сменные фильтры
   .content
